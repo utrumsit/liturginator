@@ -26,3 +26,8 @@ A Python CLI app for Byzantine Catholic Church prayer texts.
 - Vespers prayers
 - Favorite prayers (persistent)
 - Search functionality
+
+## Development
+
+### Chunking and Formatting Text
+Liturgical text is chunked from `resource/chasoslov.md` into modular `.md` files for easy assembly. See `format-guide.md` for the cleaning process, scripts, and tips to maintain consistency when adding new chunks.

@@ -12,12 +12,12 @@ and the waters above the heavens.
 
 Let them praise the name of the Lord.
 He commanded; they were made.
-He	fixed	them	for	ever,
+He fixed them for ever,
 gave a law which shall not pass away.
 
 Praise the Lord from the earth,
 sea creatures and all oceans,
-fire	and	hail,	snow	and	mist,
+fire and hail, snow and mist,
 stormy winds that obey His word;
 
 all mountains and hills,
@@ -25,8 +25,8 @@ all fruit trees and cedars,
 beasts, wild and tame,
 reptiles and birds on the wing;
 
-all	earth’s	kings	and	peoples,
-earth’s	princes	and	rulers;
+all earth’s kings and peoples,
+earth’s princes and rulers;
 young men and maidens,
 old men together with children.
 
@@ -45,7 +45,7 @@ Psalm 149
 Sing a new song to the Lord,
 His praise in the assembly of the faithful.
 Let Israel rejoice in its Maker,
-let	Zion’s	sons	exult	in	their	king.
+let Zion’s sons exult in their king.
 Let them praise His name with dancing
 and make music with timbrel and harp.
 
@@ -78,10 +78,10 @@ O praise Him with sound of trumpet, praise Him with lute
 
 and harp.
 
-Praise  Him  with  timbrel  and  dance,  praise  Him  with
+Praise Him with timbrel and dance, praise Him with
 
 strings and pipe.
 
-O  praise  Him  with  resounding  cymbals,  praise  Him
+O praise Him with resounding cymbals, praise Him
 with clashing of cymbals. Let everything that lives and that
 breathes give praise to the Lord.

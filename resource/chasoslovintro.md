@@ -56,25 +56,31 @@ FAIRFAX, VIRGINIA
 [cite_start]The following points may be helpful to utilize the section titled The Book of Hours. [cite: 68]
 
 [cite_start]**The Midnight Service.** [cite: 69]
+
 * [cite_start]The Midnight Service is not customarily observed in parish churches, with the possible exception of the Midnight Service of Great Saturday night (Нагробноє, Nahrobnoje). [cite: 70, 71]
 * [cite_start]Since the Acts of the Holy Apostles records that Paul and Silas were praying at midnight (Acts 16:25), a person may pray this hour privately. [cite: 72] [cite_start]If so, the Mutual Forgiveness and petitions are omitted. [cite: 73]
 * [cite_start]The order of the Midnight Service for Saturday and Sunday varies from the weekday structure. [cite: 75] [cite_start]The Ninth Kathisma is appointed on Saturday as well as the prayer of Saint Eustratius that he prayed, it is said, as he was being led to martyrdom. [cite: 76] [cite_start]The Sunday Service appoints a canon to the Holy Trinity chanted. [cite: 77] [cite_start]The Book of Hours offers a form of this canon composed from all eight tones. [cite: 78]
 
 [cite_start]**Morning Prayers** [cite: 79]
+
 * [cite_start]Morning Prayers are arranged in a pattern like Matins. [cite: 80]
 
 [cite_start]**Matins** [cite: 81]
+
 * [cite_start]The Royal Service (pp 85-88) is prayed only in a nation having a Christian sovereign. [cite: 82] Otherwise, Matins begins on p. [cite_start]88. [cite: 83]
 * [cite_start]The Six Psalms are chanted by a single reader. [cite: 84]
 * The Scriptural Canticles that the rubrics mention on p 117 and on p. [cite_start]155 are not included in the edition of the Časoslov (Часословъ) from which this translation was made. [cite: 85, 86] [cite_start]The Scriptural canticles are in the Časoslov, 1950, that is an expanded version of this edition according to the Ruthenian Recension, published also by the Congregation of the Eastern Churches. [cite: 87]
 
 [cite_start]**The Little Hours** [cite: 88]
+
 * [cite_start]Each of the Little Hours consists of three psalms and three prayers. [cite: 89] [cite_start]As stated previously, the First Hour is usually joined to the conclusion of Matins. [cite: 89, 91] [cite_start]If prayed as a separate hour, it begins with the Usual Beginning Prayers. [cite: 91, 92]
 
 [cite_start]**Compline** [cite: 93]
+
 * [cite_start]If Compline is prayed privately, Mutual Forgiveness and the petitions that follow are omitted. [cite: 94, 95, 96]
 
 [cite_start]**Prayers before Sleep** [cite: 97]
+
 * [cite_start]The Prayers before Sleep are loosely patterned after Vespers, with a collection of eight prayers reflecting that there are eight priestly Prayers of Light at Vespers. [cite: 98] [cite_start]These are followed by prayers to the Guardian Angel and to the Theotokos. [cite: 99]
 
 ---
@@ -82,6 +88,7 @@ FAIRFAX, VIRGINIA
 ## THE CANONICON
 
 [cite_start]The Services (Služba, Служба) for each day of the week are provided in the typical edition in case the hymns from the proper liturgical books are unavailable. [cite: 101, 102] [cite_start]Please note that The Service to the Holy Cross is prayed on Wednesdays and Fridays. [cite: 103] [cite_start]However, on Wednesdays, the Canon to the Hodegetria Mother of God is sung at Matins instead of the Canon to the Holy Cross which is only sung on Fridays. [cite: 104]
+
 * [cite_start]The Prayers at the conclusion of each Service are provided in the typical edition for use at the conclusion of a moleben to the particular angel or saint. [cite: 105]
 
 ---
@@ -111,6 +118,7 @@ FAIRFAX, VIRGINIA
 ## BOOKS OF THE RUTHENIAN RECENSION (AS REPRINTED IN CHURCH SLAVONIC BY ECP)
 
 [cite_start]**Book I: Evangelion - The Holy Gospel** [cite: 139]
+
 * The Gospel According to Saint Matthew
 * The Gospel According to Saint Mark
 * [cite_start]The Gospel According to Saint Luke. [cite: 140]
@@ -118,16 +126,19 @@ FAIRFAX, VIRGINIA
 * [cite_start]Appendix [cite: 141]
 
 [cite_start]**Book II and III: Apostol - The Apostle** [cite: 143]
+
 * Readings from Acts and Universal Letters
 * [cite_start]Reading from Letters of Saint Paul. [cite: 144]
 * [cite_start]Propers and Apostolic readings. [cite: 144]
 
 [cite_start]**Book IV: Archieraticon - Book of the Hierarchical Services** [cite: 145, 146]
+
 * [cite_start]Liturgies [cite: 147]
 * [cite_start]Ordinations [cite: 148]
 * [cite_start]Blessings [cite: 149]
 
 [cite_start]**Books V and VI: Služebnik - Book of the Priest/Deacon** [cite: 150]
+
 * [cite_start]The Order of Vespers [cite: 151]
 * [cite_start]Compline and Midnight Service [cite: 152]
 * [cite_start]The Order of Orthros [cite: 153]
@@ -137,6 +148,7 @@ FAIRFAX, VIRGINIA
 * [cite_start]Propers [cite: 157]
 
 [cite_start]**Books VII and VIII: Časoslov - The Book of Hours** [cite: 158]
+
 * The Order of the Midnight Service
 * [cite_start]The Order of Orthros [cite: 159]
 * [cite_start]The Order of the Hours [cite: 160]
@@ -149,6 +161,7 @@ FAIRFAX, VIRGINIA
 * [cite_start]The Order of Holy Communion [cite: 166]
 
 [cite_start]**Books IX, X and XI: Trebnik - Book of Sacraments and Blessings** [cite: 168]
+
 * [cite_start]Order of Holy Baptism and Chrismation [cite: 169]
 * [cite_start]Order of Confession [cite: 169]
 * [cite_start]Lifting of a Penance [cite: 170]
@@ -162,6 +175,7 @@ FAIRFAX, VIRGINIA
 * [cite_start]Prayers and Blessings [cite: 178]
 
 [cite_start]**Book XII: Moleben - Book of Prayer Services** [cite: 179]
+
 * [cite_start]New Year [cite: 180]
 * [cite_start]Civil Holidays [cite: 181]
 * [cite_start]Time of War [cite: 182]
@@ -179,7 +193,6 @@ FAIRFAX, VIRGINIA
 * [cite_start]Various Prayers [cite: 191]
 
 ---
-
 
 [cite_start]Meeting at Saint George Cathedral, L'viv, November 29-30, 1927. [cite: 193] [cite_start]Metropolitan Archbishop Andrej Sheptytsky is sitting front center. [cite: 193] [cite_start]The Carpatho-Ruthenian bishops in the photograph are the following. [cite: 194] [cite_start]First on the left, seated, is Bishop Dionysius Nyaradyi, Bishop of Krizevtsi, who, when this photograph was taken, had recently resigned as Apostolic Administrator of Prešov. [cite: 194] [cite_start]In the back row, second from left is Bishop Basil Takach, bishop of the Ruthenian Exarchate of Pittsburgh. [cite: 195] [cite_start]Third from left is Bishop Peter Gebej, Bishop of Mukachevo. [cite: 196] [cite_start]Fifth from left is Blessed Bishop martyr Paul Gojdich, O.S.B.M, Bishop of Prešov, Czechoslovakia. [cite: 197] [cite_start]Among the Ukrainian Greek Catholic bishops are the following. [cite: 198] [cite_start]Seated, second from left is Blessed Bishop martyr Hryhory Khomyshyn, Bishop of Stanislaviv, and second most influential Ukrainian Catholic bishop after the Venerable Metropolitan Sheptytsky. [cite: 198] [cite_start]Bishop Khomyshyn was not in support of attempts to remove latinizations. [cite: 199] [cite_start]Fourth from left seated is Blessed Bishop Nykyta Budka, who was then Bishop of Ukrainians in Canada although he was transferred to Ukraine where he would be martyred in 1949. [cite: 200] [cite_start]On the extreme right seated is Blessed Bishop martyr Josaphat Kotsylovsky, O.S.B.M. the Bishop of Peremyšl. [cite: 200, 201]
 

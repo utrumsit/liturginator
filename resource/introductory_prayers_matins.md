@@ -1,7 +1,7 @@
 [The Royal Service]
 
 If it is the Great Forty Day Fast, after Blessed is our God:
-say:  Trisagion.  Most  holy  Trinity:  After  Our  Father:  Lord,
+say: Trisagion. Most holy Trinity: After Our Father: Lord,
 have mercy 12. Glory: now and ever: Come, let us worship:
 three times, and the two psalms.
 
@@ -12,15 +12,15 @@ Come, let us worship: three times, and the psalms.
 Psalm 19
 
 May the Lord answer in time of trial;
-May	the	name	of	Jacob’s	God	protect	you.
+May the name of Jacob’s God protect you.
 
 May He send you help from His shrine
 and give you support from Zion.
-May	He	remember	all	your	offerings
-and	receive	your	sacrifice	with	favor.
+May He remember all your offerings
+and receive your sacrifice with favor.
 
-May	He	give	you	your	heart’s	desire
-and	fulfill	every	one	of	your	plans.
+May He give you your heart’s desire
+and fulfill every one of your plans.
 May we ring out with joy at your victory
 And rejoice in the name of our God.
 
@@ -33,7 +33,7 @@ with the mighty victory of His hand.
 Some trust in chariots or horses,
 but we in the name of the Lord.
 They will collapse and fall,
-but	we	shall	hold	and	stand	firm.
+but we shall hold and stand firm.
 
 Give victory to the king, O Lord,
 give answer on the day we call.
@@ -42,7 +42,7 @@ Psalm 20
 
 O Lord, Your strength gives joy to the king;
 How Your saving help makes him glad!
-You	have	granted	him	his	heart’s	desire;
+You have granted him his heart’s desire;
 You have not refused the prayer of his lips.
 
 You came to meet him with the blessings of success,
@@ -56,15 +56,15 @@ You have granted Your blessings to him for ever.
 You have made him rejoice with the joy of Your presence.
 
 The king has put his trust in the Lord;
-through	the	mercy	of	the	Most	High	he	shall	stand	firm.
+through the mercy of the Most High he shall stand firm.
 
-His	hand	will	seek	and	find	all	his	foes,
-his	right	hand	find	out	those	that	hate	him.
+His hand will seek and find all his foes,
+his right hand find out those that hate him.
 
 You will burn them like a blazing furnace
 on the day when You appear.
 And the Lord shall destroy them in His anger;
-fire	will	swallow	them	up.
+fire will swallow them up.
 
 You will wipe out their race from the earth
 and their children from the sons of men.
