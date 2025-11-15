@@ -1,3 +1,7 @@
+[Six Psalms]
+
+**Logic Note:** The hexapsalm is always said.
+
 **Psalm 3**
 
 How many are my foes, O Lord!  
