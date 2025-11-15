@@ -134,7 +134,7 @@ But the priest says quietly the prayers of Matins, standing,
 
 with head uncovered, before the holy doors.
 
-Psalm 87
+**Psalm 87**
 
 Lord my God, I call for help by day;
 I cry at night before You.
@@ -190,7 +190,7 @@ I cry at night before You.
 Let my prayer come into Your presence.
 O turn Your ear to my cry.
 
-Psalm 102
+**Psalm 102**
 
 Bless the Lord, O my soul,
 and all my being bless His holy name.
@@ -250,7 +250,7 @@ Bless the Lord, all His works,
 in every place where He rules.
 Bless the Lord, O my soul!
 
-Psalm 142
+**Psalm 142**
 
 Lord, listen to my prayer:
 turn Your ear to my appeal.
