@@ -74,9 +74,19 @@ at them You will aim with Your bow.
 O Lord, arise in Your strength;  
 we shall sing and praise Your power.  
 
-*Glory: now and ever:* Trisagion. Most holy Trinity: Our
+*Glory: now and ever:*
 
-Father: For Thine is the kingdom:
+Holy God, Holy and Mighty, Holy and Immortal, have mercy on us. *Three times.*
+
+Most holy Trinity, have mercy on us; Lord, cleanse us of our sins; Master, forgive our transgressions; Holy One, come to us and heal our infirmities for Your Name’s sake.
+
+Our Father, Who art in heaven, hallowed be Thy Name. Thy kingdom come, Thy will be done on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses as we forgive those who trespass against us, and lead us not into temptation, but deliver us from evil.
+
+*The priest:*
+
+For Thine is the kingdom, and the power, and the glory, Father, Son, and Holy Spirit, now and ever and forever.
+
+*And we: Amen.*
 
 *And these troparia:*
 

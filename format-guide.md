@@ -74,7 +74,7 @@ Rubrics are liturgical instructions (e.g., who says what, repetitions). Mark the
 - For numbers like "12", change to `*Twelve times*` or keep as `*12*` if space-constrained.
 - Expand abbreviations: "Glory:" to `*Glory to the Father, and to the Son, and to the Holy Spirit:*` if it fits the flow.
 - **Poetic Formatting**: For verse-like or poetic lines (e.g., "Come let us worship...", psalm verses), add two spaces after periods to preserve line breaks in rendering. Example: "Come let us worship our King and God.  " (note the two spaces).
-- **Expand Abbreviations**: Replace abbreviated prayers (e.g., "Come let us worship:") with full text from other chunks (e.g., from introductory_prayers.md) to provide complete prayers.
+- **Expand Abbreviations**: Replace abbreviated prayers (e.g., "Come let us worship:", "Trisagion.") with full text from other chunks (e.g., from introductory_prayers.md) to provide complete prayers. Generally prefer full prayers over abbreviations for clarity and completeness.
 
 ## Specific Formatting Rules
 - **Introductory Prayers**: Certain prayers should be on single lines for better flow:
