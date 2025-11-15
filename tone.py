@@ -77,11 +77,20 @@ def get_tone(date=None):
         return tone
 
 if __name__ == "__main__":
-    import sys
-    date_str = sys.argv[1] if len(sys.argv) > 1 else None
-    if date_str:
-        date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Calculate the liturgical tone for a given date.")
+    parser.add_argument('date', nargs='?', default=None, help='Date in YYYY-MM-DD format (default: today)')
+    args = parser.parse_args()
+
+    if args.date:
+        try:
+            date = datetime.datetime.strptime(args.date, '%Y-%m-%d').date()
+        except ValueError:
+            print("Invalid date format. Use YYYY-MM-DD.")
+            exit(1)
     else:
-        date = None
+        date = datetime.date.today()
+
     tone = get_tone(date)
-    print(f"Tone for {date or datetime.date.today()}: {tone}")
+    print(f"Tone for {date}: {tone}")
