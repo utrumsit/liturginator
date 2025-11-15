@@ -25,6 +25,7 @@ def get_tone(date=None):
 
     year = date.year
     pascha = calculate_easter(year)
+    pentecost = pascha + datetime.timedelta(days=49)
 
     # If before Pascha, perhaps Tone 8 or special, but for simplicity, assume cycle starts at Pascha
     if date < pascha:
@@ -44,36 +45,12 @@ def get_tone(date=None):
         # Thomas Sunday: Tone 1
         return 1
     else:
-        # After Thomas Sunday
-        # Calculate weeks after Pentecost
-        # Pentecost is 50 days after Pascha
-        pentecost = pascha + datetime.timedelta(days=49)  # 50th day is Pentecost
-        if date <= pentecost:
-            # Paschal season: special tones
-            # For simplicity, use the regular cycle
-            pass
-
-        # Sundays after Pentecost: Tone = ((sunday_number - 1) % 8) + 1
-        # But need to find the sunday number.
-
-        # First, find the number of Sundays after Pentecost
         days_after_pentecost = (date - pentecost).days
-        if days_after_pentecost < 0:
-            # During Paschal season, perhaps Tone 1 or special
-            return 1
-
-        # Find the Sunday number
-        # The second Sunday after Pentecost is Tone 1, etc.
-        # So, for date, find how many Sundays have passed since Pentecost.
-
-        # Calculate the date of the first Sunday after Pentecost
-        first_sunday_after_pentecost = pentecost + datetime.timedelta(days=(7 - pentecost.weekday()))
-
-        if date < first_sunday_after_pentecost:
-            return 1  # Pentecost week or something
-
-        weeks_after = ((date - first_sunday_after_pentecost).days // 7) + 1  # +1 for the first week
-        tone = ((weeks_after - 1) % 8) + 1
+        number = days_after_pentecost // 7
+        if number <= 2:
+            tone = 1
+        else:
+            tone = ((number - 2) % 8) + 1
         return tone
 
 if __name__ == "__main__":
