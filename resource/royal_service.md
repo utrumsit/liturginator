@@ -1,5 +1,7 @@
 [The Royal Service]
 
+**Logic Note:** If Lent (Great Forty Day Fast), include introductory prayers (Trisagion, etc.) after blessing. Otherwise, skip to "Come let us worship."
+
 *If it is the Great Forty Day Fast, after Blessed is our God:*
 say: Trisagion. Most holy Trinity: After Our Father: Lord,
 have mercy 12. Glory: now and ever: Come, let us worship:
