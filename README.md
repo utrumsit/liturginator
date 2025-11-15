@@ -7,7 +7,7 @@ A Python CLI app for Byzantine Catholic Church prayer texts.
 1. Clone or download the repository.
 2. Set up the virtual environment: `python3 -m venv venv`
 3. Activate: `source venv/bin/activate`
-4. Install dependencies: `pip install click`
+4. Install dependencies: `pip install click python-dateutil`
 
 ## Usage
 
