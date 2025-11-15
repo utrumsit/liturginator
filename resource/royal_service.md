@@ -90,16 +90,10 @@ For Thine is the kingdom, and the power, and the glory, Father, Son, and Holy Sp
 
 *And these troparia:*
 
-Save Your people, O Lord, and bless Your inheritance.  
-Grant victory to Your Church over evil and protect Your  
-people by Your cross.  
+Save Your people, O Lord, and bless Your inheritance. Grant victory to Your Church over evil and protect Your people by Your cross.  
 
 *Glory:*
 
-Christ our God, Who were willingly raised upon the cross,  
-grant Your mercies to the new people who bear Your Name.  
-By Your power grant joy to the Church. Give her victory over  
-evil with Your invincible trophy, the weapon of peace, as an  
-ally.  
+Christ our God, Who were willingly raised upon the cross, grant Your mercies to the new people who bear Your Name. By Your power grant joy to the Church. Give her victory over evil with Your invincible trophy, the weapon of peace, as an ally.  
 
 *Now and ever:*
