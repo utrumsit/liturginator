@@ -67,6 +67,7 @@ Rubrics are liturgical instructions (e.g., who says what, repetitions). Mark the
 - Speaker indicators: "If there is a priest, he says:", "If there is no priest, say:", "We:", "The priest:".
 - Repetitions: "Three times", "12" (meaning "12 times").
 - Structural cues: "Glory:", "now and ever:" (consider expanding to full text if short).
+- Verse indicators: "Verse 1:", "Verse 2:", etc., in psalms or hymns.
 - Other: Any non-prayer text directing the liturgy.
 
 ### Formatting
