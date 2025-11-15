@@ -56,6 +56,30 @@ def vespers():
     click.echo("(Full Vespers text would be added here)")
 
 @cli.command()
+@click.option('--date', default=None, help='Date in YYYY-MM-DD format')
+@click.option('--output', default=None, help='Output to Markdown file')
+def matins(date, output):
+    """Display or export Matins prayers."""
+    from matins_logic import MatinsAssembler
+    from datetime import datetime
+
+    if not date:
+        date = datetime.now().strftime('%Y-%m-%d')
+
+    # Placeholder: determine if Lent
+    is_lent = False  # TODO: implement Lent check
+
+    assembler = MatinsAssembler(date, is_lent)
+    text = assembler.assemble()
+
+    if output:
+        with open(output, 'w', encoding='utf-8') as f:
+            f.write(text)
+        click.echo(f"Matins exported to {output}")
+    else:
+        click.echo(text)
+
+@cli.command()
 @click.argument('prayer')
 def favorite(prayer):
     """Mark a prayer as favorite."""
