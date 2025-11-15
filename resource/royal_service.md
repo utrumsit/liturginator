@@ -4,12 +4,21 @@
 
 *If it is the Great Forty Day Fast, after Blessed is our God:*
 say: Trisagion. Most holy Trinity: After Our Father: Lord,
-have mercy 12. Glory: now and ever: Come, let us worship:
-three times, and the two psalms.
+have mercy 12. Glory: now and ever:
+
+Come, let us worship our King and God.  
+Come, let us worship Christ, our King and God.  
+Come, let us worship and bow before the only Lord Jesus Christ, the King and our God.
+
+*three times, and the two psalms.*
 
 *But if it is not, after the blessing:*
 
-Come, let us worship: three times, and the psalms.
+Come, let us worship our King and God.  
+Come, let us worship Christ, our King and God.  
+Come, let us worship and bow before the only Lord Jesus Christ, the King and our God.
+
+*three times, and the psalms.*
 
 Psalm 19
 
