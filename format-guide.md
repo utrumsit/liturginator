@@ -75,6 +75,12 @@ Rubrics are liturgical instructions (e.g., who says what, repetitions). Mark the
 - Expand abbreviations: "Glory:" to `*Glory to the Father, and to the Son, and to the Holy Spirit:*` if it fits the flow.
 - **Poetic Formatting**: For verse-like or poetic lines (e.g., "Come let us worship...", psalm verses), add two spaces after periods to preserve line breaks in rendering. Example: "Come let us worship our King and God.  " (note the two spaces).
 
+## Specific Formatting Rules
+- **Introductory Prayers**: Certain prayers should be on single lines for better flow:
+  - Trisagion: "Holy God, Holy and Mighty, Holy and Immortal, have mercy on us." (no line break before "mercy on us").
+  - Doxology: "For Thine is the kingdom, and the power, and the glory, Father, Son, and Holy Spirit, now and ever and forever." (single line).
+  - Final Invocation: "Come, let us worship and bow before the only Lord Jesus Christ, the King and our God." (single line).
+
 ### Application
 - Manually edit files or use a script to wrap patterns (e.g., regex for ":\s*$" but carefully).
 - Example: Change "Glory:" to `*Glory:*` or expand.

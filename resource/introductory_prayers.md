@@ -19,9 +19,7 @@ present and filling all things, Treasury of Blessings and Giver
 of Life, come and dwell within us, cleanse us of all stain, and
 save our souls, O gracious One.
 
-Holy God, Holy and Mighty, Holy and Immortal, have
-
-mercy on us. *Three times.*
+Holy God, Holy and Mighty, Holy and Immortal, have mercy on us. *Three times.*
 
 Glory to the Father, and to the Son, and to the Holy Spirit,
 
@@ -43,9 +41,7 @@ lead us not into temptation, but deliver us from evil.
 
 *The priest:*
 
-For Thine is the kingdom, and the power, and the glory,
-
-Father, Son, and Holy Spirit, now and ever and forever.
+For Thine is the kingdom, and the power, and the glory, Father, Son, and Holy Spirit, now and ever and forever.
 
 *And we:* Amen.
 
@@ -55,5 +51,4 @@ Father, Son, and Holy Spirit, now and ever and forever.
 
 Come, let us worship our King and God.  
 Come, let us worship Christ, our King and God.  
-Come, let us worship and bow before the only  
-Lord Jesus Christ, the King and our God.
+Come, let us worship and bow before the only Lord Jesus Christ, the King and our God.
