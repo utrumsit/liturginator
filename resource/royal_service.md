@@ -94,6 +94,32 @@ Save Your people, O Lord, and bless Your inheritance. Grant victory to Your Chur
 
 *Glory:*
 
-Christ our God, Who were willingly raised upon the cross, grant Your mercies to the new people who bear Your Name. By Your power grant joy to the Church. Give her victory over evil with Your invincible trophy, the weapon of peace, as an ally.  
+Christ our God, Who were willingly raised upon the cross, grant Your mercies to the new people who bear Your Name. By Your power grant joy to the Church. Give her victory over evil with Your invincible trophy, the weapon of peace, as an ally.
 
 *Now and ever:*
+
+O awesome intercession that cannot be put to shame, O good one, despise not our prayers, O all-hymned Theotokos; strengthen the people of the true faith; save the well-believing kings that You have appointed to rule; and grant them victory from heaven; for you gave birth to God, O only-blessed one.
+
+*The priest:*
+
+silence and contrition.
+
+*And the brother, who reads with reverence, and fear of God, says:*
+
+Glory to God in the highest, and to His people on earth, His peace and good will. *Three times.*
+
+O Lord, open my lips, and my mouth will declare Your praise. *Twice.*
+
+Have mercy on us, O God, according to Your great mercy, we pray You, hear and have mercy.
+
+*Choir:* Lord, have mercy. *6.*
+
+Again we pray for our God-protected King and for the armed forces.
+
+*Choir:* Lord, have mercy. *6.*
+
+*Exclamation:*
+
+For You are a merciful and loving God, and we give glory to You, Father, Son, and Holy Spirit, now and ever and forever.
+
+*Choir:* Amen.
