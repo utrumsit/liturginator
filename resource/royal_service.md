@@ -86,7 +86,7 @@ Our Father, Who art in heaven, hallowed be Thy Name. Thy kingdom come, Thy will 
 
 For Thine is the kingdom, and the power, and the glory, Father, Son, and Holy Spirit, now and ever and forever.
 
-*And we: Amen.*
+*And we:* Amen.
 
 *And these troparia:*
 
