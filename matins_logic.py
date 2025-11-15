@@ -25,22 +25,25 @@ class MatinsAssembler:
         # 3. Hexapsalm (constant)
         parts.append(self.get_hexapsalm())
 
-        # 4. Hymn of Light (variable by tone)
+        # 4. The Lord is God (constant)
+        parts.append(self.get_the_lord_is_god())
+
+        # 5. Hymn of Light (variable by tone)
         parts.append(self.get_hymn_of_light(self.get_tone()))
 
-        # 5. Exapostilarion (variable)
+        # 6. Exapostilarion (variable)
         parts.append(self.get_exapostilarion())
 
-        # 6. Scripture Readings (variable)
+        # 7. Scripture Readings (variable)
         parts.append(self.get_scripture_readings())
 
-        # 7. Canon (variable)
+        # 8. Canon (variable)
         parts.append(self.get_canon())
 
-        # 8. Praises (constant)
+        # 9. Praises (constant)
         parts.append(self.get_praises())
 
-        # 9. Dismissal (constant)
+        # 10. Dismissal (constant)
         parts.append(self.get_dismissal())
 
         return '\n\n'.join(parts)
@@ -56,12 +59,17 @@ class MatinsAssembler:
 
     def get_royal_service(self):
         # Load from royal_service.md
-        with open('resource/royal_service.md', 'r') as f:
+        with open('resource/matins/royal_service.md', 'r') as f:
+            return f.read()
+
+    def get_the_lord_is_god(self):
+        # Load from theLordisGod.md
+        with open('resource/matins/theLordisGod.md', 'r') as f:
             return f.read()
 
     def get_hexapsalm(self):
         # Load from hexapsalm_matins.md
-        with open('resource/hexapsalm_matins.md', 'r') as f:
+        with open('resource/matins/hexapsalm_matins.md', 'r') as f:
             return f.read()
 
     def get_tone(self):
@@ -91,12 +99,12 @@ class MatinsAssembler:
 
     def get_praises(self):
         # Load from praises_matins.md
-        with open('resource/praises_matins.md', 'r') as f:
+        with open('resource/matins/praises_matins.md', 'r') as f:
             return f.read()
 
     def get_dismissal(self):
         # Load from dismissal_matins.md
-        with open('resource/dismissal_matins.md', 'r') as f:
+        with open('resource/matins/dismissal_matins.md', 'r') as f:
             return f.read()
 
 # Example usage:
