@@ -1,4 +1,4 @@
-Psalm 3
+**Psalm 3**
 
 How many are my foes, O Lord!
 How many are rising up against me!
@@ -82,7 +82,7 @@ My God, do not stay afar off!
 Make haste and come to my help,
 O Lord, my God, my Savior!
 
-Psalm 62
+**Psalm 62**
 
 O God, You are my God, for You I long;
 for You my soul is thirsting.

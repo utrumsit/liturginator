@@ -20,7 +20,7 @@ Come, let us worship and bow before the only Lord Jesus Christ, the King and our
 
 *three times, and the psalms.*
 
-Psalm 19
+**Psalm 19**
 
 May the Lord answer in time of trial;  
 May the name of Jacob’s God protect you.  
@@ -49,7 +49,7 @@ but we shall hold and stand firm.
 Give victory to the king, O Lord,  
 give answer on the day we call.  
 
-Psalm 20
+**Psalm 20**
 
 O Lord, Your strength gives joy to the king;  
 How Your saving help makes him glad!  

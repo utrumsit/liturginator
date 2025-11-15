@@ -1,4 +1,4 @@
-Psalm 148
+**Psalm 148**
 
 Praise the Lord from the heavens,
 Praise Him in the heights.
@@ -40,7 +40,7 @@ He is the praise of all His saints,
 of the sons of Israel,
 of the people to whom He comes close.
 
-Psalm 149
+**Psalm 149**
 
 Sing a new song to the Lord,
 His praise in the assembly of the faithful.
@@ -64,7 +64,7 @@ And their nobles in fetters of iron;
 to carry out the sentence pre-ordained: this honor
 is for all His faithful.
 
-Psalm 150
+**Psalm 150**
 
 Praise God in His holy place, praise Him in His mighty
 
