@@ -8,32 +8,12 @@ Determines the liturgical tone for a given date based on the 8-tone cycle starti
 import datetime
 from dateutil.easter import easter  # For Western Easter, but we'll adjust for Orthodox
 
-def calculate_orthodox_easter(year):
+def calculate_easter(year):
     """
-    Calculate the date of Orthodox Easter (Pascha) for the given year.
-    Orthodox Easter is the first Sunday after the first full moon after March 21,
-    but calculated differently from Western Easter.
-    For simplicity, using an approximation; in production, use a proper library.
+    Calculate the date of Easter (Pascha) for the given year.
+    Byzantine Catholic Church uses the Western (Gregorian) calculation.
     """
-    # Placeholder: Orthodox Easter is usually 13 days after Western Easter, but not always.
-    # For 2023: April 16, 2023
-    # For 2024: May 5, 2024
-    # For 2025: April 20, 2025
-    # Implement proper calculation here.
-    # For now, hardcode or use a formula.
-
-    # Simple approximation: Orthodox Easter = Western Easter + 13 days, adjusted.
-    western = easter(year)
-    # Orthodox is the Sunday after the full moon following March 21 in Julian calendar.
-    # This is complex; for demo, use a dict or formula.
-
-    orthodox_dates = {
-        2023: datetime.date(2023, 4, 16),
-        2024: datetime.date(2024, 5, 5),
-        2025: datetime.date(2025, 4, 20),
-        # Add more years as needed
-    }
-    return orthodox_dates.get(year, datetime.date(year, 4, 16))  # Default to April 16
+    return easter(year)
 
 def get_tone(date=None):
     """
@@ -44,7 +24,7 @@ def get_tone(date=None):
         date = datetime.date.today()
 
     year = date.year
-    pascha = calculate_orthodox_easter(year)
+    pascha = calculate_easter(year)
 
     # If before Pascha, perhaps Tone 8 or special, but for simplicity, assume cycle starts at Pascha
     if date < pascha:
