@@ -57,25 +57,61 @@ def vespers():
 
 @cli.command()
 @click.option('--date', default=None, help='Date in YYYY-MM-DD format')
+@click.option('--service', default='matins', type=click.Choice(['matins', 'vespers', 'hours']), help='Service to generate')
 @click.option('--output', default=None, help='Output to Markdown file')
-def matins(date, output):
-    """Display or export Matins prayers."""
-    from matins_logic import MatinsAssembler
+def liturgy(date, service, output):
+    """Display or export liturgical service texts."""
     from datetime import datetime
+    import tone
+    import pascha
+    from menaion import Menaion
+    import json
 
     if not date:
         date = datetime.now().strftime('%Y-%m-%d')
 
-    # Placeholder: determine if Lent
-    is_lent = False  # TODO: implement Lent check
+    # Parse date
+    dt = datetime.strptime(date, '%Y-%m-%d')
+    month = dt.strftime('%B')
+    day = dt.day
 
-    assembler = MatinsAssembler(date, is_lent)
-    text = assembler.assemble()
+    # Determine tone
+    tone_num = tone.get_tone(date)
+
+    # Check for feast
+    men = Menaion()
+    feast = men.get_feast(month, day)
+
+    # Determine season (simplified)
+    is_lent = pascha.is_lent(date)
+
+    # Load hymns
+    with open('resurrection_troparia.json', 'r') as f:
+        res_troparia = json.load(f)
+    with open('theotokia.json', 'r') as f:
+        theotokia = json.load(f)
+
+    # Select hymns
+    if feast:
+        troparion = feast.get('troparia', {}).get('troparion', '')
+        theotokion = feast.get('troparia', {}).get('theotokion', '')
+    else:
+        troparion = res_troparia.get(str(tone_num), {}).get('troparion', '')
+        theotokion = theotokia.get(tone_num, {}).get('standard', [''])[0]
+
+    # Assemble text (placeholder)
+    text = f"# {service.capitalize()} for {date}\n\n"
+    text += f"Tone: {tone_num}\n\n"
+    if feast:
+        text += f"Feast: {feast}\n\n"
+    text += f"Troparion:\n{troparion}\n\n"
+    text += f"Theotokion:\n{theotokion}\n\n"
+    # Add more assembly logic here
 
     if output:
         with open(output, 'w', encoding='utf-8') as f:
             f.write(text)
-        click.echo(f"Matins exported to {output}")
+        click.echo(f"{service.capitalize()} exported to {output}")
     else:
         click.echo(text)
 

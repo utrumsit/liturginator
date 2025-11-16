@@ -35,6 +35,18 @@ def calculate_pascha(year):
 
     return pascha_date
 
+def is_lent(date_str):
+    """
+    Check if the given date is in Lent.
+    """
+    from datetime import datetime, timedelta
+    dt = datetime.strptime(date_str, '%Y-%m-%d').date()
+    year = dt.year
+    pascha = calculate_pascha(year)
+    # Lent starts 48 days before Pascha (7 weeks)
+    lent_start = pascha - timedelta(days=48)
+    return lent_start <= dt < pascha
+
 if __name__ == "__main__":
     year = int(input("Enter year: "))
     pascha_date = calculate_pascha(year)
