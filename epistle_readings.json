@@ -1,0 +1,52 @@
+{
+  "fixed": {
+    "nativity_theotokos": {
+      "book": "Philippians",
+      "chapter": 2,
+      "verses": "5-11",
+      "text": "Have this mind among yourselves, which is yours in Christ Jesus, who, though he was in the form of God, did not count equality with God a thing to be grasped, but emptied himself, taking the form of a servant, being born in the likeness of men. And being found in human form he humbled himself and became obedient unto death, even death on a cross. Therefore God has highly exalted him and bestowed on him the name which is above every name, that at the name of Jesus every knee should bow, in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father."
+    }
+  },
+  "lent": {
+    "1": {
+      "book": "Romans",
+      "chapter": 13,
+      "verses": "11b-14:4",
+      "text": "Besides this you know what hour it is, how it is full time now for you to wake from sleep. For salvation is nearer to us now than when we first believed; the night is far gone, the day is at hand. Let us then cast off the works of darkness and put on the armor of light; let us conduct ourselves becomingly as in the day, not in reveling and drunkenness, not in debauchery and licentiousness, not in quarreling and jealousy. But put on the Lord Jesus Christ, and make no provision for the flesh, to gratify its desires."
+    },
+    "default": {
+      "book": "Romans",
+      "chapter": 13,
+      "verses": "11b-14:4",
+      "text": "Default Lent reading."
+    }
+  },
+  "pascha": {
+    "0": {
+      "book": "Acts",
+      "chapter": 1,
+      "verses": "1-8",
+      "text": "In the first book, O The-oph'ilus, I have dealt with all that Jesus began to do and teach, until the day when he was taken up, after he had given commandment through the Holy Spirit to the apostles whom he had chosen. To them he presented himself alive after his passion by many proofs, appearing to them during forty days, and speaking of the kingdom of God. And while staying with them he charged them not to depart from Jerusalem, but to wait for the promise of the Father, which, he said, 'you heard from me, for John baptized with water, but before many days you shall be baptized with the Holy Spirit.' So when they had come together, they asked him, 'Lord, will you at this time restore the kingdom to Israel?' He said to them, 'It is not for you to know times or seasons which the Father has fixed by his own authority. But you shall receive power when the Holy Spirit has come upon you; and you shall be my witnesses in Jerusalem and in all Judea and Samaria and to the end of the earth.'"
+    },
+    "default": {
+      "book": "Acts",
+      "chapter": 1,
+      "verses": "1-8",
+      "text": "Default Pascha reading."
+    }
+  },
+  "pentecostarion": {
+    "0": {
+      "book": "Hebrews",
+      "chapter": 11,
+      "verses": "33-12:2a",
+      "text": "Who through faith conquered kingdoms, enforced justice, received promises, stopped the mouths of lions, quenched raging fire, escaped the edge of the sword, won strength out of weakness, became mighty in war, put foreign armies to flight. Women received their dead by resurrection. Some were tortured, refusing to accept release, that they might rise again to a better life. Others suffered mocking and scourging, and even chains and imprisonment. They were stoned, they were sawn in two, they were killed with the sword; they went about in skins of sheep and goats, destitute, afflicted, ill-treated—of whom the world was not worthy—wandering over deserts and mountains, and in dens and caves of the earth. And all these, though well attested by their faith, did not receive what was promised, since God had foreseen something better for us, that apart from us they should not be made perfect. Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with perseverance the race that is set before us, looking to Jesus the pioneer and perfecter of our faith."
+    },
+    "default": {
+      "book": "Hebrews",
+      "chapter": 11,
+      "verses": "33-12:2a",
+      "text": "Default Pentecostarion reading."
+    }
+  }
+}

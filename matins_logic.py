@@ -2,10 +2,22 @@
 # This file outlines the structure and conditional logic for assembling Matins prayers.
 # It serves as a guide for implementing the assembly in the main liturginator.py.
 
+import json
+import tone
+import pascha
+from menaion import Menaion
+from datetime import datetime
+
 class MatinsAssembler:
-    def __init__(self, date, is_lent=False):
+    def __init__(self, date):
         self.date = date
-        self.is_lent = is_lent  # True if Great Forty Day Fast
+        self.is_lent = pascha.is_lent(date)
+        dt = datetime.strptime(date, '%Y-%m-%d').date()
+        self.tone_num = tone.get_tone(dt)
+        self.men = Menaion()
+        self.month = dt.strftime('%B')
+        self.day = dt.day
+        self.feast = self.men.get_feast(self.month, self.day)
 
     def assemble(self):
         """
@@ -53,8 +65,8 @@ class MatinsAssembler:
         return "Blessed is our God, always, now and ever and forever."
 
     def get_introductory_prayers(self):
-        # Load from introductory_prayers.md
-        with open('resource/introductory_prayers.md', 'r') as f:
+        # Load from introductory_prayers_matins.md
+        with open('resource/matins/introductory_prayers_matins.md', 'r') as f:
             return f.read()
 
     def get_royal_service(self):
@@ -73,28 +85,35 @@ class MatinsAssembler:
             return f.read()
 
     def get_tone(self):
-        # Determine tone based on date (placeholder)
-        return 1  # Example
+        return self.tone_num
 
     def get_hymn_of_light(self, tone):
-        # Load or generate based on tone
-        # Placeholder: return hymn for tone
-        hymns = {
-            1: "Send light, O Lord...",
-            # etc.
-        }
-        return hymns.get(tone, "Hymn of Light")
+        # Load from resurrection_troparia.json or similar
+        with open('resurrection_troparia.json', 'r') as f:
+            res_troparia = json.load(f)
+        return res_troparia.get(str(tone), {}).get('troparion', 'Hymn of Light not found')
 
     def get_exapostilarion(self):
-        # Variable: select based on day
-        return "Exapostilarion text"
+        # For now, use resurrection exapostilarion or feast-specific
+        if self.feast:
+            return self.feast.get('troparia', {}).get('exapostilarion', 'Exapostilarion text')
+        with open('resurrection_troparia.json', 'r') as f:
+            res_troparia = json.load(f)
+        return res_troparia.get(str(self.tone_num), {}).get('exapostilarion', 'Exapostilarion text')
 
     def get_scripture_readings(self):
         # Variable: prokeimenon, readings
         return "Scripture readings"
 
     def get_canon(self):
-        # Variable: ode-based hymns
+        # Placeholder: integrate with menaion hymns or canon sources
+        if self.feast:
+            troparia = self.feast.get('troparia', {})
+            canon_parts = []
+            for key in ['irmos', 'troparion', 'theotokion']:
+                if key in troparia:
+                    canon_parts.append(f"{key.capitalize()}: {troparia[key]}")
+            return '\n'.join(canon_parts) if canon_parts else "Canon text"
         return "Canon text"
 
     def get_praises(self):
@@ -108,6 +127,6 @@ class MatinsAssembler:
             return f.read()
 
 # Example usage:
-# assembler = MatinsAssembler(date='2023-03-15', is_lent=True)
+# assembler = MatinsAssembler(date='2023-03-15')
 # matins_text = assembler.assemble()
 # print(matins_text)

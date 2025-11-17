@@ -34,6 +34,10 @@ The program integrates solar and lunar calendars to determine service content:
 - **`tone.py`**: Calculates octoechos tone for a given date.
 - **`pascha.py`**: Handles Paschalion (Easter date) and lunar seasonal logic (e.g., Lent, Pentecost).
 - **`matins_logic.py`**: Generates Matins text structure, incorporating hymns and prayers.
+- **`vespers_logic.py`**: Generates Vespers text structure.
+- **`hours_logic.py`**: Generates Hours text structure.
+- **`gospel.py`**: Determines Gospel reading for the day, accounting for lunar calendar, fixed feasts, and Lucan Jump rules.
+- **`epistle.py`**: Determines Epistle reading for the day, following similar rules as Gospel.
 - **`lent.py`**: Handles Lenten-specific logic and texts.
 - **Data Files**: Extracted from `chasoslov.md` and other sources:
   - `resurrection_troparia.json`: Dict of troparia/theotokia by tone.
@@ -41,6 +45,8 @@ The program integrates solar and lunar calendars to determine service content:
   - `menaion_data.json`: Nested dict of solar feasts by month/date.
   - `triodion_data.json`: Lenten/Paschalion hymns.
   - `horologion_texts.json`: Base prayers/psalms for Hours, Vespers, Matins.
+  - `gospel_readings.json`: Database of Gospel pericopes by date/season.
+  - `epistle_readings.json`: Database of Epistle pericopes by date/season.
 
 ## Data Extraction and Preparation
 - Source: `resource/chasoslov.md`.
@@ -66,6 +72,7 @@ The program integrates solar and lunar calendars to determine service content:
 - Error Handling: Invalid dates, missing data, calendar conflicts.
 
 ## Future Extensions
+- **Scripture Readings**: Implement `gospel.py` and `epistle.py` to generate daily Epistle and Gospel readings, handling lunar calendar cycles, fixed feast overrides, and the Lucan Jump (Matthew/Mark/Luke/John rotation with special rules for Lent and Pascha).
 - Web interface or GUI.
 - Additional services (e.g., Liturgy, Compline).
 - Localization (Slavonic vs. English variants).

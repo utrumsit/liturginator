@@ -62,51 +62,25 @@ def vespers():
 def liturgy(date, service, output):
     """Display or export liturgical service texts."""
     from datetime import datetime
-    import tone
-    import pascha
-    from menaion import Menaion
     import json
 
     if not date:
         date = datetime.now().strftime('%Y-%m-%d')
 
-    # Parse date
-    dt = datetime.strptime(date, '%Y-%m-%d')
-    month = dt.strftime('%B')
-    day = dt.day
-
-    # Determine tone
-    tone_num = tone.get_tone(date)
-
-    # Check for feast
-    men = Menaion()
-    feast = men.get_feast(month, day)
-
-    # Determine season (simplified)
-    is_lent = pascha.is_lent(date)
-
-    # Load hymns
-    with open('resurrection_troparia.json', 'r') as f:
-        res_troparia = json.load(f)
-    with open('theotokia.json', 'r') as f:
-        theotokia = json.load(f)
-
-    # Select hymns
-    if feast:
-        troparion = feast.get('troparia', {}).get('troparion', '')
-        theotokion = feast.get('troparia', {}).get('theotokion', '')
+    if service == 'matins':
+        from matins_logic import MatinsAssembler
+        assembler = MatinsAssembler(date)
+        text = assembler.assemble()
+    elif service == 'vespers':
+        from vespers_logic import VespersAssembler
+        assembler = VespersAssembler(date)
+        text = assembler.assemble()
+    elif service == 'hours':
+        from hours_logic import HoursAssembler
+        assembler = HoursAssembler(date)
+        text = assembler.assemble()
     else:
-        troparion = res_troparia.get(str(tone_num), {}).get('troparion', '')
-        theotokion = theotokia.get(tone_num, {}).get('standard', [''])[0]
-
-    # Assemble text (placeholder)
-    text = f"# {service.capitalize()} for {date}\n\n"
-    text += f"Tone: {tone_num}\n\n"
-    if feast:
-        text += f"Feast: {feast}\n\n"
-    text += f"Troparion:\n{troparion}\n\n"
-    text += f"Theotokion:\n{theotokion}\n\n"
-    # Add more assembly logic here
+        text = f"Service {service} not supported."
 
     if output:
         with open(output, 'w', encoding='utf-8') as f:
@@ -114,6 +88,31 @@ def liturgy(date, service, output):
         click.echo(f"{service.capitalize()} exported to {output}")
     else:
         click.echo(text)
+
+@cli.command()
+@click.option('--date', default=None, help='Date in YYYY-MM-DD format')
+@click.option('--reading', type=click.Choice(['gospel', 'epistle']), help='Reading type')
+def scripture(date, reading):
+    """Display scripture readings for the day."""
+    from datetime import datetime
+
+    if not date:
+        date = datetime.now().strftime('%Y-%m-%d')
+
+    if reading == 'gospel':
+        from gospel import GospelReader
+        reader = GospelReader()
+        result = reader.get_reading(date)
+    elif reading == 'epistle':
+        from epistle import EpistleReader
+        reader = EpistleReader()
+        result = reader.get_reading(date)
+    else:
+        click.echo("Specify --reading gospel or epistle.")
+        return
+
+    click.echo(f"{reading.capitalize()} for {date}: {result['book']} {result['chapter']}:{result['verses']}")
+    click.echo(result['text'])
 
 @cli.command()
 @click.argument('prayer')

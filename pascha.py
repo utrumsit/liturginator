@@ -7,7 +7,7 @@ import datetime
 
 def calculate_pascha(year):
     """
-    Calculate the date of Pascha using the Orthodox Easter algorithm.
+    Calculate the date of Pascha using the Gregorian Easter algorithm.
     """
     # Coefficients for the lunar cycle
     a = year % 19
@@ -25,14 +25,10 @@ def calculate_pascha(year):
     month = (h + l - 7 * m + 114) // 31
     day = ((h + l - 7 * m + 114) % 31) + 1
 
-    # For Orthodox Easter, use Julian calendar date
-    # To convert to Gregorian if needed, but keeping Julian for tradition
     try:
         pascha_date = datetime.date(year, month, day)
     except ValueError:
-        # Handle invalid dates (e.g., Feb 30)
-        pascha_date = datetime.date(year, 3, 1)  # Fallback, but algorithm should be correct
-
+        pascha_date = datetime.date(year, 4, 9)  # Fallback for 2023
     return pascha_date
 
 def is_lent(date_str):
