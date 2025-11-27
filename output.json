@@ -1,0 +1,2733 @@
+{
+  "pentecostarion": {
+    "4": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Romans (9:18-23)"
+          },
+          {
+            "gospel": "Matthew (11:2-15)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Romans (10:11-11:2a)"
+          },
+          {
+            "gospel": "Matthew (11:16-20)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Romans (11:2b-12)"
+          },
+          {
+            "gospel": "Matthew (11:20-26)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Romans (11:13-24)"
+          },
+          {
+            "gospel": "Matthew (11:27-30)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Romans (11:25-36)"
+          },
+          {
+            "gospel": "Matthew (12:1-8)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans (6:11-17)"
+          },
+          {
+            "gospel": "Matthew (8:14-23)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "4th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Romans (6:18-23)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke (24:1-12)"
+        }
+      }
+    },
+    "5": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Romans (12:4-5, 15-21)"
+          },
+          {
+            "gospel": "Matthew (12:9-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Romans (14:9-18)"
+          },
+          {
+            "gospel": "Matthew (12:14-16, 22-30)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Romans (15:7-16)"
+          },
+          {
+            "gospel": "Matthew (12:38-45)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Romans (15:17-29)"
+          },
+          {
+            "gospel": "Matthew (12:46-13:3a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Romans (16:1-16)"
+          },
+          {
+            "gospel": "Matthew (13:3b-9)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans (8:14-21)"
+          },
+          {
+            "gospel": "Matthew (9:9-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "5th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Romans (10:1-10)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke (24:12-35)"
+        }
+      }
+    },
+    "6": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Romans (16:17-24)"
+          },
+          {
+            "gospel": "Matthew (13:10-23)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (1:1-9)"
+          },
+          {
+            "gospel": "Matthew (13:24-30)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (2:9-3:8)"
+          },
+          {
+            "gospel": "Matthew (13:31-36a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (3:18-23)"
+          },
+          {
+            "gospel": "Matthew (13:36b-43)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians a (4:5-8)"
+          },
+          {
+            "gospel": "Matthew (13:44-54a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans (9:1-5)"
+          },
+          {
+            "gospel": "Matthew (9:18-26)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "6th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Romans (12:6-14)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke (24:36-53)"
+        }
+      }
+    },
+    "7": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (5:9-6:11)"
+          },
+          {
+            "gospel": "Matthew (13:54-58)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (6:20b-7:12)"
+          },
+          {
+            "gospel": "Matthew (14:1-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (7:12b-24)"
+          },
+          {
+            "gospel": "Matthew (14:35-15:11)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (7:24-35)"
+          },
+          {
+            "gospel": "Matthew (15:12-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (7:35-8:7)"
+          },
+          {
+            "gospel": "Matthew (15:29-31)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans (12:1-3)"
+          },
+          {
+            "gospel": "Matthew (10:37-11:1)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "7th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Romans (15:1-7)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (20:1-10)"
+        }
+      }
+    },
+    "8": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (9:13-18)"
+          },
+          {
+            "gospel": "Matthew (16:1-6)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (10:5-12)"
+          },
+          {
+            "gospel": "Matthew (16:6-12)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (10:12-22)"
+          },
+          {
+            "gospel": "Matthew (16:20-24)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (10:28-11:7)"
+          },
+          {
+            "gospel": "Matthew (16:24-28)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (11:8-22)"
+          },
+          {
+            "gospel": "Matthew (17:10-18)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans (13:1-10)"
+          },
+          {
+            "gospel": "Matthew (12:30-37)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "8th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "1 Corinthians (1:10-18)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (20:11-18)"
+        }
+      }
+    },
+    "9": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (11:31-12:6)"
+          },
+          {
+            "gospel": "Matthew (18:1-11)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (12:12-26)"
+          },
+          {
+            "gospel": "Matthew (18:18-22; 19:1-2, 13-15)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (13:4-14:5)"
+          },
+          {
+            "gospel": "Matthew (20:1-16)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (14:6-19)"
+          },
+          {
+            "gospel": "Matthew (20:17-28)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (14:26-40)"
+          },
+          {
+            "gospel": "Matthew a (21:12-14, 17-20)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans (14:6-9)"
+          },
+          {
+            "gospel": "Matthew (15:32-39)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "9th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "1 Corinthians (3:9-17)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (20:19-31)"
+        }
+      }
+    },
+    "10": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (15:12-19)"
+          },
+          {
+            "gospel": "Matthew (21:18-22)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (15:29-38)"
+          },
+          {
+            "gospel": "Matthew (21:23-27)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians (16:4-12)"
+          },
+          {
+            "gospel": "Matthew (21:28-32)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians (1:1-6)"
+          },
+          {
+            "gospel": "Matthew (21:43-46)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians (1:12-20)"
+          },
+          {
+            "gospel": "Matthew (22:23-33)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Romans"
+          },
+          {
+            "gospel": "Matthew (17:24-18:4)"
+          },
+          {
+            "gospel": "(15:30-33)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "10th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(4:9-16)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (21:1-14)"
+        }
+      }
+    },
+    "11": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Matthew (23:13-22)"
+          },
+          {
+            "gospel": "(2:3b-15a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Matthew (23:23-28)"
+          },
+          {
+            "gospel": "(2:14-3:3)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Matthew (23:29-39)"
+          },
+          {
+            "gospel": "(3:4-11)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Matthew (24:13-28)"
+          },
+          {
+            "gospel": "(4:1-6)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Matthew (24:27-33, 42-51)"
+          },
+          {
+            "gospel": "(4:13-18)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Matthew (19:3-12)"
+          },
+          {
+            "gospel": "(1:3-9)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "11th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "(21:15-25)"
+          },
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(9:2b-12)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John"
+        }
+      }
+    },
+    "12": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (1:9-15)"
+          },
+          {
+            "gospel": "(5:10-15)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (1:16-22)"
+          },
+          {
+            "gospel": "(5:15-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (1:23-28)"
+          },
+          {
+            "gospel": "(6:11-16a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (1:29-35)"
+          },
+          {
+            "gospel": "(7:1b-10a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (2:18-22)"
+          },
+          {
+            "gospel": "(7:10-16)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians a"
+          },
+          {
+            "gospel": "Matthew (20:29-34)"
+          },
+          {
+            "gospel": "(1:26-29)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "12th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "\\(28:16-20\\)"
+          },
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(15:1-11)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Matthew"
+        }
+      }
+    },
+    "13": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (3:6-12)"
+          },
+          {
+            "gospel": "(8:7-15)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (3:13-19a)"
+          },
+          {
+            "gospel": "(8:16-9:5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (3:20-27)"
+          },
+          {
+            "gospel": "(9:12-10:7)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (3:28-35)"
+          },
+          {
+            "gospel": "(10:7b-18)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (4:1-9)"
+          },
+          {
+            "gospel": "(11:5-21a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Matthew (22:15-22)"
+          },
+          {
+            "gospel": "(2:5-9)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "13th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(16:13-24)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Mark (16:1-8)"
+        }
+      }
+    },
+    "14": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (4:10-23)"
+          },
+          {
+            "gospel": "(12:10-19)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (4:24-34)"
+          },
+          {
+            "gospel": "(12:20-13:2)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Mark (4:35-41)"
+          },
+          {
+            "gospel": "(13:3-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (5:1-20)"
+          },
+          {
+            "gospel": "(1:1-10, 1:20-2:5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (5:22-25, 5:35-6:1)"
+          },
+          {
+            "gospel": "(2:6-10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Matthew (23:1-12)"
+          },
+          {
+            "gospel": "(4:1-5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "14th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "2 Corinthians"
+          },
+          {
+            "gospel": "(1:21-2:4)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Mark (16:9-20)"
+        }
+      }
+    },
+    "15": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (5:24b-34)"
+          },
+          {
+            "gospel": "(2:11-16)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (6:1-7)"
+          },
+          {
+            "gospel": "(2:21-3:7)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (6:7-13)"
+          },
+          {
+            "gospel": "(3:15-22)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (6:30-45)"
+          },
+          {
+            "gospel": "(3:23-4:5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (6:45-53)"
+          },
+          {
+            "gospel": "(4:8-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Matthew (24:1-13)"
+          },
+          {
+            "gospel": "(4:17-5:5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "15th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "2 Corinthians"
+          },
+          {
+            "gospel": "(4:6-15)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke (24:1-12)"
+        }
+      }
+    },
+    "16": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (6:54-7:8a)"
+          },
+          {
+            "gospel": "(4:28-5:10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (7:5-16)"
+          },
+          {
+            "gospel": "(5:11-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Mark (7:14-24a)"
+          },
+          {
+            "gospel": "(6:2-10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (7:24-30)"
+          },
+          {
+            "gospel": "(1:1-9)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (8:1-10)"
+          },
+          {
+            "gospel": "(1:7-17)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Matthew (24:34-44)"
+          },
+          {
+            "gospel": "(10:23-28)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "16th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "(24:12-35)"
+          },
+          {
+            "gospel": "2 Corinthians"
+          },
+          {
+            "gospel": "(6:1-10)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke"
+        }
+      }
+    },
+    "17": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (10:46-52)"
+          },
+          {
+            "gospel": "(1:22-2:3)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (11:11-23)"
+          },
+          {
+            "gospel": "(2:19-3:7)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (11:23-26)"
+          },
+          {
+            "gospel": "(3:8-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (11:27-33)"
+          },
+          {
+            "gospel": "(4:14-19)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Mark (12:1-12)"
+          },
+          {
+            "gospel": "(4:17-25a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Matthew (25:1-13)"
+          },
+          {
+            "gospel": "(14:20-25)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "17th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "(24:36-53)"
+          },
+          {
+            "gospel": "2 Corinthians a"
+          },
+          {
+            "gospel": "(6:16b-7:1)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke"
+        }
+      }
+    },
+    "18": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Luke (3:19-22)"
+          },
+          {
+            "gospel": "(4:25-32)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Luke (3:23-4:1)"
+          },
+          {
+            "gospel": "(5:20-26)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Luke (4:1-15)"
+          },
+          {
+            "gospel": "(5:25-33a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Luke (4:16-22a)"
+          },
+          {
+            "gospel": "(5:33-6:9)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Ephesians"
+          },
+          {
+            "gospel": "Luke (4:22-30)"
+          },
+          {
+            "gospel": "(6:18-24)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Luke (4:31-36)"
+          },
+          {
+            "gospel": "(15:39-45)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "18th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "2 Corinthians (9:6-11)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (20:1-10)"
+        }
+      }
+    },
+    "19": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Philippians"
+          },
+          {
+            "gospel": "Luke (4:37-44)"
+          },
+          {
+            "gospel": "(1:1-7)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Philippians"
+          },
+          {
+            "gospel": "Luke (5:12-16)"
+          },
+          {
+            "gospel": "(1:8-14)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Philippians"
+          },
+          {
+            "gospel": "Luke (5:33-39)"
+          },
+          {
+            "gospel": "(1:12-20a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Philippians"
+          },
+          {
+            "gospel": "Luke (6:12-19)"
+          },
+          {
+            "gospel": "(1:20b-27a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Philippians"
+          },
+          {
+            "gospel": "Luke (6:17-23a)"
+          },
+          {
+            "gospel": "(1:27-2:4)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "1 Corinthians"
+          },
+          {
+            "gospel": "Luke (5:17-26)"
+          },
+          {
+            "gospel": "(15:58-16:3)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "19th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "2 Corinthians"
+          },
+          {
+            "gospel": "(11:31-12:9)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (20:11-18)"
+        }
+      }
+    },
+    "20": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (10:22-25)"
+          },
+          {
+            "gospel": "(1:1-5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:1-10)"
+          },
+          {
+            "gospel": "(1:6-10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:9-13)"
+          },
+          {
+            "gospel": "(2:1-8)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:14-23)"
+          },
+          {
+            "gospel": "(2:9-14a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:23-26)"
+          },
+          {
+            "gospel": "(2:14-19)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Luke (8:16-21)"
+          },
+          {
+            "gospel": "(8:1-5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "23rd Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "\\(28:16-20\\)"
+          },
+          {
+            "gospel": "Ephesians"
+          },
+          {
+            "gospel": "(2:4-10)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Matthew"
+        }
+      }
+    },
+    "24": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:29-33)"
+          },
+          {
+            "gospel": "(2:20-3:8)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:34-41)"
+          },
+          {
+            "gospel": "(3:9-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:42-46)"
+          },
+          {
+            "gospel": "(4:1-12)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians"
+          },
+          {
+            "gospel": "Luke (11:47-12:1)"
+          },
+          {
+            "gospel": "(5:1-8)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Thessalonians (5:9-13, 24-28)"
+          },
+          {
+            "gospel": "Luke"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "2 Corinthians"
+          },
+          {
+            "gospel": "Luke (9:1-6)"
+          },
+          {
+            "gospel": "(11:1-6)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "24th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Ephesians"
+          },
+          {
+            "gospel": "(2:14-22)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Mark (16:1-8)"
+        }
+      }
+    },
+    "25": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Thessalonians"
+          },
+          {
+            "gospel": "Luke (12:13-15, 22b-31)"
+          },
+          {
+            "gospel": "(1:1-10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Thessalonians a"
+          },
+          {
+            "gospel": "Luke (12:42-48)"
+          },
+          {
+            "gospel": "(1:10b-2:2)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Thessalonians"
+          },
+          {
+            "gospel": "Luke (12:48b-59)"
+          },
+          {
+            "gospel": "(2:1-12)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "2 Thessalonians"
+          },
+          {
+            "gospel": "Luke (13:1-9)"
+          },
+          {
+            "gospel": "(2:13-3:5)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Thessalonians"
+          },
+          {
+            "gospel": "Luke (13:31-35)"
+          },
+          {
+            "gospel": "(3:6-18)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Luke (9:37-43a)"
+          },
+          {
+            "gospel": "(1:3-10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "25th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Ephesians"
+          },
+          {
+            "gospel": "(4:1-6)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Mark (16:9-20)"
+        }
+      }
+    },
+    "26": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (14:1, 12-15)"
+          },
+          {
+            "gospel": "(1:1-7)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (14:25-35)"
+          },
+          {
+            "gospel": "(1:8-14)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (15:1-10)"
+          },
+          {
+            "gospel": "(1:18-20; 2:8-15)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (16:1-9)"
+          },
+          {
+            "gospel": "(3:1-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (16:15-18; 17:1-4)"
+          },
+          {
+            "gospel": "(4:4-8,16)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Luke (9:57-62)"
+          },
+          {
+            "gospel": "(3:8-12)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "26th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Ephesians"
+          },
+          {
+            "gospel": "(5:8b-19)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke (24:1-12)"
+        }
+      }
+    },
+    "27": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Timothy a"
+          },
+          {
+            "gospel": "Luke (17:20-25)"
+          },
+          {
+            "gospel": "(5:1-10)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (17:26-37)"
+          },
+          {
+            "gospel": "(5:11-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (18:15-17, 26-30)"
+          },
+          {
+            "gospel": "(5:22-6:11a)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Timothy"
+          },
+          {
+            "gospel": "Luke (18:31-34)"
+          },
+          {
+            "gospel": "(6:17-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Timothy"
+          },
+          {
+            "gospel": "Luke (19:12-28)"
+          },
+          {
+            "gospel": "(1:1-2, 8-18)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Galatians"
+          },
+          {
+            "gospel": "Luke a (10:19-21)"
+          },
+          {
+            "gospel": "(5:22-6:2)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "27th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "(24:12-35)"
+          },
+          {
+            "gospel": "Ephesians"
+          },
+          {
+            "gospel": "(6:10-17)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke"
+        }
+      }
+    },
+    "28": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Timothy (2:20-26)"
+          },
+          {
+            "gospel": "Luke (19:37-44)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Timothy (3:16-4:4)"
+          },
+          {
+            "gospel": "Luke (19:45-48)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Timothy (4:9-22)"
+          },
+          {
+            "gospel": "Luke (20:1-8)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Titus a (1:5-2:1)"
+          },
+          {
+            "gospel": "Luke (20:9-18)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Titus (1:15-2:10)"
+          },
+          {
+            "gospel": "Luke (20:19-26)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Ephesians (1:16-23)"
+          },
+          {
+            "gospel": "Luke (12:32-40)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "28th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Colossians (1:12-18)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "Luke (24:36-53)"
+        }
+      }
+    },
+    "29": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "Hebrews (3:5-11, 17-19)"
+          },
+          {
+            "gospel": "Luke (20:27-44)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Hebrews (4:1-13)"
+          },
+          {
+            "gospel": "Luke (21:12-19)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "Hebrews (5:11-6:8)"
+          },
+          {
+            "gospel": "Luke (21:5-7, 10-11,"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Hebrews (7:1-6)"
+          },
+          {
+            "gospel": "Luke (21:28-33)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "Hebrews (7:18-25)"
+          },
+          {
+            "gospel": "Luke (21:37-22:8)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "Ephesians a (2:11-13)"
+          },
+          {
+            "gospel": "Luke (13:18-29)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "29th Sunday after Pentecost",
+        "readings": [
+          {
+            "gospel": "Colossians (3:4-11)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": "John (20:1-10)"
+        }
+      }
+    },
+    "30": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 Peter (2:21b-3:9)"
+          },
+          {
+            "gospel": "Mark"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 Peter (3:10-22)"
+          },
+          {
+            "gospel": "Mark"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 Peter (4:1-11)"
+          },
+          {
+            "gospel": "Mark"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 Peter (4:12-5:5)"
+          },
+          {
+            "gospel": "Mark"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 Peter (1:1-10a)"
+          },
+          {
+            "gospel": "Mark"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "2 Timothy (2:11-19)"
+          },
+          {
+            "gospel": "Luke"
+          },
+          {
+            "epistle": "\\"
+          },
+          {
+            "gospel": "**The Sunday of the Publican and the Pharisee**"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "Sunday",
+        "readings": [
+          {
+            "gospel": "2 Timothy"
+          },
+          {
+            "gospel": "(3:10-15)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": ""
+        }
+      }
+    },
+    "34": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "2 Peter (1:20-2:9)"
+          },
+          {
+            "gospel": "Mark (13:9-13)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "2 Peter (2:9-22)"
+          },
+          {
+            "gospel": "Mark (13:14-23)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "2 Peter (3:1-18)"
+          },
+          {
+            "gospel": "Mark (13:24-31)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 John (1:8-2:6)"
+          },
+          {
+            "gospel": "Mark (13:31-14:2)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "1 John (2:7-17)"
+          },
+          {
+            "gospel": "Mark (14:3-9)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "epistle": "2 Timothy (3:1-9)"
+          },
+          {
+            "gospel": "Luke (20:46-21:4)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "The Sunday of the Prodigal Son",
+        "readings": [
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(6:12-20)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": ""
+        }
+      }
+    },
+    "35": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "1 John (2:18-3:10a)"
+          },
+          {
+            "gospel": "Mark (11:1-11)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "1 John (3:10b-20)"
+          },
+          {
+            "gospel": "Mark (14:10-42)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [
+          {
+            "epistle": "1 John (3:21-4:6)"
+          },
+          {
+            "gospel": "Mark (14:43-15:1)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "1 John (4:20-5:21)"
+          },
+          {
+            "gospel": "Mark (15:1-15)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "2 John (1:1-13)"
+          },
+          {
+            "gospel": "Mark (15:22, 25,"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Meatfare Saturday: Saturday of Souls",
+        "readings": [
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(10:23-28)"
+          },
+          {
+            "gospel": "1 Thessalonians"
+          },
+          {
+            "gospel": "(4:13-17)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "Sunday",
+        "readings": [
+          {
+            "epistle": "**Meatfare Sunday: The Sunday of the Last"
+          },
+          {
+            "gospel": "Judgment**"
+          },
+          {
+            "gospel": "1 Corinthians"
+          },
+          {
+            "gospel": "(8:8-9:2)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": ""
+        }
+      }
+    },
+    "36": {
+      "0": {
+        "title": "Monday",
+        "readings": [
+          {
+            "epistle": "3 John (1:1-15)"
+          },
+          {
+            "gospel": "Luke (19:29-40;"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "1": {
+        "title": "Tuesday",
+        "readings": [
+          {
+            "epistle": "Jude (1-10)"
+          },
+          {
+            "gospel": "Luke (22:39-42,"
+          },
+          {
+            "epistle": "* Wednesday*\\"
+          },
+          {
+            "gospel": "*6th Hour*: Joel"
+          },
+          {
+            "gospel": "2:12-26"
+          },
+          {
+            "gospel": "*Vespers:* Joel 4:12-21"
+          },
+          {
+            "gospel": "(or 3:12-21)"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "2": {
+        "title": "Wednesday",
+        "readings": [],
+        "matins_gospel": null
+      },
+      "3": {
+        "title": "Thursday",
+        "readings": [
+          {
+            "epistle": "Jude (1:11-25)"
+          },
+          {
+            "gospel": "Luke (23:1-34,"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "4": {
+        "title": "Friday",
+        "readings": [
+          {
+            "epistle": "*6th Hour:* Zechariah"
+          },
+          {
+            "gospel": "*No Liturgy*"
+          },
+          {
+            "gospel": "8:7-17"
+          },
+          {
+            "gospel": "*Vespers:* Zechariah"
+          },
+          {
+            "gospel": "8:19-23"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "5": {
+        "title": "Saturday",
+        "readings": [
+          {
+            "gospel": "Ephesians"
+          },
+          {
+            "gospel": "(6:10-17)"
+          },
+          {
+            "epistle": "\\"
+          },
+          {
+            "gospel": "**Sunday after Theophany**"
+          }
+        ],
+        "matins_gospel": null
+      },
+      "6": {
+        "title": "Sunday",
+        "readings": [
+          {
+            "epistle": "Councils**"
+          },
+          {
+            "gospel": "*Vespers Paramia:* (1) Genesis 14:14-20 \u2022 (2)"
+          },
+          {
+            "gospel": "Deuteronomy 1:8-11, 15-17 \u2022 (3) Deuteronomy"
+          },
+          {
+            "gospel": "10:14-21"
+          },
+          {
+            "gospel": "Hebrews (13:7-16)"
+          },
+          {
+            "gospel": "**THE TRANSFIGURATION OF THE LORD**"
+          },
+          {
+            "gospel": "*Vespers Paramia:* (1) Exodus 24:12-18 \u2022 (2)"
+          },
+          {
+            "gospel": "Exodus 33:11-23; 34:4-6, 8 \u2022\\"
+          },
+          {
+            "gospel": "(3) III Kingdoms 19:3-9, 11-13, 15-16"
+          },
+          {
+            "gospel": "*Matins Gospel:* Luke (9:28b-36)"
+          },
+          {
+            "gospel": "2 Peter (1:10-19)"
+          },
+          {
+            "gospel": "**DORMITION OF THE ALL-HOLY THEOTOKOS**"
+          },
+          {
+            "gospel": "*Vespers Paramia:* (1) Genesis 28:10-17 \u2022 (2)"
+          },
+          {
+            "gospel": "Ezekiel 43:27-44:4a \u2022\\"
+          },
+          {
+            "gospel": "(3) Proverbs 9:1-11"
+          },
+          {
+            "gospel": "*Matins Gospel:* Luke (1:39-49, 56)"
+          },
+          {
+            "gospel": "Philippians"
+          },
+          {
+            "gospel": "(2:5-11)"
+          },
+          {
+            "gospel": "**Beheading of St John the Baptist**"
+          },
+          {
+            "gospel": "*Vespers Paramia:* (1) Isaiah 40:1-3, 9;"
+          },
+          {
+            "gospel": "41:17-18,45:8; 48:20-21; 54:1 \u2022\\"
+          },
+          {
+            "gospel": "(2) Malachi 3:1-3, 5-7,12,18; 4:4-6 \u2022 (3) Wisdom"
+          },
+          {
+            "gospel": "4:7, 16-17, 19-20; 5:1-7"
+          },
+          {
+            "gospel": "*Matins Gospel:* Matthew (14:1-13)"
+          },
+          {
+            "gospel": "Acts (13:25-33a)"
+          }
+        ],
+        "matins_gospel": {
+          "reference": ""
+        }
+      }
+    }
+  }
+}

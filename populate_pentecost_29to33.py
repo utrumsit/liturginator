@@ -67,6 +67,27 @@ readings = {
           }
         ]
       },
+      "5": {
+        "title": "Saturday of 29th Week after Pentecost",
+        "readings": [
+          {
+            "type": "epistle",
+            "book": "Ephesians",
+            "chapter": 2,
+            "verses": "11-13",
+            "text": "",
+            "context": "Ephesians 2:11-13"
+          },
+          {
+            "type": "gospel",
+            "book": "Luke",
+            "chapter": 13,
+            "verses": "18-29",
+            "text": "",
+            "context": "Luke 13:18-29"
+          }
+        ]
+      },
       "3": {
         "title": "Thursday of 29th Week after Pentecost",
         "readings": [
@@ -753,6 +774,34 @@ readings = {
             "context": "Luke 18:2-8a"
           }
         ]
+      },
+      "6": {
+        "title": "33rd Sunday after Pentecost",
+        "readings": [
+          {
+            "type": "epistle",
+            "book": "1 Timothy",
+            "chapter": 6,
+            "verses": "11b-16",
+            "text": "",
+            "context": "1 Timothy 6:11b-16"
+          },
+          {
+            "type": "gospel",
+            "book": "Luke",
+            "chapter": 18,
+            "verses": "2-8a",
+            "text": "",
+            "context": "Luke 18:2-8a"
+          }
+        ],
+        "matins_gospel": {
+          "book": "John",
+          "chapter": 21,
+          "verses": "1-14",
+          "text": "",
+          "context": "John 21:1-14"
+        }
       }
     }
   }

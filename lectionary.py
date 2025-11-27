@@ -34,7 +34,12 @@ def get_readings(date):
         datetime.date(year, 6, 29): 'peter_paul',
         datetime.date(year, 8, 6): 'transfiguration',
         datetime.date(year, 8, 15): 'dormition',
-        datetime.date(year, 8, 29): 'beheading_john'
+        datetime.date(year, 8, 29): 'beheading_john',
+        datetime.date(year, 1, 5): 'sunday_before_theophany',
+        datetime.date(year, 1, 12): 'sunday_after_theophany',
+        datetime.date(year, 1, 19): '35th_after_pentecost',
+        datetime.date(year, 1, 26): '36th_after_pentecost',
+        datetime.date(year, 2, 2): '37th_after_pentecost'
     }
     if date in fixed_dates:
         return data['fixed'][fixed_dates[date]]
@@ -56,8 +61,10 @@ def get_readings(date):
     elif 50 <= days_since_pascha < 320:  # Pentecostarion
         pentecost_week = (days_since_pascha - 49) // 7 + 1
         day = (days_since_pascha - 49) % 7
-        if str(pentecost_week) in data['pentecostarion']:
+        if str(pentecost_week) in data['pentecostarion'] and str(day) in data['pentecostarion'][str(pentecost_week)]:
             return data['pentecostarion'][str(pentecost_week)][str(day)]
+        else:
+            return {'title': f'Pentecostarion Week {pentecost_week} Day {day} not populated', 'readings': []}
     else:  # After Pentecost: Triodion again
         post_pentecost_week = (days_since_pascha - 319) // 7 + 1
         day = (days_since_pascha - 319) % 7
