@@ -55,9 +55,16 @@ def load_rsv_bible():
         'Zech': 'Zechariah',
         'Mal': 'Malachi',
         'Matt': 'Matthew',
+        'Mt': 'Matthew',
+        'Mk': 'Mark',
+        'Mrk': 'Mark',
         'Mark': 'Mark',
         'Luke': 'Luke',
+        'Lk': 'Luke',
+        'Luk': 'Luke',
         'John': 'John',
+        'Jn': 'John',
+        'Jhn': 'John',
         'Acts': 'Acts',
         'Rom': 'Romans',
         '1Cor': '1 Corinthians',
@@ -140,6 +147,7 @@ def get_rsv_text(bible, book, chapter, verses):
     """
     book_abbr = book
     if book_abbr not in bible:
+        print(f"Book {book} not found")
         return f"Book {book} not found"
 
     if ':' in verses:
@@ -206,6 +214,7 @@ def get_rsv_text(bible, book, chapter, verses):
     else:
         # Normal single chapter
         if str(chapter) not in bible[book_abbr]:
+            print(f"Chapter {chapter} not found for {book}")
             return f"Chapter {chapter} not found"
         chap = bible[book_abbr][str(chapter)]
         verse_nums = parse_verses(verses)
@@ -228,7 +237,7 @@ def populate_json():
 
     def update_texts(data):
         if isinstance(data, dict):
-            if 'book' in data and 'chapter' in data and 'verses' in data and 'text' in data and data['text'] == "":
+            if 'book' in data and 'chapter' in data and 'verses' in data and 'text' in data and (data['text'] == "" or "not found" in data['text']):
                 text = get_rsv_text(bible, data['book'], data['chapter'], data['verses'])
                 data['text'] = text
             else:
