@@ -13,6 +13,7 @@ def load_rsv_bible():
     """
     Load RSV Bible from XML into dict: book_abbr -> chapter -> verse -> text
     """
+    ns = {'osis': 'http://www.bibletechnologies.net/2003/OSIS/namespace'}
     book_map = {
         'Gen': 'Genesis',
         'Exod': 'Exodus',
@@ -84,18 +85,18 @@ def load_rsv_bible():
     tree = ET.parse('rsv.xml')
     root = tree.getroot()
     bible = {}
-    for book in root.iter('div'):
+    for book in root.iter('{http://www.bibletechnologies.net/2003/OSIS/namespace}div'):
         if book.get('type') == 'book':
             book_id = book.get('osisID')
             if book_id:
                 book_name = book_map.get(book_id, book_id)
                 bible[book_name] = {}
-                for chapter in book.iter('chapter'):
+                for chapter in book.iter('{http://www.bibletechnologies.net/2003/OSIS/namespace}chapter'):
                     chapter_id = chapter.get('osisID')
                     if chapter_id:
                         chapter_num = chapter_id.split('.')[1]
                         bible[book_name][chapter_num] = {}
-                        for verse in chapter.iter('verse'):
+                        for verse in chapter.iter('{http://www.bibletechnologies.net/2003/OSIS/namespace}verse'):
                             verse_id = verse.get('osisID')
                             if verse_id:
                                 verse_num = verse_id.split('.')[2]
@@ -152,47 +153,54 @@ def get_rsv_text(bible, book, chapter, verses):
                 start, end = part.split('-', 1)
                 start = start.strip()
                 end = end.strip()
-                if ':' in start:
-                    start_ch, start_v = start.split(':', 1)
-                    start_ch = int(start_ch)
-                    start_v = int(start_v)
-                else:
-                    start_ch = current_chapter
-                    start_v = int(start)
-                if ':' in end:
-                    end_ch, end_v = end.split(':', 1)
-                    end_ch = int(end_ch)
-                    end_v = int(end_v)
-                else:
-                    end_ch = current_chapter
-                    end_v = int(end)
-                # Collect texts
-                if start_ch == end_ch:
-                    if str(start_ch) in bible[book_abbr]:
-                        chap = bible[book_abbr][str(start_ch)]
-                        for v in range(start_v, end_v + 1):
-                            if str(v) in chap:
-                                all_texts.append(chap[str(v)])
-                else:
-                    # From start_ch:start_v to end of start_ch
-                    if str(start_ch) in bible[book_abbr]:
-                        chap = bible[book_abbr][str(start_ch)]
-                        max_v = max((int(v) for v in chap.keys() if v.isdigit()), default=0)
-                        for v in range(start_v, max_v + 1):
-                            if str(v) in chap:
-                                all_texts.append(chap[str(v)])
-                    # From end_ch:1 to end_v
-                    if str(end_ch) in bible[book_abbr]:
-                        chap = bible[book_abbr][str(end_ch)]
-                        for v in range(1, end_v + 1):
-                            if str(v) in chap:
-                                all_texts.append(chap[str(v)])
-                current_chapter = end_ch
+                try:
+                    if ':' in start:
+                        start_ch, start_v_str = start.split(':', 1)
+                        start_ch = int(start_ch)
+                        start_v = int(start_v_str) if start_v_str.isdigit() else 0
+                    else:
+                        start_ch = current_chapter
+                        start_v = int(start) if start.isdigit() else 0
+                    if ':' in end:
+                        end_ch, end_v_str = end.split(':', 1)
+                        end_ch = int(end_ch)
+                        end_v = int(end_v_str) if end_v_str.isdigit() else 0
+                    else:
+                        end_ch = current_chapter
+                        end_v = int(end) if end.isdigit() else 0
+                    # Collect texts
+                    if start_ch == end_ch:
+                        if str(start_ch) in bible[book_abbr]:
+                            chap = bible[book_abbr][str(start_ch)]
+                            for v in range(start_v, end_v + 1):
+                                if str(v) in chap:
+                                    all_texts.append(chap[str(v)])
+                    else:
+                        # From start_ch:start_v to end of start_ch
+                        if str(start_ch) in bible[book_abbr]:
+                            chap = bible[book_abbr][str(start_ch)]
+                            max_v = max((int(v) for v in chap.keys() if v.isdigit()), default=0)
+                            for v in range(start_v, max_v + 1):
+                                if str(v) in chap:
+                                    all_texts.append(chap[str(v)])
+                        # From end_ch:1 to end_v
+                        if str(end_ch) in bible[book_abbr]:
+                            chap = bible[book_abbr][str(end_ch)]
+                            for v in range(1, end_v + 1):
+                                if str(v) in chap:
+                                    all_texts.append(chap[str(v)])
+                    current_chapter = end_ch
+                except ValueError:
+                    # Skip invalid verse ranges
+                    continue
             else:
                 # Single verse
-                v = int(part)
-                if str(current_chapter) in bible[book_abbr] and str(v) in bible[book_abbr][str(current_chapter)]:
-                    all_texts.append(bible[book_abbr][str(current_chapter)][str(v)])
+                try:
+                    v = int(part)
+                    if str(current_chapter) in bible[book_abbr] and str(v) in bible[book_abbr][str(current_chapter)]:
+                        all_texts.append(bible[book_abbr][str(current_chapter)][str(v)])
+                except ValueError:
+                    continue
         result = ' '.join(all_texts).strip()
         return result if result else f"No texts found for {book} {chapter}:{verses}"
     else:
@@ -226,6 +234,9 @@ def populate_json():
             else:
                 for key, value in data.items():
                     update_texts(value)
+        elif isinstance(data, list):
+            for item in data:
+                update_texts(item)
 
     for section, data in readings.items():
         update_texts(data)
