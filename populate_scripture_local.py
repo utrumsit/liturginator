@@ -142,22 +142,29 @@ def load_rsv_bible():
 
 def parse_verses(verses_str):
     """
-    Parse verses string like "1-17" or "1:1-8" or "39-49, 56" into list of verse numbers.
+    Parse verses string like "1-17" or "1:1-8" or "39-49, 56" or "9:37-43a" into list of verse numbers.
+    Convert "43a" -> "43" (take full verse).
     """
+    # Convert "43a" -> "43"
+    verses_str = re.sub(r'(\d+)[a-zA-Z]', r'\1', verses_str)
     # If verses_str contains ':', split and take the verse part
     if ':' in verses_str:
         verses_str = verses_str.split(':', 1)[1]
     parts = re.split(r'[,\s]+', verses_str)
     verse_nums = []
     for part in parts:
+        part = part.strip()
+        if not part:
+            continue
         if '-' in part:
             split_part = part.split('-')
             if len(split_part) == 2:
                 start_str, end_str = split_part
                 try:
-                    start, end = int(start_str), int(end_str)
+                    start = int(start_str)
+                    end = int(end_str)
                     verse_nums.extend(range(start, end + 1))
-                except:
+                except ValueError:
                     continue
             else:
                 # Invalid
@@ -165,7 +172,7 @@ def parse_verses(verses_str):
         else:
             try:
                 verse_nums.append(int(part))
-            except:
+            except ValueError:
                 continue
     return verse_nums
 
@@ -175,11 +182,22 @@ def get_rsv_text(bible, book, chapter, verses):
     """
     book_abbr = book
     if book_abbr not in bible:
-        print(f"Book {book} not found")
         return f"Book {book} not found"
 
+# If chapter is empty, try to extract from verses
+    if not chapter and ':' in verses:
+        # Assume single chapter in verses like "9:37-43a"
+        ch_v = verses.split(':', 1)
+        if ch_v[0].isdigit():
+            chapter = int(ch_v[0])
+            verses = ch_v[1]
+        else:
+            chapter = 1  # default
+
+    chapter = int(chapter) if chapter else 0
+
+    # Handle cross-chapter: "1:1-2:3" or "1:1-5; 2:1-3"
     if ':' in verses or ';' in verses:
-        # Cross-chapter or complex
         if ';' in verses:
             chapter_parts = verses.split(';')
         else:
@@ -194,40 +212,22 @@ def get_rsv_text(bible, book, chapter, verses):
             else:
                 current_chapter = chapter
                 verse_part = chap_part
-            parts = verse_part.split(',')
-            for part in parts:
-                part = part.strip()
-                if '-' in part:
-                    start, end = part.split('-', 1)
-                    start = start.strip()
-                    end = end.strip()
-                    try:
-                        start_v = int(start) if start.isdigit() else 0
-                        end_v = int(end) if end.isdigit() else 0
-                        # Collect texts
-                        if str(current_chapter) in bible[book_abbr]:
-                            chap = bible[book_abbr][str(current_chapter)]
-                            for v in range(start_v, end_v + 1):
-                                if str(v) in chap:
-                                    all_texts.append(chap[str(v)])
-                    except ValueError:
-                        # Skip invalid
-                        continue
-                else:
-                    # Single verse
-                    try:
-                        v = int(part)
-                        if str(current_chapter) in bible[book_abbr] and str(v) in bible[book_abbr][str(current_chapter)]:
-                            all_texts.append(bible[book_abbr][str(current_chapter)][str(v)])
-                    except ValueError:
-                        continue
+            verse_nums = parse_verses(verse_part)
+            if str(current_chapter) in bible[book_abbr]:
+                chap = bible[book_abbr][str(current_chapter)]
+                for v in verse_nums:
+                    if str(v) in chap:
+                        all_texts.append(chap[str(v)])
+                    else:
+                        all_texts.append(f"[Verse {v} not found in {book} {current_chapter}]")
+            else:
+                all_texts.append(f"[Chapter {current_chapter} not found in {book}]")
         result = ' '.join(all_texts).strip()
         return result if result else f"No texts found for {book} {chapter}:{verses}"
     else:
-        # Normal single chapter
+        # Single chapter
         if str(chapter) not in bible[book_abbr]:
-            print(f"Chapter {chapter} not found for {book}")
-            return f"Chapter {chapter} not found"
+            return f"Chapter {chapter} not found for {book}"
         chap = bible[book_abbr][str(chapter)]
         verse_nums = parse_verses(verses)
         texts = []
@@ -235,7 +235,7 @@ def get_rsv_text(bible, book, chapter, verses):
             if str(v) in chap:
                 texts.append(chap[str(v)])
             else:
-                texts.append(f"[Verse {v} not found]")
+                texts.append(f"[Verse {v} not found in {book} {chapter}]")
         result = ' '.join(texts).strip()
         return result if result else f"No texts found for {book} {chapter}:{verses}"
 

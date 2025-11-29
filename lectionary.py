@@ -46,30 +46,64 @@ def get_readings(date):
 
     # Variable feasts (e.g., Sunday after Exaltation: Sep 15-21)
     if date.month == 9 and 15 <= date.day <= 21 and date.weekday() == 6:  # Sunday
-        return {'title': 'Sunday after the Exaltation of the Cross', 'readings': [{'type': 'epistle', 'book': 'Galatians', 'chapter': 2, 'verses': '16-20', 'text': '', 'context': 'Galatians 2:16-20'}, {'type': 'gospel', 'book': 'Mark', 'chapter': 8, 'verses': '34-9:1', 'text': '', 'context': 'Mark 8:34-9:1'}]}  # Placeholder
+        result = {'title': 'Sunday after the Exaltation of the Cross', 'readings': [{'type': 'epistle', 'book': 'Galatians', 'chapter': 2, 'verses': '16-20', 'text': '', 'context': 'Galatians 2:16-20'}, {'type': 'gospel', 'book': 'Mark', 'chapter': 8, 'verses': '34-9:1', 'text': '', 'context': 'Mark 8:34-9:1'}]}  # Placeholder
+        if date.weekday() != 6 and 'matins_gospel' in result:
+            del result['matins_gospel']
+        return result
 
     # Determine season
     if days_since_pascha < 0:  # Before Pascha: Triodion
         triodion_week = abs(days_since_pascha) // 7 + 1
         day = abs(days_since_pascha) % 7
         if f'lent_{triodion_week}' in data['triodion']:
-            return data['triodion'][f'lent_{triodion_week}'][str(day)]
+            result = data['triodion'][f'lent_{triodion_week}'][str(day)]
+            if date.weekday() != 6 and 'matins_gospel' in result:
+                del result['matins_gospel']
+            return result
         elif str(triodion_week) in data['triodion']:
-            return data['triodion'][str(triodion_week)][str(day)]
+            result = data['triodion'][str(triodion_week)][str(day)]
+            if date.weekday() != 6 and 'matins_gospel' in result:
+                del result['matins_gospel']
+            return result
     elif 0 <= days_since_pascha < 50:  # Pascha
-        return data['pascha'][str(days_since_pascha)]
-    elif 50 <= days_since_pascha < 320:  # Pentecostarion
-        pentecost_week = (days_since_pascha - 49) // 7 + 1
-        day = (days_since_pascha - 49) % 7
-        if str(pentecost_week) in data['pentecostarion'] and str(day) in data['pentecostarion'][str(pentecost_week)]:
-            return data['pentecostarion'][str(pentecost_week)][str(day)]
-        else:
-            return {'title': f'Pentecostarion Week {pentecost_week} Day {day} not populated', 'readings': []}
+        result = data['pascha'][str(days_since_pascha)]
+        if date.weekday() != 6 and 'matins_gospel' in result:
+            del result['matins_gospel']
+        return result
+    elif 50 <= days_since_pascha < 320:  # Post-Pentecost (Weeks after Pentecost)
+        # Week starts Monday. Pentecost is day 49 (Sun).
+        # Day 50 (Mon) -> Week 1. Day 56 (Sun) -> Week 1.
+        week_num = (days_since_pascha - 50) // 7 + 1
+        
+        # Day name (0=Mon, 6=Sun)
+        day_names = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+        day_name = day_names[date.weekday()]
+        
+        # Use movable.post_pentecost if available
+        if 'movable' in data and 'post_pentecost' in data['movable']:
+            section = data['movable']['post_pentecost']
+            week_key = f"week{week_num}"
+            if week_key in section:
+                # Handle Sunday (day 6 in python weekday, but 'sunday' in json)
+                # Others: 0=monday...
+                day_key = day_name # mapped above
+                
+                if day_key in section[week_key]:
+                    result = section[week_key][day_key]
+                    # Filter matins
+                    if date.weekday() != 6 and 'matins_gospel' in result:
+                        del result['matins_gospel']
+                    return result
+        
+        return {'title': f'Post-Pentecost Week {week_num} {day_name} not populated', 'readings': []}
     else:  # After Pentecost: Triodion again
         post_pentecost_week = (days_since_pascha - 319) // 7 + 1
         day = (days_since_pascha - 319) % 7
         if str(post_pentecost_week) in data['triodion']:
-            return data['triodion'][str(post_pentecost_week)][str(day)]
+            result = data['triodion'][str(post_pentecost_week)][str(day)]
+            if date.weekday() != 6 and 'matins_gospel' in result:
+                del result['matins_gospel']
+            return result
 
     return {'title': 'No readings found', 'readings': []}
 
