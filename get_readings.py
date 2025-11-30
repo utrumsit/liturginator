@@ -15,108 +15,81 @@ import json
 from lectionary_pdist import LectionaryPdist
 
 def format_reading_output(result, compact=False):
-    """Format the reading result for display"""
+    """Format the reading result for display in markdown"""
     if compact:
         # Compact JSON output
         return json.dumps(result, indent=2, default=str)
     
-    import textwrap
-    
-    # Human-readable format
+    # Markdown format
     lines = []
-    lines.append("=" * 70)
-    lines.append(result['title'])
+    lines.append(f"# {result['title']}")
+    lines.append("")
     
     # Add feast name if present
     if result.get('feast_name'):
-        lines.append(f"Feast: {result['feast_name']} (Level {result.get('feast_level', '?')})")
-    
-    lines.append("=" * 70)
-    lines.append("")
+        lines.append(f"**{result['feast_name']}** (Feast Level {result.get('feast_level', '?')})")
+        lines.append("")
     
     # Check if we have both daily and saint readings
     has_both = result.get('saint_epistle') or result.get('saint_gospel')
     
     if has_both:
         # Show daily readings first
-        lines.append("DAILY CYCLE READINGS")
-        lines.append("=" * 70)
+        lines.append("## Daily Cycle Readings")
         lines.append("")
         
         if result.get('daily_epistle'):
             epistle = result['daily_epistle']
-            lines.append("EPISTLE")
-            lines.append("-" * 70)
-            lines.append(f"Reference: {epistle.get('display', 'N/A')}")
-            if epistle.get('rsv_text'):
-                lines.append("")
-                wrapped = textwrap.fill(epistle['rsv_text'], width=70)
-                lines.append(wrapped)
+            lines.append(f"### Epistle: {epistle.get('display', 'N/A')}")
             lines.append("")
+            if epistle.get('rsv_text'):
+                lines.append(epistle['rsv_text'])
+                lines.append("")
         
         if result.get('daily_gospel'):
             gospel = result['daily_gospel']
-            lines.append("GOSPEL")
-            lines.append("-" * 70)
-            lines.append(f"Reference: {gospel.get('display', 'N/A')}")
-            if gospel.get('rsv_text'):
-                lines.append("")
-                wrapped = textwrap.fill(gospel['rsv_text'], width=70)
-                lines.append(wrapped)
+            lines.append(f"### Gospel: {gospel.get('display', 'N/A')}")
             lines.append("")
+            if gospel.get('rsv_text'):
+                lines.append(gospel['rsv_text'])
+                lines.append("")
         
         # Show saint readings
-        lines.append("=")
-        lines.append(f"SAINT READINGS: {result.get('feast_name', 'Unknown')}")
-        lines.append("=" * 70)
+        lines.append(f"## Saint Readings: {result.get('feast_name', 'Unknown')}")
         lines.append("")
         
         if result.get('saint_epistle'):
             epistle = result['saint_epistle']
-            lines.append("EPISTLE")
-            lines.append("-" * 70)
-            lines.append(f"Reference: {epistle.get('display', 'N/A')}")
-            if epistle.get('rsv_text'):
-                lines.append("")
-                wrapped = textwrap.fill(epistle['rsv_text'], width=70)
-                lines.append(wrapped)
+            lines.append(f"### Epistle: {epistle.get('display', 'N/A')}")
             lines.append("")
+            if epistle.get('rsv_text'):
+                lines.append(epistle['rsv_text'])
+                lines.append("")
         
         if result.get('saint_gospel'):
             gospel = result['saint_gospel']
-            lines.append("GOSPEL")
-            lines.append("-" * 70)
-            lines.append(f"Reference: {gospel.get('display', 'N/A')}")
-            if gospel.get('rsv_text'):
-                lines.append("")
-                wrapped = textwrap.fill(gospel['rsv_text'], width=70)
-                lines.append(wrapped)
+            lines.append(f"### Gospel: {gospel.get('display', 'N/A')}")
             lines.append("")
+            if gospel.get('rsv_text'):
+                lines.append(gospel['rsv_text'])
+                lines.append("")
     else:
         # Single set of readings
         if result.get('epistle'):
             epistle = result['epistle']
-            lines.append("EPISTLE")
-            lines.append("-" * 70)
-            lines.append(f"Reference: {epistle.get('display', 'N/A')}")
-            if epistle.get('rsv_text'):
-                lines.append("")
-                wrapped = textwrap.fill(epistle['rsv_text'], width=70)
-                lines.append(wrapped)
+            lines.append(f"## Epistle: {epistle.get('display', 'N/A')}")
             lines.append("")
+            if epistle.get('rsv_text'):
+                lines.append(epistle['rsv_text'])
+                lines.append("")
         
         if result.get('gospel'):
             gospel = result['gospel']
-            lines.append("GOSPEL")
-            lines.append("-" * 70)
-            lines.append(f"Reference: {gospel.get('display', 'N/A')}")
-            if gospel.get('rsv_text'):
-                lines.append("")
-                wrapped = textwrap.fill(gospel['rsv_text'], width=70)
-                lines.append(wrapped)
+            lines.append(f"## Gospel: {gospel.get('display', 'N/A')}")
             lines.append("")
-    
-    lines.append("=" * 70)
+            if gospel.get('rsv_text'):
+                lines.append(gospel['rsv_text'])
+                lines.append("")
     
     return "\n".join(lines)
 
