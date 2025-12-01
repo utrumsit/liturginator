@@ -182,42 +182,80 @@ def scrape_day(month, day):
     if vespers_heading:
         # Get all paragraphs until next h2
         current = vespers_heading.find_next_sibling()
+        in_main_stichera = False
+        in_litija = False
+        in_aposticha = False
+        last_tone = None  # Track tone for consecutive stichera without tone markings
+        
         while current and current.name != 'h2':
             if current.name == 'p':
                 text = current.get_text()
                 
+                # Stop collecting stichera at Glory/Troparion markers
+                if re.match(r'^\s*(Glory|Troparion)', text, re.I):
+                    in_main_stichera = False
+                    in_litija = False
+                    in_aposticha = False
+                    last_tone = None
+                
                 # Check for stichera sections
-                if 'litija' in text.lower():
-                    # Start collecting litija stichera
-                    next_p = current.find_next_sibling('p')
-                    while next_p and next_p.name == 'p' and 'Glory' not in next_p.get_text()[:20]:
-                        stic = extract_tone_and_text(next_p)
-                        if stic['text'] and len(stic['text']) > 50:
-                            stichera_litija.append(stic)
-                        next_p = next_p.find_next_sibling('p')
+                elif 'litija' in text.lower():
+                    in_litija = True
+                    in_main_stichera = False
+                    in_aposticha = False
+                    last_tone = None
                 
                 elif 'aposticha' in text.lower():
-                    # Start collecting aposticha stichera
-                    next_p = current.find_next_sibling('p')
-                    while next_p and next_p.name == 'p' and not re.match(r'^Troparion', next_p.get_text()):
+                    in_aposticha = True
+                    in_main_stichera = False
+                    in_litija = False
+                    last_tone = None
+                
+                # Check if we're starting main stichera (has "Tone" marking)
+                elif current.find('strong') and 'Tone' in text and not in_litija and not in_aposticha:
+                    in_main_stichera = True
+                    stic = extract_tone_and_text(current)
+                    if stic['text'] and len(stic['text']) > 50:
+                        stichera_lord_i_cried.append(stic)
+                        last_tone = stic['tone']  # Remember tone for next stichera
+                
+                # Collect stichera in active section
+                elif in_main_stichera and len(text) > 50:
+                    # This is likely a continuation sticheron without tone marking
+                    stic = extract_tone_and_text(current)
+                    # If no tone found, use the last tone
+                    if stic['tone'] is None:
+                        stic['tone'] = last_tone
+                    if stic['text']:
+                        stichera_lord_i_cried.append(stic)
+                
+                elif in_litija and len(text) > 50:
+                    # Collect litija stichera
+                    if not re.match(r'^\s*(Glory|Now and ever)', text, re.I):
+                        stic = extract_tone_and_text(current)
+                        if stic['tone'] is None:
+                            stic['tone'] = last_tone
+                        if stic['text']:
+                            stichera_litija.append(stic)
+                            if stic['tone']:
+                                last_tone = stic['tone']
+                
+                elif in_aposticha and len(text) > 50:
+                    # Collect aposticha stichera
+                    if not re.match(r'^\s*(Glory|Troparion)', text, re.I):
                         # Check for verse marker
-                        blockquote = next_p.find_previous_sibling('blockquote')
+                        blockquote = current.find_previous_sibling('blockquote')
                         verse = blockquote.get_text().strip() if blockquote else None
                         
-                        stic = extract_tone_and_text(next_p)
-                        if stic['text'] and len(stic['text']) > 50:
+                        stic = extract_tone_and_text(current)
+                        if stic['tone'] is None:
+                            stic['tone'] = last_tone
+                        if stic['text']:
                             if verse:
                                 stic['verse'] = verse
                             stichera_aposticha.append(stic)
-                        next_p = next_p.find_next_sibling('p')
-                
-                # Collect main stichera at "O Lord I have cried"
-                elif current.find('strong') and 'Tone' in current.get_text():
-                    stic = extract_tone_and_text(current)
-                    if stic['text'] and len(stic['text']) > 50:
-                        # Check if this is before litija section (i.e., main stichera)
-                        if not stichera_litija and not stichera_aposticha:
-                            stichera_lord_i_cried.append(stic)
+                            if stic['tone']:
+                                last_tone = stic['tone']
             
             current = current.find_next_sibling()
     
