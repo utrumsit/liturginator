@@ -1,0 +1,84 @@
+{
+  "_comment": "Feast levels for Byzantine Menaion - determines whether 'God is the Lord' or 'Alleluia' is sung",
+  "_levels": {
+    "0": "Ordinary day (Alleluia)",
+    "1": "Presanctified (Alleluia)",
+    "2": "6-stich minor feast (Alleluia)",
+    "3": "Doxology rank (Alleluia)",
+    "4": "Polyeleos rank (God is the Lord)",
+    "5": "Vigil rank (God is the Lord)",
+    "6": "Great Feast (God is the Lord)",
+    "7": "Major Theotokos Feast (God is the Lord)",
+    "8": "Major Lord's Feast (God is the Lord)"
+  },
+  "1": {
+    "1": 8,
+    "6": 8,
+    "7": 5,
+    "14": 6,
+    "25": 6,
+    "30": 5
+  },
+  "2": {
+    "2": 8,
+    "24": 4
+  },
+  "3": {
+    "9": 3,
+    "25": 8
+  },
+  "4": {
+    "23": 5,
+    "25": 5
+  },
+  "5": {
+    "8": 5,
+    "21": 5,
+    "25": 4
+  },
+  "6": {
+    "24": 8,
+    "29": 6,
+    "30": 5
+  },
+  "7": {
+    "2": 6,
+    "16": 3,
+    "20": 4,
+    "27": 4
+  },
+  "8": {
+    "6": 8,
+    "15": 6,
+    "29": 6
+  },
+  "9": {
+    "1": 5,
+    "8": 8,
+    "14": 8,
+    "26": 5
+  },
+  "10": {
+    "1": 6,
+    "6": 5,
+    "11": 3,
+    "26": 5
+  },
+  "11": {
+    "1": 3,
+    "8": 6,
+    "21": 8,
+    "30": 5
+  },
+  "12": {
+    "4": 5,
+    "5": 4,
+    "6": 5,
+    "8": 6,
+    "12": 4,
+    "20": 4,
+    "25": 8,
+    "26": 7,
+    "27": 5
+  }
+}
