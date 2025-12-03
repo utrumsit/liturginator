@@ -198,8 +198,51 @@ class RSVExtractor:
     
     def extract_text(self, pericope_ref: str) -> Optional[str]:
         """
-        Extract RSV text for a given pericope reference
+        Extract RSV text for a given pericope reference.
+        Supports multi-passage references separated by commas.
+        
+        Examples:
+            "Luke 10.19-21" -> single passage
+            "1 Timothy 1.18-20, 2.8-15" -> two passages from same book
+        
         Returns: full text of verses joined together, or None if not found
+        """
+        # Check if this is a multi-passage reference (contains comma between chapter.verse patterns)
+        # Pattern matches: "1.18-20, 2.8" or "1.18, 2.8-15" etc.
+        if ', ' in pericope_ref and re.search(r'\d+\.[\d-]+,\s*\d+\.', pericope_ref):
+            # Multi-passage reference like "1 Timothy 1.18-20, 2.8-15"
+            # Extract book name from first part
+            first_part = pericope_ref.split(',')[0].strip()
+            match = re.match(r'^([A-Za-z0-9 ]+)\s+\d+\.', first_part)
+            if match:
+                book_name = match.group(1).strip()
+                # Split into individual passages
+                parts = pericope_ref.split(',')
+                all_texts = []
+                
+                for i, part in enumerate(parts):
+                    part = part.strip()
+                    # First part has full book name, subsequent parts just have chapter.verses
+                    if i == 0:
+                        full_ref = part
+                    else:
+                        # Prepend book name to subsequent passages
+                        full_ref = f"{book_name} {part}"
+                    
+                    # Extract this passage
+                    passage_text = self._extract_single_passage(full_ref)
+                    if passage_text:
+                        all_texts.append(passage_text)
+                
+                return '\n\n'.join(all_texts) if all_texts else None
+        
+        # Single passage
+        return self._extract_single_passage(pericope_ref)
+    
+    def _extract_single_passage(self, pericope_ref: str) -> Optional[str]:
+        """
+        Extract RSV text for a single passage reference.
+        Helper method for extract_text().
         """
         parsed = self._parse_pericope(pericope_ref)
         if not parsed:
