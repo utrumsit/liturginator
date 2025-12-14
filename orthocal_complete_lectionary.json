@@ -9900,9 +9900,10 @@
   },
 "12-14": {
     "readings": [],
-    "title": "2nd Sunday before Nativity (Forefathers Sunday)",
+    "title": "Forefathers Sunday",
     "feast_name": "Forefathers Sunday",
-    "feast_level": 4
+    "feast_level": 4,
+    "pdist_override": 1010
   },
   "12-11": {
     "readings": [],

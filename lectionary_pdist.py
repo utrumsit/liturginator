@@ -45,7 +45,12 @@ class LectionaryPdist:
         
         saint_epistle = None
         saint_gospel = None
-        if feast_info.get('readings'):
+        pdist_override = feast_info.get('pdist_override')
+        if pdist_override:
+            cycle = self.paschal_cycle.get(pdist_override, {})
+            daily_epistle = cycle.get('epistle')
+            daily_gospel = cycle.get('gospel')
+        elif feast_info.get('readings'):
             for reading in feast_info['readings']:
                 if reading['type'] == 'epistle' and not saint_epistle:
                     saint_epistle = reading.copy()
@@ -116,7 +121,7 @@ class LectionaryPdist:
     def _get_gospel_pdist(self, pdist, date_obj, key_dates, pascha):
         days_to_nativity = (date_obj.replace(month=12, day=25) - date_obj).days
         if 11 <= days_to_nativity <= 17 and date_obj.weekday() == 6:
-            return key_dates['forefathers']
+            return -105  # Forefathers Sunday: Colossians 3.4-11, Luke 14.16-24
         
         if pdist > key_dates['sun_after_elevation']:
             return pdist + key_dates['lukan_jump']

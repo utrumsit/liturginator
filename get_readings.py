@@ -123,7 +123,7 @@ def main():
             sys.exit(1)
     
     # Initialize lectionary with RSV
-    lect = LectionaryPdist()
+    lect = LectionaryPdist(rsv_xml_path='rsv.xml')
     
     # Get readings
     result = lect.get_readings(date)
