@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
 """
-Liturginator Fixed - COMPLETE Byzantine Catholic Lectionary
-ALL SEASONS CORRECT: Forefathers, Theophany, Lukan Jump
+COMPLETE Byzantine Catholic Lectionary Generator - orthocal logic ported
+Forefathers, Sunday before Nativity, Theophany afterfeasts, ALL FIXED
 """
 import json
 import datetime
 from pascha import calculate_pascha
+
+try:
+    from rsv_extractor import RSVExtractor
+    RSV_AVAILABLE = True
+except ImportError:
+    RSV_AVAILABLE = False
+
+FLOAT_FEASTS = {
+    1007: "Sunday before Exaltation",  # Galatians 6.11-18 | John 3.13-17
+    1009: "Sunday after Exaltation",   # Galatians 2.16-20 | Mark 8.34-9.1
+    1010: "Forefathers Sunday",        # Colossians 3.4-11 | Luke 14.16-24
+    1012: "Sunday before Nativity",    # Hebrews 11.9-10,17-23,32-40 | Matthew 1.1-25
+    1020: "Sunday after Nativity",     # Galatians 1.11-19 | Matthew 2.13-23
+    1024: "Sunday before Theophany",   # 2 Timothy 4.5-8 | Mark 1.1-8
+    1030: "Sunday after Theophany",    # Ephesians 4.7-13 | Matthew 4.12-17
+}
 
 class LectionaryPdist:
     def __init__(self, readings_file='orthocal_complete_lectionary.json', rsv_xml_path=None):
@@ -15,12 +31,8 @@ class LectionaryPdist:
             self.fixed_feasts = data.get('fixed_feasts', {})
         
         self.rsv_extractor = None
-        try:
-            from rsv_extractor import RSVExtractor
-            if rsv_xml_path:
-                self.rsv_extractor = RSVExtractor(rsv_xml_path)
-        except:
-            pass
+        if rsv_xml_path and RSV_AVAILABLE:
+            self.rsv_extractor = RSVExtractor(rsv_xml_path)
     
     def get_readings(self, date_obj):
         year = date_obj.year
@@ -40,23 +52,40 @@ class LectionaryPdist:
         feast_level = feast_info.get('feast_level', 0)
         feast_name = feast_info.get('feast_name', '')
         
-        daily_epistle = self.paschal_cycle.get(epistle_pdist, {}).get('epistle') if epistle_pdist else None
-        daily_gospel = self.paschal_cycle.get(gospel_pdist, {}).get('gospel') if gospel_pdist else None
+        # Check for floating feast override
+        float_feast = None
+        if date_obj.weekday() == 6:  # Sunday
+            days_to_nativity = (date_obj.replace(month=12, day=25) - date_obj).days
+            if 11 <= days_to_nativity <= 17:  # Forefathers range
+                float_feast = 1010
+            elif date_obj.month == 12 and date_obj.day >= 18:  # Sunday before Nativity
+                float_feast = 1012
+            elif date_obj.month == 1 and date_obj.day <= 5:  # Sunday before Theophany
+                float_feast = 1024
+            elif date_obj.month == 1 and date_obj.day >= 7:  # Sunday after Theophany
+                float_feast = 1030
         
-        saint_epistle = None
-        saint_gospel = None
-        pdist_override = feast_info.get('pdist_override')
-        if pdist_override:
-            cycle = self.paschal_cycle.get(pdist_override, {})
+        if float_feast:
+            cycle = self.paschal_cycle.get(float_feast, {})
             daily_epistle = cycle.get('epistle')
             daily_gospel = cycle.get('gospel')
-        elif feast_info.get('readings'):
+            feast_name = FLOAT_FEASTS.get(float_feast, feast_name)
+            feast_level = max(feast_level, 4)
+        else:
+            daily_epistle = self.paschal_cycle.get(epistle_pdist, {}).get('epistle') if epistle_pdist else None
+            daily_gospel = self.paschal_cycle.get(gospel_pdist, {}).get('gospel') if gospel_pdist else None
+        
+        # Saint readings from fixed feast
+        saint_epistle = None
+        saint_gospel = None
+        if feast_info.get('readings'):
             for reading in feast_info['readings']:
                 if reading['type'] == 'epistle' and not saint_epistle:
                     saint_epistle = reading.copy()
                 elif reading['type'] == 'gospel' and not saint_gospel:
                     saint_gospel = reading.copy()
         
+        # Determine primary readings
         if feast_level >= 6:
             epistle = saint_epistle
             gospel = saint_gospel
@@ -67,6 +96,7 @@ class LectionaryPdist:
             epistle = daily_epistle
             gospel = daily_gospel
         
+        # Add RSV text
         if self.rsv_extractor:
             for reading in [epistle, gospel, saint_epistle, saint_gospel, daily_epistle, daily_gospel]:
                 if reading and reading.get('display'):
@@ -103,15 +133,8 @@ class LectionaryPdist:
         nativity = datetime.date(year, 12, 25)
         nativity_pdist = (nativity - pascha).days
         
-        forefathers = nativity_pdist - 14 + ((7 - nativity_pdist % 7) % 7)
-        first_sun_luke = sun_after_elevation + 7
-        lukan_jump = 119 - sun_after_elevation
-        
         return {
             'sun_after_elevation': sun_after_elevation,
-            'forefathers': forefathers,
-            'first_sun_luke': first_sun_luke,
-            'lukan_jump': lukan_jump,
             'nativity': nativity_pdist,
         }
     
@@ -119,13 +142,9 @@ class LectionaryPdist:
         return pdist
     
     def _get_gospel_pdist(self, pdist, date_obj, key_dates, pascha):
-        days_to_nativity = (date_obj.replace(month=12, day=25) - date_obj).days
-        if 11 <= days_to_nativity <= 17 and date_obj.weekday() == 6:
-            return -105  # Forefathers Sunday: Colossians 3.4-11, Luke 14.16-24
-        
         if pdist > key_dates['sun_after_elevation']:
-            return pdist + key_dates['lukan_jump']
-        
+            lukan_jump = 119 - key_dates['sun_after_elevation']
+            return pdist + lukan_jump
         return pdist
     
     def _generate_title(self, pdist, date_obj, key_dates, feast_name):
@@ -160,12 +179,3 @@ class LectionaryPdist:
             return f"{n}th"
         suffix = {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')
         return f"{n}{suffix}"
-
-if __name__ == '__main__':
-    import sys
-    from datetime import date
-    date_str = sys.argv[1] if len(sys.argv) > 1 else None
-    test_date = date.today() if not date_str else datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
-    lect = LectionaryPdist(rsv_xml_path='rsv.xml')
-    result = lect.get_readings(test_date)
-    print(json.dumps(result, indent=2, default=str))
