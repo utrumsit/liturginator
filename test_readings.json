@@ -1,0 +1,226 @@
+{
+  "2025-12-14": {
+    "title": "Sunday of the 27th week after Pentecost",
+    "pdist": 238,
+    "epistle_pdist": 238,
+    "gospel_pdist": 252,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Ephesians 6.10-17",
+      "sdisplay": "Eph 6.10-17",
+      "pericope": "233"
+    },
+    "gospel": {
+      "book": "Luke",
+      "display": "Luke 17.12-19",
+      "sdisplay": "Luke 17.12-19",
+      "pericope": "85"
+    }
+  },
+  "2025-12-15": {
+    "title": "Monday of the 28th week after Pentecost",
+    "pdist": 239,
+    "epistle_pdist": 239,
+    "gospel_pdist": 253,
+    "epistle": {
+      "book": "Apostol",
+      "display": "2 Timothy 2.20-26",
+      "sdisplay": "2 Tim 2.20-26",
+      "pericope": "294"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 8.11-21",
+      "sdisplay": "Mark 8.11-21",
+      "pericope": "33"
+    },
+    "saint_epistle": null,
+    "saint_gospel": null,
+    "daily_epistle": {
+      "book": "Apostol",
+      "display": "2 Timothy 2.20-26",
+      "sdisplay": "2 Tim 2.20-26",
+      "pericope": "294"
+    },
+    "daily_gospel": {
+      "book": "Mark",
+      "display": "Mark 8.11-21",
+      "sdisplay": "Mark 8.11-21",
+      "pericope": "33"
+    }
+  },
+  "2025-12-16": {
+    "title": "Tuesday of the 28th week after Pentecost",
+    "pdist": 240,
+    "epistle_pdist": 240,
+    "gospel_pdist": 254,
+    "epistle": {
+      "book": "Apostol",
+      "display": "2 Timothy 3.16-4.4",
+      "sdisplay": "2 Tim 3.16-4.4",
+      "pericope": "297"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 8.22-26",
+      "sdisplay": "Mark 8.22-26",
+      "pericope": "34"
+    }
+  },
+  "2025-12-17": {
+    "title": "Wednesday of the 28th week after Pentecost",
+    "pdist": 241,
+    "epistle_pdist": 241,
+    "gospel_pdist": 255,
+    "epistle": {
+      "book": "Apostol",
+      "display": "2 Timothy 4.9-22",
+      "sdisplay": "2 Tim 4.9-22",
+      "pericope": "299"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 8.30-34",
+      "sdisplay": "Mark 8.30-34",
+      "pericope": "36"
+    },
+    "saint_epistle": null,
+    "saint_gospel": null,
+    "daily_epistle": {
+      "book": "Apostol",
+      "display": "2 Timothy 4.9-22",
+      "sdisplay": "2 Tim 4.9-22",
+      "pericope": "299"
+    },
+    "daily_gospel": {
+      "book": "Mark",
+      "display": "Mark 8.30-34",
+      "sdisplay": "Mark 8.30-34",
+      "pericope": "36"
+    }
+  },
+  "2025-12-18": {
+    "title": "Thursday of the 28th week after Pentecost",
+    "pdist": 242,
+    "epistle_pdist": 242,
+    "gospel_pdist": 256,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Titus 1.5-2.1",
+      "sdisplay": "Titus 1.5-2.1",
+      "pericope": "300ctr"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 9.10-16",
+      "sdisplay": "Mark 9.10-16",
+      "pericope": "39"
+    }
+  },
+  "2025-12-19": {
+    "title": "Friday of the 28th week after Pentecost",
+    "pdist": 243,
+    "epistle_pdist": 243,
+    "gospel_pdist": 257,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Titus 1.15-2.10",
+      "sdisplay": "Titus 1.15-2.10",
+      "pericope": "301"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 9.33-41",
+      "sdisplay": "Mark 9.33-41",
+      "pericope": "41"
+    }
+  },
+  "2025-12-20": {
+    "title": "Saturday of the 28th week after Pentecost",
+    "pdist": 244,
+    "epistle_pdist": 244,
+    "gospel_pdist": 258,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Ephesians 1.16-23",
+      "sdisplay": "Eph 1.16-23",
+      "pericope": "218"
+    },
+    "gospel": {
+      "book": "Luke",
+      "display": "Luke 14.1-11",
+      "sdisplay": "Luke 14.1-11",
+      "pericope": "74"
+    },
+    "feast_name": "Repose of St. John of Kronstadt",
+    "feast_level": 4,
+    "saint_epistle": null,
+    "saint_gospel": null,
+    "daily_epistle": {
+      "book": "Apostol",
+      "display": "Ephesians 1.16-23",
+      "sdisplay": "Eph 1.16-23",
+      "pericope": "218"
+    },
+    "daily_gospel": {
+      "book": "Luke",
+      "display": "Luke 14.1-11",
+      "sdisplay": "Luke 14.1-11",
+      "pericope": "74"
+    }
+  },
+  "2025-12-21": {
+    "title": "Sunday of the 28th week after Pentecost",
+    "pdist": 245,
+    "epistle_pdist": 245,
+    "gospel_pdist": 259,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Colossians 1.12-18",
+      "sdisplay": "Col 1.12-18",
+      "pericope": "250"
+    },
+    "gospel": {
+      "book": "Luke",
+      "display": "Luke 18.18-27",
+      "sdisplay": "Luke 18.18-27",
+      "pericope": "91"
+    }
+  },
+  "2025-12-22": {
+    "title": "Monday of the 29th week after Pentecost",
+    "pdist": 246,
+    "epistle_pdist": 246,
+    "gospel_pdist": 260,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Hebrews 3.5-11, 17-19",
+      "sdisplay": "Heb 3.5-11, 17-19",
+      "pericope": "308"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 9.42-10.1",
+      "sdisplay": "Mark 9.42-10.1",
+      "pericope": "42"
+    }
+  },
+  "2025-12-23": {
+    "title": "Tuesday of the 29th week after Pentecost",
+    "pdist": 247,
+    "epistle_pdist": 247,
+    "gospel_pdist": 261,
+    "epistle": {
+      "book": "Apostol",
+      "display": "Hebrews 4.1-13",
+      "sdisplay": "Heb 4.1-13",
+      "pericope": "310"
+    },
+    "gospel": {
+      "book": "Mark",
+      "display": "Mark 10.2-12",
+      "sdisplay": "Mark 10.2-12",
+      "pericope": "43"
+    }
+  }
+}

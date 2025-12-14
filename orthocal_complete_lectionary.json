@@ -9891,124 +9891,25 @@
       "feast_level": 0,
       "saint": "Martyrs Menas, Hermogenes, Eugraphus"
     },
-    "12-11": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Ven. Daniel the Stylite"
-    },
-    "12-12": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 2,
-      "saint": "St Spyridon the Wonderworker"
-    },
-    "12-14": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Martyrs Thyrsus, Leucis, Callinicus"
-    },
-    "12-15": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 2,
-      "saint": "Hieromartyr Eleutherius of Illyria; St Stephen of Surozh"
-    },
-    "12-16": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Prophet Haggai"
-    },
-    "12-17": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 2,
-      "saint": "Holy Prophet Daniel and Three Holy Youths"
-    },
-    "12-18": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Martyr Sebastian and Companions at Rome"
-    },
-    "12-19": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Martyr Boniface and Righteous Aglaida"
-    },
-    "12-20": {
-      "readings": [],
-      "title": "",
-      "feast_name": "Repose of St. John of Kronstadt",
-      "feast_level": 4,
-      "saint": "Forefeast of Nativity; Hieromartyr Ignatius the Godbearer"
-    },
-    "12-21": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Virgin Martyr Juliana and Companions"
-    },
-    "12-22": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Greatmartyr Anastasia and Companions"
-    },
-    "12-23": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Holy Ten Martyrs of Crete"
-    },
-    "12-24": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": ""
-    },
-    "12-28": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "20,000 Martyrs of Nicomedia"
-    },
-    "12-29": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Holy Innocents Slain by Herod"
-    },
-    "12-30": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Virgin Martyr Anysia at Thessalonica"
-    },
-    "12-31": {
-      "readings": [],
-      "title": "",
-      "feast_name": "",
-      "feast_level": 0,
-      "saint": "Ven. Melania the Younger of Rome"
-    }
+"12-11": {
+    "readings": [],
+    "title": "Forefathers Sunday",
+    "feast_name": "Forefathers Sunday",
+    "feast_level": 4,
+    "saint": "Ven. Daniel the Stylite"
+  },
+"12-14": {
+    "readings": [],
+    "title": "2nd Sunday before Nativity (Forefathers Sunday)",
+    "feast_name": "Forefathers Sunday",
+    "feast_level": 4
+  },
+  "12-11": {
+    "readings": [],
+    "title": "Forefathers Sunday",
+    "feast_name": "Forefathers Sunday",
+    "feast_level": 4,
+    "saint": "Ven. Daniel the Stylite"
+  }
   }
 }

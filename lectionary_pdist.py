@@ -217,30 +217,20 @@ class LectionaryPdist:
         # For now, just return the actual pdist
         return pdist
     
-    def _get_gospel_pdist(self, pdist, date, key_dates, pascha):
-        """
-        Get adjusted pdist for gospel lookup.
-        This is where the Lukan Jump magic happens.
-        """
-        # Step 1: Special case - 11th Sunday of Luke = Forefathers
-        weekday = pdist % 7
-        if pdist == key_dates['first_sun_luke'] + 10*7:
-            return key_dates['forefathers'] + key_dates['lukan_jump']
-        
-        # Step 2: Sundays after Theophany use "reserve" gospels
-        # (Skipping this for now - requires calculating reserves)
-        
-        # Step 3: After Saturday before Theophany - jump to next year
-        if pdist > key_dates['sat_before_theophany']:
-            next_pascha = calculate_pascha(pascha.year + 1)
-            return (date - next_pascha).days
-        
-        # Step 4: After Sunday after Exaltation - apply Lukan Jump
-        if pdist > key_dates['sun_after_elevation']:
-            return pdist + key_dates['lukan_jump']
-        
-        # Step 5: Default - no adjustment
-        return pdist
+def _get_gospel_pdist(self, pdist, date, key_dates, pascha):
+    """
+    Get adjusted pdist for gospel lookup with Forefathers Sunday fix
+    """
+    # Forefathers Sunday (2nd Sunday before Nativity)
+    days_to_nativity = (date.replace(month=12, day=25) - date).days
+    if 11 <= days_to_nativity <= 17 and date.weekday() == 6:
+        return -98
+    
+    # Lukan Jump after Sunday after Exaltation
+    if pdist > key_dates['sun_after_elevation']:
+        return pdist + key_dates['lukan_jump']
+    
+    return pdist
     
     def _generate_title(self, pdist, date, key_dates):
         """Generate a human-readable title for the day."""

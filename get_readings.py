@@ -123,11 +123,7 @@ def main():
             sys.exit(1)
     
     # Initialize lectionary with RSV
-    try:
-        lect = LectionaryPdist(rsv_xml_path='rsv.xml')
-    except FileNotFoundError:
-        print("Error: rsv.xml not found. Make sure you're in the liturginator directory.")
-        sys.exit(1)
+    lect = LectionaryPdist()
     
     # Get readings
     result = lect.get_readings(date)

@@ -137,27 +137,105 @@ LENT_MATINS = {
 
 LENT_VESPERS = WINTER_VESPERS  # Same as winter
 
+# Prayers after each stasis (not the Little Ektenia)
+STASIS_ENDING_BASE = """
+Glory to the Father and to the Son and to the Holy Spirit; Now and ever and unto ages of ages. Amen.
+
+Alleluia, alleluia, alleluia. Glory to You, O God. *Three times.*
+
+Lord, have mercy. *Three times.*
+
+Glory to the Father and to the Son and to the Holy Spirit; Now and ever and unto ages of ages. Amen.
+
+"""
+
+STASIS_EXCLAMATION_1 = """*The priest exclaims:* For Yours is the might, and Yours are the kingdom and the power and the glory, Father, Son, and Holy Spirit, now and ever and forever.
+
+*Choir:* Amen."""
+
+STASIS_EXCLAMATION_2 = """*The priest exclaims:* For You are a good and loving God, and we give glory to You, Father, Son, and Holy Spirit, now and ever and forever.
+
+*Choir:* Amen."""
+
+STASIS_EXCLAMATION_3 = """*The priest exclaims:* For You are our God, and we give glory to You, Father, Son, and Holy Spirit, now and ever and forever.
+
+*Choir:* Amen."""
+
+def get_stasis_ending(stasis_num):
+    """
+    Get the stasis ending prayers with the appropriate exclamation for the given stasis number.
+    """
+    if stasis_num == 1:
+        exclamation = STASIS_EXCLAMATION_1
+    elif stasis_num == 2:
+        exclamation = STASIS_EXCLAMATION_2
+    else:
+        exclamation = STASIS_EXCLAMATION_3
+    return STASIS_ENDING_BASE + exclamation
+
+# The Little Ektenia - said only once after the entire kathisma
+LITTLE_EKTENIA = """
+### Little Ektenia
+
+*Deacon:* Again and again, in peace, let us pray to the Lord.
+
+*Choir:* Lord, have mercy.
+
+*Deacon:* Protect us, save us, have mercy on us and preserve us, O God, by Your grace.
+
+*Choir:* Lord, have mercy.
+
+*Deacon:* Commemorating our most holy, most pure, most blessed and glorious Lady, the Theotokos and Ever-Virgin Mary, with all the saints, let us commit ourselves and one another and our whole life to Christ our God.
+
+*Choir:* To You, O Lord.
+
+*The priest exclaims:* For Yours is the might, and Yours are the kingdom and the power and the glory, Father, Son, and Holy Spirit, now and ever and forever.
+
+*Choir:* Amen."""
+
 def extract_kathisma_text(kathisma_num):
     """
-    Extract the text for a given kathisma number from kathisma.md.
+    Extract the text for a given kathisma number from kathisma.md,
+    adding the stasis ending prayers after each stasis, and the Little Ektenia
+    at the very end of the kathisma.
     """
     try:
         with open('resource/kathisma.md', 'r', encoding='utf-8') as f:
             content = f.read()
-        # print(f"Debug: Successfully read resource/kathisma.md for Kathisma {kathisma_num}, content length: {len(content)}")
     except Exception as e:
-        # print(f"Debug: Error reading resource/kathisma.md: {e}")
         return ""
-    
+
     # Find the Kathisma section
     pattern = rf'#\s*Kathisma\s+{kathisma_num}\n(.*?)(?=#\s*Kathisma\s+\d+|$)'
     match = re.search(pattern, content, re.DOTALL)
     if match:
         extracted_text = match.group(1).strip()
-        # print(f"Debug: Found Kathisma {kathisma_num}, text length: {len(extracted_text)}")
-        return extracted_text
+
+        # Insert stasis ending prayers after each stasis
+        stasis_pattern = r'(###\s*Stasis\s+\d+)'
+        parts = re.split(stasis_pattern, extracted_text)
+
+        # parts will be: [before_first_stasis, 'Stasis 1', content1, 'Stasis 2', content2, 'Stasis 3', content3]
+        result_parts = []
+        stasis_count = 0
+
+        for i, part in enumerate(parts):
+            if re.match(stasis_pattern, part):
+                stasis_count += 1
+                # Before stasis 2 and 3, add ending prayers from previous stasis
+                if stasis_count > 1:
+                    result_parts.append("\n" + get_stasis_ending(stasis_count - 1) + "\n\n")
+                result_parts.append(part)
+            else:
+                result_parts.append(part)
+
+        # Add ending prayers after stasis 3, then the Little Ektenia
+        if stasis_count > 0:
+            result_parts.append("\n" + get_stasis_ending(stasis_count) + "\n")
+            result_parts.append(LITTLE_EKTENIA + "\n")
+
+        return ''.join(result_parts).strip()
     else:
-        # print(f"Debug: No match found for Kathisma {kathisma_num}")
         return ""
 
 def display_interactive(matins_kaths, vespers_kaths):

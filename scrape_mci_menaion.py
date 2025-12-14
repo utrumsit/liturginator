@@ -72,12 +72,12 @@ def infer_feast_level(soup, day_data):
 def extract_tone_and_text(element):
     """
     Extract tone number and text from a hymn element.
-    
+
     Returns:
         dict: {"tone": int, "melody": str or None, "text": str}
     """
     result = {"tone": None, "melody": None, "text": ""}
-    
+
     # Find tone in strong tags
     strong_tags = element.find_all('strong')
     for strong in strong_tags:
@@ -85,16 +85,15 @@ def extract_tone_and_text(element):
         tone_match = re.search(r'Tone (\d+)', text)
         if tone_match:
             result['tone'] = int(tone_match.group(1))
-        
-        # Check for special melody
+
+        # Check for special melody - it's in <em> tags inside <strong>
         if 'melody' in text.lower():
-            # Extract melody name from emphasis tag following
-            next_elem = strong.find_next('emphasis')
-            if next_elem:
-                melody_text = next_elem.get_text().strip(' .')
+            em_tag = strong.find('em')
+            if em_tag:
+                melody_text = em_tag.get_text().strip(' .')
                 if melody_text:
                     result['melody'] = melody_text
-    
+
     # Extract text content (everything after strong tags)
     text_parts = []
     for content in element.contents:
@@ -103,7 +102,7 @@ def extract_tone_and_text(element):
                 text_parts.append(content.get_text())
             elif isinstance(content, str):
                 text_parts.append(content)
-    
+
     result['text'] = ' '.join(text_parts).strip()
     return result
 
@@ -176,7 +175,9 @@ def scrape_day(month, day):
     stichera_lord_i_cried = []
     stichera_litija = []
     stichera_aposticha = []
-    
+    glory_sticheron = None  # Theotokion/Dogmatikon after Glory
+    now_and_ever_rubric = None  # "Theotokion, or Stavrotheotokion" etc.
+
     # Find vespers section
     vespers_heading = soup.find('h2', string=re.compile(r'At Vespers', re.I))
     if vespers_heading:
@@ -186,31 +187,58 @@ def scrape_day(month, day):
         in_litija = False
         in_aposticha = False
         last_tone = None  # Track tone for consecutive stichera without tone markings
-        
+
         while current and current.name != 'h2':
             if current.name == 'p':
                 text = current.get_text()
-                
-                # Stop collecting stichera at Glory/Troparion markers
-                if re.match(r'^\s*(Glory|Troparion)', text, re.I):
+
+                # Check for Glory sticheron (Theotokion/Dogmatikon)
+                # Match "Glory – Tone X" but NOT "Glory, now and ever"
+                if re.match(r'^\s*Glory\s*[–-]\s*Tone', text, re.I):
+                    in_main_stichera = False
+                    in_litija = False
+                    in_aposticha = False
+                    # This is the Glory sticheron (doxasticon) - extract it
+                    stic = extract_tone_and_text(current)
+                    if stic['text'] and len(stic['text']) > 30:
+                        glory_sticheron = stic
+
+                # Check for "Glory, now and ever" (ends stichera section, not a sticheron itself)
+                elif re.match(r'^\s*Glory,?\s*now and ever', text, re.I):
+                    in_main_stichera = False
+                    in_litija = False
+                    in_aposticha = False
+
+                # Check for "Now and ever" rubric
+                elif re.match(r'^\s*Now and ever\s*[–-]', text, re.I):
+                    in_main_stichera = False
+                    in_litija = False
+                    in_aposticha = False
+                    # Extract the rubric (e.g., "Theotokion, or Stavrotheotokion")
+                    rubric_match = re.search(r'Now and ever\s*[–-]\s*(.+)', text, re.I)
+                    if rubric_match:
+                        now_and_ever_rubric = rubric_match.group(1).strip()
+
+                # Stop at Troparion (end of stichera section)
+                elif re.match(r'^\s*Troparion', text, re.I):
                     in_main_stichera = False
                     in_litija = False
                     in_aposticha = False
                     last_tone = None
-                
+
                 # Check for stichera sections
                 elif 'litija' in text.lower():
                     in_litija = True
                     in_main_stichera = False
                     in_aposticha = False
                     last_tone = None
-                
+
                 elif 'aposticha' in text.lower():
                     in_aposticha = True
                     in_main_stichera = False
                     in_litija = False
                     last_tone = None
-                
+
                 # Check if we're starting main stichera (has "Tone" marking)
                 elif current.find('strong') and 'Tone' in text and not in_litija and not in_aposticha:
                     in_main_stichera = True
@@ -218,7 +246,7 @@ def scrape_day(month, day):
                     if stic['text'] and len(stic['text']) > 50:
                         stichera_lord_i_cried.append(stic)
                         last_tone = stic['tone']  # Remember tone for next stichera
-                
+
                 # Collect stichera in active section
                 elif in_main_stichera and len(text) > 50:
                     # This is likely a continuation sticheron without tone marking
@@ -228,7 +256,7 @@ def scrape_day(month, day):
                         stic['tone'] = last_tone
                     if stic['text']:
                         stichera_lord_i_cried.append(stic)
-                
+
                 elif in_litija and len(text) > 50:
                     # Collect litija stichera
                     if not re.match(r'^\s*(Glory|Now and ever)', text, re.I):
@@ -239,14 +267,14 @@ def scrape_day(month, day):
                             stichera_litija.append(stic)
                             if stic['tone']:
                                 last_tone = stic['tone']
-                
+
                 elif in_aposticha and len(text) > 50:
                     # Collect aposticha stichera
                     if not re.match(r'^\s*(Glory|Troparion)', text, re.I):
                         # Check for verse marker
                         blockquote = current.find_previous_sibling('blockquote')
                         verse = blockquote.get_text().strip() if blockquote else None
-                        
+
                         stic = extract_tone_and_text(current)
                         if stic['tone'] is None:
                             stic['tone'] = last_tone
@@ -256,11 +284,15 @@ def scrape_day(month, day):
                             stichera_aposticha.append(stic)
                             if stic['tone']:
                                 last_tone = stic['tone']
-            
+
             current = current.find_next_sibling()
-    
+
     if stichera_lord_i_cried:
         day_data['vespers']['stichera_lord_i_cried'] = stichera_lord_i_cried
+    if glory_sticheron:
+        day_data['vespers']['glory_sticheron'] = glory_sticheron
+    if now_and_ever_rubric:
+        day_data['vespers']['now_and_ever_rubric'] = now_and_ever_rubric
     if stichera_litija:
         day_data['vespers']['stichera_litija'] = stichera_litija
     if stichera_aposticha:

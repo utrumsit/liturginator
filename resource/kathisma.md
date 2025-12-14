@@ -2,6 +2,8 @@ Kathismata for prayer, from the 1963 Grail Psalter
 
 # Kathisma 1
 
+### Stasis 1
+
 ## Psalm 1
 
 Happy indeed is the man
@@ -70,6 +72,8 @@ Arise, Lord; save me, my God,
 you who strike my foes on the mouth,
 you who break the teeth of the wicked!
 O Lord of salvation, bless your people!
+
+### Stasis 2
 
 ## Psalm 4
 
@@ -152,6 +156,8 @@ The Lord will accept my prayer.
 All my foes will retire in confusion,
 foiled and suddenly confounded.
 
+### Stasis 3
+
 ## Psalm 7
 
 Lord God, I take refuge in you.
@@ -220,6 +226,10 @@ birds of the air, and fish
 that make their way through the waters.
 How great is your name, O Lord our God
 through all the earth!
+
+# Kathisma 2
+
+### Stasis 1
 
 ## Psalm 9.1
 
@@ -309,7 +319,7 @@ you strengthen their hearts; you turn your ear
 to protect the rights of the orphan and oppressed:
 so that mortal man may strike terror no more.
 
-# Kathisma 2
+### Stasis 2
 
 ## Psalm 10
 
@@ -366,6 +376,8 @@ As for me, I trust in your merciful love.
 Let my heart rejoice in your saving help:
 Let me sing to the Lord for his goodness to me,
 singing psalms to the name of the Lord, the Most High.
+
+### Stasis 3
 
 ## Psalm 13
 
@@ -475,6 +487,8 @@ As for me, in my justice I shall see your face
 and be filled, when I awake, with the sight of your glory.
 
 # Kathisma 3
+
+### Stasis 1
 
 ## Psalm 17
 
@@ -590,6 +604,8 @@ He has given great victories to his king
 and shown his love for his anointed,
 for David and his sons for ever.
 
+### Stasis 2
+
 ## Psalm 18
 
 The heavens proclaim the glory of God,
@@ -689,6 +705,8 @@ For you will force them to retreat;
 at them you will aim with your bow.
 O Lord, arise in your strength;
 we shall sing and praise your power.
+
+### Stasis 3
 
 ## Psalm 21
 
@@ -815,6 +833,8 @@ He, the Lord of armies,
 he is the king of glory.
 
 # Kathisma 4
+
+### Stasis 1
 
 ## Psalm 24
 
@@ -943,6 +963,8 @@ in the land of the living.
 Hope in him, hold firm and take heart.
 Hope in the Lord!
 
+### Stasis 2
+
 ## Psalm 27
 
 To you, O Lord, I call,
@@ -1028,6 +1050,8 @@ For me you have changed my mourning into dancing,
 you removed my sackcloth and clothed me with joy.
 So my soul sings psalms to you unceasingly.
 O Lord my God, I will thank you for ever.
+
+### Stasis 3
 
 ## Psalm 30
 
@@ -1151,6 +1175,8 @@ all you upright of heart.
 
 # Kathisma 5
 
+### Stasis 1
+
 ## Psalm 32
 
 Ring out your joy to the Lord, O you just;
@@ -1244,6 +1270,8 @@ Evil brings death to the wicked;
 those who hate the good are doomed.
 The Lord ransoms the souls of his servants.
 Those who hide in him shall not be condemned.
+
+### Stasis 2
 
 ## Psalm 34
 
@@ -1360,6 +1388,8 @@ nor the hand of the wicked cast me out.
 See how the evildoers fall!
 Flung down, they shall never arise.
 
+### Stasis 3
+
 ## Psalm 36
 
 Do not fret because of the wicked;
@@ -1453,6 +1483,8 @@ The Lord helps them and delivers them
 and saves them: for their refuge is in him.
 
 # Kathisma 6
+
+### Stasis 1
 
 ## Psalm 37
 
@@ -1607,6 +1639,8 @@ the Lord thinks of me.
 You are my rescuer, my help,
 O God, do not delay.
 
+### Stasis 2
+
 ## Psalm 40
 
 Happy the man who considers the poor and the weak.
@@ -1707,6 +1741,8 @@ Why are you cast down my soul,
 why groan within me?
 Hope in God; I will praise him still,
 my savior and my God.
+
+### Stasis 3
 
 ## Psalm 43
 
@@ -1839,6 +1875,8 @@ the God of Jacob is our stronghold.
 
 # Kathisma 7
 
+### Stasis 1
+
 ## Psalm 46
 
 All peoples, clap your hands,
@@ -1949,6 +1987,8 @@ and will never see the light any more.
 In his riches, man lacks wisdom;
 he is like the beasts that are destroyed.
 
+### Stasis 2
+
 ## Psalm 49
 
 The God of gods, the Lord,
@@ -2045,6 +2085,8 @@ rebuild the walls of Jerusalem.
 Then you will be pleased with lawful sacrifice,
 (burnt offerings wholly consumed),
 then you will be offered young bulls on your altar.
+
+### Stasis 3
 
 ## Psalm 51
 
@@ -2193,6 +2235,8 @@ O Lord, I will trust in you.
 
 # Kathisma 8
 
+### Stasis 1
+
 ## Psalm 55
 
 Have mercy on me, God, men crush me;
@@ -2283,7 +2327,9 @@ let them be swept away, green wood or dry!
 The just shall rejoice at the sight of vengeance;
 they shall bathe their feet in the blood of the wicked.
 “Truly”, men shall say, “the just are rewarded.
-Truly there is a God who does justice on the earth.”
+Truly there is a God who does justice on the earth."
+
+### Stasis 2
 
 ## Psalm 58
 
@@ -2387,6 +2433,8 @@ bid love and truth be his protection.
 So I will always praise your name
 and day after day fulfill my vows.
 
+### Stasis 3
+
 ## Psalm 61
 
 In God alone is my soul at rest;
@@ -2483,6 +2531,8 @@ and fly to him for refuge.
 All the upright hearts will glory.
 
 # Kathisma 9
+
+### Stasis 1
 
 ## Psalm 64
 
@@ -2593,6 +2643,8 @@ for God, our God, has blessed us.
 May God still give us his blessing
 till the ends of the earth revere him.
 
+### Stasis 2
+
 ## Psalm 67
 
 Let God arise, let his foes be scattered.
@@ -2674,6 +2726,8 @@ God is to be feared in his holy place.
 He is the Lord, Israel’s God.
 He gives strength and power to his people.
 Blessed be God!
+
+### Stasis 3
 
 ## Psalm 68
 
@@ -2787,6 +2841,8 @@ You are my rescuer, my help,
 O Lord, do not delay.
 
 # Kathisma 10
+
+### Stasis 1
 
 ## Psalm 70
 
@@ -2902,6 +2958,8 @@ ever blessed his glorious name.
 Let his glory fill the earth.
 Amen! Amen!
 
+### Stasis 2
+
 ## Psalm 72
 
 How good God is to Israel,
@@ -3015,6 +3073,8 @@ Remember how the senseless revile you all the day.
 Do not forget the clamor of your foes,
 the daily increasing uproar of your foes.
 
+### Stasis 3
+
 ## Psalm 74
 
 We give thanks to you, O God,
@@ -3118,6 +3178,8 @@ You guided your people like a flock
 by the hand of Moses and Aaron.
 
 # Kathisma 11
+
+### Stasis 1
 
 ## Psalm 77
 
@@ -3290,6 +3352,8 @@ Of Israel is own possession.
 He tended them with blameless heart,
 with discerning mind he led them.
 
+### Stasis 2
+
 ## Psalm 78
 
 O God, the nations have invaded your land,
@@ -3407,7 +3471,9 @@ turn my hand against their enemies.
 The Lord’s enemies would cringe at their feet
 and their subjection would last for ever.
 But Israel I would feed with finest wheat
-and fill them with honey from the rock.”
+and fill them with honey from the rock."
+
+### Stasis 3
 
 ## Psalm 81
 
@@ -3537,6 +3603,8 @@ and peace shall follow his steps.
 
 # Kathisma 12
 
+### Stasis 1
+
 ## Psalm 85
 
 Turn your ear, O Lord, and give answer
@@ -3642,6 +3710,8 @@ They surround me all the day like a flood,
 they assail me all together.
 Friend and neighbor you have taken away:
 my one companion is darkness.
+
+### Stasis 2
 
 ## Psalm 88
 
@@ -3755,6 +3825,8 @@ mocking your anointed at every step.
 Blessed be the Lord for ever.
 Amen, amen!
 
+### Stasis 3
+
 ## Psalm 89
 
 O Lord, you have been our refuge
@@ -3835,6 +3907,8 @@ With length of days I will content him;
 I shall let you see my saving power.
 
 # Kathisma 13
+
+### Stasis 1
 
 ## Psalm 91
 
@@ -3937,6 +4011,8 @@ He will repay them for their evil wickedness,
 destroy them for their evil deeds.
 The Lord, our God, will destroy them.
 
+### Stasis 2
+
 ## Psalm 94
 
 Come, ring out our joy to the Lord;
@@ -4027,6 +4103,8 @@ Light shines forth for the just
 and joy for the upright of heart.
 Rejoice, you just, in the Lord;
 give glory to his holy name.
+
+### Stasis 3
 
 ## Psalm 97
 
@@ -4130,6 +4208,8 @@ uprooting from the city of the Lord
 all who do evil.
 
 # Kathisma 14
+
+### Stasis 1
 
 ## Psalm 101
 
@@ -4246,6 +4326,8 @@ Give thanks to the Lord, all his works,
 in every place where he rules.
 My soul, give thanks to the Lord!
 
+### Stasis 2
+
 ## Psalm 103
 
 Bless the Lord, my soul!
@@ -4278,7 +4360,7 @@ from the branches they sing their song.
 From your dwelling you water the hills;
 earth drinks its fill of your gift.
 You make the grass grow for the cattle
-and the plants to serve man’s our needs,
+and the plants to serve man's needs,
 that he may bring forth bread from the earth
 and wine to cheer man’s heart;
 oil, to make his face shine
@@ -4327,6 +4409,8 @@ I find my joy in the Lord.
 Let sinners vanish from the earth
 and the wicked exist no more.
 Bless the Lord, my soul.
+
+### Stasis 3
 
 ## Psalm 104
 
@@ -4424,6 +4508,8 @@ that thus they might observe his laws.
 ALLELUIA!
 
 # Kathisma 15
+
+### Stasis 1
 
 ## Psalm 105
 
@@ -4537,7 +4623,9 @@ and make it our glory to praise you.
 Blessed be the Lord, God of Israel,
 for ever, from age to age.
 Let all the people cry out:
-“Amen! Amen! ALLELUIA!”
+"Amen! Amen! ALLELUIA!"
+
+### Stasis 2
 
 ## Psalm 106
 
@@ -4633,6 +4721,8 @@ The upright see it and rejoice
 but all who do wrong are silenced.
 Whoever is wise, let him heed these things.
 And consider the love of the Lord.
+
+### Stasis 3
 
 ## Psalm 107
 
@@ -4739,6 +4829,8 @@ to save him from those who condemn him.
 
 # Kathisma 16
 
+### Stasis 1
+
 ## Psalm 109
 
 The Lord’s revelation to my Master:
@@ -4813,6 +4905,8 @@ His head will be raised in glory.
 The wicked man sees and is angry,
 grinds his teeth and fades away;
 the desire of the wicked leads to doom.
+
+### Stasis 2
 
 ## Psalm 112
 
@@ -4921,6 +5015,8 @@ and my feet from stumbling.
 I will walk in the presence of the Lord
 in the land of the living.
 
+### Stasis 3
+
 ## Psalm 115
 
 I trusted, even when I said:
@@ -5020,6 +5116,8 @@ Give thanks to the Lord for he is good;
 for his love endures for ever.
 
 # Kathisma 17
+
+### Stasis 1
 
 ## Psalm 118
 
@@ -5176,6 +5274,9 @@ It was good for me to be afflicted,
 to learn your statutes.
 The law from your mouth means more to me
 than silver and gold.
+
+### Stasis 2
+
 *Yod (Y) X
 It was your hands that made me and shaped me:
 help me to learn your commands.
@@ -5302,6 +5403,9 @@ The unfolding of your word gives light
 and teaches the simple.
 I open my mouth and I sigh
 as I yearn for your commands.
+
+### Stasis 3
+
 Turn and show me your mercy;
 show justice to your friends.
 Let my steps be guided by your promise;
@@ -5401,6 +5505,8 @@ for I remember your commands.
 
 # Kathisma 18
 
+### Stasis 1
+
 ## Psalm 119
 
 To the Lord in the hour of my distress
@@ -5497,6 +5603,8 @@ and we have escaped.
 Our help is in the name of the Lord,
 who made heaven and earth.
 
+### Stasis 2
+
 ## Psalm 124
 
 Those who put their trust in the Lord
@@ -5589,7 +5697,9 @@ With that no reaper fill his arms,
 no binder makes his sheaves
 and those passing by will not say:
 “On you the Lord’s blessing!”
-“We bless you in the name of the Lord.”
+"We bless you in the name of the Lord."
+
+### Stasis 3
 
 ## Psalm 129
 
@@ -5693,6 +5803,8 @@ May the Lord bless you from Zion,
 he who made both heaven and earth.
 
 # Kathisma 19
+
+### Stasis 1
 
 ## Psalm 134
 
@@ -5832,6 +5944,8 @@ the ills you brought on us.
 He shall seize and shall dash
 your children on the rock!
 
+### Stasis 2
+
 ## Psalm 137
 
 I thank you, Lord, with all my heart,
@@ -5940,6 +6054,8 @@ That he will do justice for the needy.
 Truly the just will praise your name
 the upright shall live in your presence.
 
+### Stasis 3
+
 ## Psalm 140
 
 I have called to you, Lord; hasten to help me!
@@ -6030,6 +6146,8 @@ destroy all those who oppress me
 for I am your servant, O Lord.
 
 # Kathisma 20
+
+### Stasis 1
 
 ## Psalm 143
 
@@ -6124,6 +6242,8 @@ Let me speak the praise of the Lord,
 let all peoples bless his holy name
 for ever, for ages unending.
 
+### Stasis 2
+
 ## Psalm 145
 
 ALLELUIA!
@@ -6202,6 +6322,8 @@ to Israel his laws and decrees.
 He has not dealt thus with other nations;
 he has not taught them his decrees.
 ALLELUIA!
+
+### Stasis 3
 
 ## Psalm 148
 

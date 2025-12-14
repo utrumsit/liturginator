@@ -1,0 +1,399 @@
+MCI Menaion Scraper
+==================================================
+Target: https://metropolitancantorinstitute.org/menaion
+
+
+Scraping month 1...
+  Day 1/1... ✓ THE CIRCUMCISION OF OUR LORD, GOD, AND SAVIOR JESUS CHRIST.
+  Day 1/2... ✓ Pre-festive day of the Theophany
+  Day 1/3... ✓ Pre-festive day of the Theophany
+  Day 1/4... ✓ Pre-festive day of the Theophany
+  Day 1/5... ✓ Vigil of the Theophany
+  Day 1/6... ✓ THE THEOPHANY OF OUR LORD, GOD, AND SAVIOR JESUS CHRIST
+  Day 1/7... ✓ Post-festive day of the Theophany
+  Day 1/8... ✓ Post-festive day of the Theophany
+  Day 1/9... ✓ Post-festive day of the Theophany
+  Day 1/10... ✓ Post-festive day of the Theophany
+  Day 1/11... ✓ Post-festive day of the Theophany
+  Day 1/12... ✓ Post-festive day of the Theophany
+  Day 1/13... ✓ Post-festive day of the Theophany
+  Day 1/14... ✓ Leave-taking of the Theophany
+  Day 1/15... ✓ Our venerable fathers Paul of Thebes and John the Hut-dweller
+  Day 1/16... ✓ The Veneration of the Chains of the holy, glorious, and illustrious apostle Peter
+  Day 1/17... ✓ Our venerable father Anthony the Great
+  Day 1/18... ✓ Our holy fathers Athanasius and Cyril of Alexandria, archbishops of that city
+  Day 1/19... ✓ Our venerable father Macarius of Egypt
+  Day 1/20... ✓ Our venerable and God-bearing father Euthymius the Great
+  Day 1/21... ✓ Our venerable father Maximus the Confessor
+  Day 1/22... ✓ The holy apostle Timothy
+  Day 1/23... ✓ The holy martyr Clement, bishop of Ancyra
+  Day 1/24... ✓ Our venerable mother Xenia of Rome
+  Day 1/25... ✓ Our holy father Gregory the Theologian
+  Day 1/26... ✓ Our venerable father Xenophon and his wife Mary
+  Day 1/27... ✓ The Translation of the Relics of our holy father John Chrysostom.
+  Day 1/28... ✓ Our venerable father Ephrem the Syrian
+  Day 1/29... ✓ Translation of the relics of the holy bishop and martyr Ignatius of Antioch
+  Day 1/30... ✓ THE THREE HOLY HIERARCHS:  BASIL THE GREAT, GREGORY THE THEOLOGIAN, AND JOHN CHRYSOSTOM
+  Day 1/31... ✓ The holy wonderworkers and unmercenary healers Cyrus and John
+
+Scraping month 2...
+  Day 2/1... ✓ Pre-festive day of the Meeting
+  Day 2/2... ✓ THE ENCOUNTER OF OUR LORD, GOD, AND SAVIOR JESUS CHRIST WITH SIMEON AND ANNA,
+  Day 2/3... ✓ Post-festive day of the Meeting
+  Day 2/4... ✓ Post-festive day of the Meeting
+  Day 2/5... ✓ Post-festive day of the Meeting
+  Day 2/6... ✓ Post-festive day of the Meeting
+  Day 2/7... ✓ Post-festive day of the Meeting
+  Day 2/8... ✓ Post-festive day of the Meeting
+  Day 2/9... ✓ Leave-taking of the Meeting.
+  Day 2/10... ✓ The holy martyr Charalampas
+  Day 2/11... ✓ The holy martyr Blaise, bishop of Sebaste
+  Day 2/12... ✓ Our holy father Meletius, archbishop of Antioch
+  Day 2/13... ✓ Our venerable father Martinian
+  Day 2/14... ✓ Our venerable father Auxentius
+  Day 2/15... ✓ The holy apostle Onesimus
+  Day 2/16... ✓ The holy martyrs: the presbyter Pamphilius, Porphyry and their companions
+  Day 2/17... ✓ The holy great martyr Theodore the Recruit
+  Day 2/18... ✓ Our holy father Leo, Pope of Rome
+  Day 2/19... ✓ The holy apostle Archippus,
+  Day 2/20... ✓ Our venerable father Leo, bishop of Catania
+  Day 2/21... ✓ Our venerable father Timothy of Symbola
+  Day 2/22... ✓ The Finding of the venerable relics of the Martyrs at Eugenia
+  Day 2/23... ✓ The holy martyr Polycarp, bishop of Smyrna
+  Day 2/24... ✓ The first and second findings of the head of the Prophet, Forerunner, and Baptist John.
+  Day 2/25... ✓ Our holy father Tarasius, Archbishop of Constantinople
+  Day 2/26... ✓ Our holy father Porphyry, bishop of Gaza
+  Day 2/27... ✓ Our venerable father and confessor Procopius the Decapolite,
+  Day 2/28... ✓ Our venerable father and confessor Basil
+  Day 2/29... ✓ Our venerable father Cassian
+
+Scraping month 3...
+  Day 3/1... ✓ The venerable martyr Eudoxia
+  Day 3/2... ✓ The holy martyr Theodotus, bishop of Cyrene,
+  Day 3/3... ✓ The holy martyr Eutropius and his companions, Cleonicus and Basiliscus,
+  Day 3/4... ✓ Our venerable father Gerasimus of the Jordan
+  Day 3/5... ✓ The holy martyr Conon,
+  Day 3/6... ✓ The holy forty-two martyrs of Ammorium in Syria
+  Day 3/7... ✓ The holy martyrs and bishops of Cherson
+  Day 3/8... ✓ Our venerable father and confessor Theophylact
+  Day 3/9... ✓ The forty holy martyrs of Sebaste in Armenia.
+  Day 3/10... ✓ The holy martyr Codratus and his companions
+  Day 3/11... ✓ Our holy father Sophronius, patriarch of Jerusalem.
+  Day 3/12... ✓ Our venerable father and confessor Theophane of the Sygrian Mountain in Bithynia in the monastery of Ager Magnus
+  Day 3/13... ✓ The translation of the relics of our holy father Nicephor, patriarch of Constantinople.
+  Day 3/14... ✓ Our venerable father Benedict.
+  Day 3/15... ✓ The holy martyr Agapius and his companions
+  Day 3/16... ✓ The holy martyrs Sabinus and Papas
+  Day 3/17... ✓ Our venerable father Alexis, Man of God
+  Day 3/18... ✓ Our holy father Cyril, archbishop of Jerusalem
+  Day 3/19... ✓ The holy martyrs Chrysanthus and Daria
+  Day 3/20... ✓ Our venerable fathers of the St. Sabbas Monastery
+  Day 3/21... ✓ Our venerable father and confessor James, bishop of Catania
+  Day 3/22... ✓ The holy martyr Basilides, priest of Ancyra
+  Day 3/23... ✓ The holy venerable martyr Nicon and his students martyred with him
+  Day 3/24... ✓ Prefestive day of the Annunciation
+  Day 3/25... ✓ THE ANNUNCIATION OF THE MOTHER OF GOD AND EVER-VIRGIN MARY
+  Day 3/26... ✓ Leave-taking of the Annunciation
+  Day 3/27... ✓ Our venerable mother Matrona
+  Day 3/28... ✓ Our venerable father Hilary the Younger
+  Day 3/29... ✓ Our venerable father Mark, bishop of Arethusa in Syria and of the Deacon Cyril, and the others who suffered martyrdom under Julian the Apostate
+  Day 3/30... ✓ Our venerable father John Climacus, author of “The Ladder”
+  Day 3/31... ✓ Our venerable father Hypatius
+
+Scraping month 4...
+  Day 4/1... ✓ Our holy mother Mary of Egypt
+  Day 4/2... ✓ Our venerable father Titus the Wonderworker
+  Day 4/3... ✓ Our venerable father and confessor Nicetas, Hegumen of Medikion
+  Day 4/4... ✓ Our venerable father, Joseph the Hymnographer
+  Day 4/5... ✓ The holy martyrs Theodulus, lector, and Agathopedus, deacon
+  Day 4/6... ✓ Our holy father Eutyches, archbishop of Constantinople
+  Day 4/7... ✓ Our venerable father George, bishop of Mitylene
+  Day 4/8... ✓ The holy apostles Herodian, Agabus, Rufus, Asyncritus, Phlegon and Hermes
+  Day 4/9... ✓ The holy martyr Eupsychius
+  Day 4/10... ✓ The holy martyrs Terence, Pompey, and their forty companions in Africa
+  Day 4/11... ✓ The holy martyr Antipas
+  Day 4/12... ✓ Our venerable father and confessor Basil, bishop of Parium
+  Day 4/13... ✓ The holy priest martyr Artemon
+  Day 4/14... ✓ Our holy father and confessor Martin, pope of Rome
+  Day 4/15... ✓ The holy apostles Aristarchus, Pudens, and Trophimus
+  Day 4/16... ✓ The holy martyrs Agape, Irene, and Chiona
+  Day 4/17... ✓ Our venerable father Simeon of Saba in Persia, bishop of Seleucis and Ctesiphon
+  Day 4/18... ✓ Our venerable father John, disciple of the holy Gregory the Decapolite
+  Day 4/19... ✓ Our venerable father John of the ancient cave
+  Day 4/20... ✓ Our venerable father Theodore “Trichinas”
+  Day 4/21... ✓ The holy bishop martyr Januarius and his companions Proculus, Sonius and Faustus (deacons), Desiderius (lector), Eutyches and Akutionus
+  Day 4/22... ✓ Our venerable father Theodore the Sykiot
+  Day 4/23... (no page)
+  Day 4/24... ✓ The holy martyr Sabbas the Goth
+  Day 4/25... (no page)
+  Day 4/26... ✓ The holy martyr Basil, bishop of Amasea in Pontus
+  Day 4/27... ✓ The holy bishop martyr Simeon, relative of our Lord
+  Day 4/28... (no page)
+  Day 4/29... (no page)
+  Day 4/30... (no page)
+
+Scraping month 5...
+  Day 5/1... ✓ The holy prophet Jeremiah
+  Day 5/2... ✓ Our holy father Athanasius the Great, archbishop of Alexandria,
+  Day 5/3... ✓ The holy martyr Timothy and his wife Maura
+  Day 5/4... ✓ The holy martyr Pelagia,
+  Day 5/5... ✓ The holy and glorious martyr Irene, at Thessalonica in Macedonia
+  Day 5/6... ✓ The holy and just Job, the Long-Suffering,
+  Day 5/7... ✓ The appearance of the Sign of the Cross in the heavens
+  Day 5/8... ✓ The holy apostle and evangelist John the Theologian
+  Day 5/9... ✓ The holy prophet Isaiah
+  Day 5/10... ✓ The holy apostle Simon the Zealot
+  Day 5/11... ✓ The foundation of Constantinople in 330.
+  Day 5/12... ✓ Our holy father Epiphanius, bishop at Salamina in Cyprus.
+  Day 5/13... ✓ The holy martyr Glyceria
+  Day 5/14... ✓ The holy martyr Isidore
+  Day 5/15... ✓ Our venerable father Pachomius the Great
+  Day 5/16... ✓ Our venerable father Theodore
+  Day 5/17... ✓ The holy apostle Andronicus and his companions.
+  Day 5/18... ✓ The holy martyr Theodotus of Ancyra
+  Day 5/19... ✓ The holy martyr Patrick, bishop of Prusa, and his companions,
+  Day 5/20... ✓ The holy martyr Thaleleus
+  Day 5/21... ✓ The holy emperor Constantine and his mother Helen, equal to the apostles.
+  Day 5/22... ✓ The holy martyr Basiliscus
+  Day 5/23... ✓ Our venerable father and confessor Michael, bishop of Synnada
+  Day 5/24... ✓ Our venerable father Simeon of the Wondrous Mountain
+  Day 5/25... ✓ The third finding of the head of the holy prophet, forerunner, and Baptist, John
+  Day 5/26... ✓ The holy apostle Carpus, one of the Seventy.
+  Day 5/27... ✓ The holy bishop martyr Therapont of Sardis
+  Day 5/28... ✓ Our venerable father Nicetas, bishop of Chalcedon.
+  Day 5/29... ✓ The holy venerable martyr and virgin Theodosia.
+  Day 5/30... ✓ Our venerable father Isaac, hegumen of the Dalmatian Monastery
+  Day 5/31... ✓ The holy apostle Hermes, bishop of Philippi
+
+Scraping month 6...
+  Day 6/1... ✓ The holy martyr Justin and his companions.
+  Day 6/2... ✓ Our venerable father Nicephor the confessor,
+  Day 6/3... ✓ The holy martyr Lucillian and his companions.
+  Day 6/4... ✓ Our holy father Metrophanes, patriarch of Constantinople
+  Day 6/5... ✓ The holy martyr Dorotheus
+  Day 6/6... ✓ Our venerable father Bessarion the Wonder-worker
+  Day 6/7... ✓ The holy martyr Theodotus,
+  Day 6/8... ✓ The translation of the relics of the holy great martyr Theodore the Recruit
+  Day 6/9... ✓ Our holy father Cyril, bishop of Alexandria.
+  Day 6/10... ✓ The holy martyr Timothy
+  Day 6/11... ✓ The holy Apostles Bartholomew and Barnabas.
+  Day 6/12... ✓ Our venerable father Onuphry the Grea
+  Day 6/13... ✓ The holy martyr Aquilina
+  Day 6/14... ✓ The holy prophet Elisha
+  Day 6/15... ✓ The holy prophet Amos
+  Day 6/16... ✓ Our holy father Tychon the Wonder-worker
+  Day 6/17... ✓ The holy martyrs Manuel, Sabel, and Ishmael
+  Day 6/18... ✓ The holy martyr Leontius,
+  Day 6/19... ✓ The holy apostle Jude, brother of the Lord,
+  Day 6/20... ✓ The holy martyr Methodius, bishop of Patara
+  Day 6/21... ✓ The holy martyr Julian of Tarsus
+  Day 6/22... ✓ The holy martyr Eusebius, bishop of Samosata
+  Day 6/23... ✓ The holy martyr Agrippina
+  Day 6/24... ✓ THE NATIVITY OF THE HOLY PROPHET, FORERUNNER, AND BAPTIST JOHN
+  Day 6/25... ✓ Leave-taking of the Nativity of the Forerunner
+  Day 6/26... ✓ Our venerable father David of Thessalonica
+  Day 6/27... ✓ Our venerable father Sampson the Hospitaler
+  Day 6/28... ✓ The translation of the relics of the holy unmercenary physicians Cyrus and John
+  Day 6/29... ✓ THE HOLY PREEMINENT APOSTLES PETER AND PAUL.
+  Day 6/30... ✓ The Synaxis of the Twelve Apostles
+
+Scraping month 7...
+  Day 7/1... ✓ The holy unmercenary healers and wonder-workers Cosmas and Damian,
+  Day 7/2... ✓ The deposition of the venerable robes of our Most Holy Lady, the Mother of God at Blachernae
+  Day 7/3... ✓ The holy martyr Hyacinth
+  Day 7/4... ✓ Our holy father Andrew of Jerusalem, archbishop of Crete,
+  Day 7/5... ✓ Our venerable father Athanasius of Mt. Athos,
+  Day 7/6... ✓ Our venerable father Sisoes the Great, hermit in Egypt,
+  Day 7/7... ✓ Our venerable fathers Thomas of Maleum and Acacius, mentioned in “The Ladder.”
+  Day 7/8... ✓ The holy great martyr Procopius  at Caesarea in Palestine.
+  Day 7/9... ✓ The holy martyr Pancratius
+  Day 7/10... ✓ The holy forty-five martyrs in Nicopolis in Armenia
+  Day 7/11... ✓ The holy martyr Euphemia the Illustrious at Chalcedon in Bithynia.
+  Day 7/12... ✓ The holy martyrs Proclus and Hilary
+  Day 7/13... ✓ The synaxis of the Archangel Gabriel
+  Day 7/14... ✓ The holy apostle Aquila and his wife, Prisca or Priscilla,
+  Day 7/15... ✓ The holy martyrs Cyricus and Julitta.
+  Day 7/16... ✓ The holy martyrs Athenogenes, bishop of Sebaste, and his ten disciples in Armenia
+  Day 7/17... ✓ The holy great martyr Marina (also known as Margaret),
+  Day 7/18... ✓ The holy martyr Hyacinth
+  Day 7/19... ✓ Our venerable mother Macrina
+  Day 7/20... ✓ THE HOLY AND GLORIOUS PROPHET ELIJAH
+  Day 7/21... ✓ Our venerable father Simeon, fool for Christ, and his fellow ascetic John
+  Day 7/22... ✓ The holy myrrh-bearer Mary Magdalene, equal to the apostles,
+  Day 7/23... ✓ The holy martyrs Trophimus and Theophilus and their companions
+  Day 7/24... ✓ The holy great martyr Christine
+  Day 7/25... ✓ Dormition of the Holy Anna, mother of the Mother of God.
+  Day 7/26... ✓ The holy priest-martyr Hermolaus and his companions.
+  Day 7/27... ✓ The holy great martyr Panteleimon
+  Day 7/28... ✓ The holy apostles and deacons Prochorus, Nicanor, Timon, and Parmenas
+  Day 7/29... ✓ The holy martyr Callinicus
+  Day 7/30... ✓ The holy apostles Silas and Silvanus and their companions.
+  Day 7/31... ✓ Pre-festive day of the  Procession of the Venerable Cross.
+
+Scraping month 8...
+  Day 8/1... ✓ The procession of the Wood of the venerable and life-creating Cross.
+  Day 8/2... ✓ The translation of the relics of the holy protomartyr and archdeacon Stephen.
+  Day 8/3... ✓ Our venerable fathers Isaac, Dalmatus, and Faustus.
+  Day 8/4... ✓ The holy seven children of Ephesus.
+  Day 8/5... ✓ Pre-festive day of the  Transfiguration.
+  Day 8/6... ✓ THE TRANSFIGURATION OF OUR LORD, GOD,  AND  SAVIOR JESUS CHRIST
+  Day 8/7... ✓ Postfestive day of the Transfiguration.
+  Day 8/8... ✓ Postfestive day of the Transfiguration.
+  Day 8/9... ✓ Postfestive day of the Transfiguration.
+  Day 8/10... ✓ Postfestive day of the Transfiguration.
+  Day 8/11... ✓ Postfestive day of the Transfiguration.
+  Day 8/12... ✓ Postfestive day of the Transfiguration.
+  Day 8/13... ✓ The leave-taking of the Transfiguration.
+  Day 8/14... ✓ Prefestive day of the Dormition of the Theotokos.
+  Day 8/15... ✓ THE DORMITION OF THE MOTHER OF GOD AND EVER- VIRGIN MARY.
+  Day 8/16... ✓ Postfestive day of the Dormition.
+  Day 8/17... ✓ Postfestive day of the Dormition.
+  Day 8/18... ✓ Postfestive day of the Dormition.
+  Day 8/19... ✓ Postfestive day of the Dormition.
+  Day 8/20... ✓ Postfestive day of the Dormition.
+  Day 8/21... ✓ Postfestive day of the Dormition.
+  Day 8/22... ✓ Postfestive day of the Dormition.
+  Day 8/23... ✓ The leave-taking of the Dormition of the Theotokos.
+  Day 8/24... ✓ The holy bishop-martyr Eutyches, disciple of St. John the Theologian.
+  Day 8/25... ✓ Return of the relics of the holy apostle Bartholomew.
+  Day 8/26... ✓ The holy martyrs Adrian and Natalie [
+  Day 8/27... ✓ Our venerable father Pimen.
+  Day 8/28... ✓ Our venerable father Moses the Ethiopian.
+  Day 8/29... ✓ THE BEHEADING OF THE HOLY PROPHET, FORERUNNER, AND BAPTIST JOHN.
+  Day 8/30... ✓ Post-festive day of the Beheading of the Forerunner
+  Day 8/31... ✓ The deposition of the venerable Belt of the Most Holy Mother of God.
+
+Scraping month 9...
+  Day 9/1... ✓ The  Beginning of the Church Year (“Indiction”).
+  Day 9/2... ✓ The holy martyr Mammas
+  Day 9/3... ✓ The holy martyr Anthimus
+  Day 9/4... ✓ The holy martyr Babylas, bishop of Antioch
+  Day 9/5... ✓ The holy prophet Zachary and his wife, the holy and venerable Elizabeth, the parents of the Forerunner
+  Day 9/6... ✓ The commemoration of the miracle of the Holy Archangel Michael at Colossae in Chionia
+  Day 9/7... ✓ Pre-festive day of the Nativity of the Theotokos
+  Day 9/8... ✓ THE NATIVITY OF THE THEOTOKOS AND EVER-VIRGIN MARY
+  Day 9/9... ✓ The Synaxis of the holy and just Grandparents of God, Joachim and Anna
+  Day 9/10... ✓ Post-festive day of the Nativity of the Theotokos
+  Day 9/11... ✓ Post-festive day of the Nativity of the Theotokos
+  Day 9/12... ✓ The leave-taking of the Nativity of the Theotokos
+  Day 9/13... ✓ Pre-festive day of the Exaltation of the Holy Cross
+  Day 9/14... ✓ THE EXALTATION OF THE PRECIOUS, HOLY, AND LIFE-CREATING CROSS,
+  Day 9/15... ✓ Post-festive day of the Exaltation of the Cross
+  Day 9/16... ✓ Post-festive day of the Exaltation of the Cross
+  Day 9/17... ✓ Post-festive day of the Exaltation of the Cross
+  Day 9/18... ✓ Post-festive day of the Exaltation of the Cross
+  Day 9/19... ✓ Post-festive day of the Exaltation of the Cross
+  Day 9/20... ✓ Post-festive day of the Exaltation of the Cross
+  Day 9/21... ✓ The leave-taking of the Exaltation of the Cross.
+  Day 9/22... ✓ The holy martyr Phocas, bishop of Sinope.
+  Day 9/23... ✓ The conception of the holy prophet, forerunner, and baptist John.
+  Day 9/24... ✓ The holy martyr, first among women, and equal to the apostles, Thecla,
+  Day 9/25... ✓ Our venerable mother Euphrosyna
+  Day 9/26... ✓ The passing of the holy apostle and evangelist, John the Theologian,
+  Day 9/27... ✓ The holy martyr Callistratus and his companions.
+  Day 9/28... ✓ Our venerable father and confessor Chariton,
+  Day 9/29... ✓ Our venerable father Cyriacus the anchorite
+  Day 9/30... ✓ The holy martyr Gregory, bishop of Armenia,
+
+Scraping month 10...
+  Day 10/1... ✓ THE PROTECTION OF THE MOTHER OF GOD AND EVER-VIRGIN MARY.
+  Day 10/2... ✓ The holy bishop martyr Cyprian
+  Day 10/3... ✓ The holy bishop and martyr Denis the Areopagite,
+  Day 10/4... ✓ The holy martyr Hierotheus, bishop of Athens
+  Day 10/5... ✓ The holy martyr Charitina,
+  Day 10/6... ✓ The holy and glorious apostle Thomas,
+  Day 10/7... ✓ The holy martyrs Sergius and Bacchus
+  Day 10/8... ✓ Our venerable mother Pelagia
+  Day 10/9... ✓ The holy apostle James Alpheus
+  Day 10/10... ✓ The holy martyrs Eulampius and Eulampia
+  Day 10/11... ✓ The holy apostle Philip
+  Day 10/12... (no page)
+  Day 10/13... (no page)
+  Day 10/14... (no page)
+  Day 10/15... (no page)
+  Day 10/16... (no page)
+  Day 10/17... ✓ The holy prophet Hosea
+  Day 10/18... ✓ The holy apostle and evangelist Luke
+  Day 10/19... ✓ The holy prophet Joel
+  Day 10/20... ✓ The holy great martyr Artemius
+  Day 10/21... ✓ Our venerable father Hilary the Great
+  Day 10/22... ✓ The holy bishop Abercius, equal to the apostles and wonderworker
+  Day 10/23... ✓ The holy apostle James, the brother of God
+  Day 10/24... ✓ The holy martyr Arethas and his companions
+  Day 10/25... ✓ The holy martyrs and notaries Marcian and Martyrius
+  Day 10/26... ✓ The holy and great martyr Demetrius
+  Day 10/27... ✓ The holy martyr Nestor
+  Day 10/28... ✓ The holy martyrs Terence and Neonila
+  Day 10/29... ✓ The holy venerable martyr Anastasia
+  Day 10/30... ✓ The holy martyr Zenobius and his sister Zenobia
+  Day 10/31... ✓ The holy priest-martyr Theodore Romzha.
+
+Scraping month 11...
+  Day 11/1... ✓ The holy unmercenary wonderworkers Cosmas and Damian
+  Day 11/2... ✓ The holy martyrs Akindynos, Pegasius, Aphthonius, Elpidiphor, and Anempodistus
+  Day 11/3... ✓ The holy martyrs Acepsimas the bishop, Joseph the priest, and Aeithalas the deacon
+  Day 11/4... ✓ Our venerable father Joannicus the Great
+  Day 11/5... ✓ The holy martyrs Galaction and Episteme
+  Day 11/6... ✓ Our father Paul the Confessor, archbishop of Constantinople
+  Day 11/7... ✓ The holy thirty-three martyrs at Melitene
+  Day 11/8... ✓ THE SYNAXIS OF THE HOLY ARCHANGEL MICHAEL AND ALL THE ANGELIC POWERS
+  Day 11/9... ✓ Our venerable mother Matrona
+  Day 11/10... ✓ The holy apostles Erastus, Olympas and Rhodion and their companions.
+  Day 11/11... ✓ The holy martyrs Menas, Victor, and Vincent
+  Day 11/12... ✓ The holy martyr Josaphat, bishop of Polotsk
+  Day 11/13... ✓ Our holy father John Chrysostom, archbishop of Constantinople
+  Day 11/14... ✓ The holy and illustrious apostle Philip
+  Day 11/15... ✓ The holy martyrs and confessors Gurias, Samonas, and Habib
+  Day 11/16... ✓ The holy apostle and evangelist Mathew
+  Day 11/17... ✓ Our holy father Gregory the Wonder-worker, bishop of Neocaesarea
+  Day 11/18... ✓ The holy martyrs Plato and Roman.
+  Day 11/19... ✓ The holy prophet Obadiah
+  Day 11/20... ✓ Prefestive day of the Entrance of the Theotokos.
+  Day 11/21... ✓ THE ENTRANCE OF OUR MOST BLESSED LADY, THE THEOTOKOS AND EVER-VIRGIN MARY INTO THE TEMPLE
+  Day 11/22... ✓ Postfestive day of the Entrance
+  Day 11/23... ✓ Postfestive day of the Entrance
+  Day 11/24... ✓ Postfestive day of the Entrance
+  Day 11/25... ✓ The leave-taking of the Entrance
+  Day 11/26... ✓ Our venerable father Alypius the Stylite
+  Day 11/27... ✓ The holy martyr James the Persian
+  Day 11/28... ✓ The holy venerable martyr Stephen the Younger
+  Day 11/29... ✓ The holy martyr Paramon
+  Day 11/30... ✓ The holy and glorious apostle Andrew, the First-Called
+
+Scraping month 12...
+  Day 12/1... ✓ The holy prophet Nahum,
+  Day 12/2... ✓ The holy prophet Habakkuk
+  Day 12/3... ✓ The holy prophet Zephaniah
+  Day 12/4... ✓ The holy great martyr Barbara
+  Day 12/5... ✓ Our venerable and God-bearing father Sabbas the Sanctified
+  Day 12/6... ✓ OUR HOLY FATHER NICHOLAS, ARCHBISHOP OF MYRA IN LYCIA, THE WONDERWORKER
+  Day 12/7... ✓ Pre-festive day of the Maternity of the holy Anna
+  Day 12/8... ✓ FEAST OF THE MATERNITY OF  THE HOLY ANNA, MOTHER OF OUR BLESSED LADY, THE MOTHER OF GOD AND EVER-VIRGIN MARY
+  Day 12/9... ✓ Our venerable father Patapius
+  Day 12/10... ✓ The holy martyrs Menas, Hermogenes and Eugraphus
+  Day 12/11... ✓ Our venerable father Spiridon the Wonder-worker,
+  Day 12/12... ✓ The Theotokos of Guadalupe,
+  Day 12/13... ✓ The holy martyrs Eustratius, Auxentius, Eugene, Mardarius, and Orestes,
+  Day 12/14... (no page)
+  Day 12/15... (no page)
+  Day 12/16... (no page)
+  Day 12/17... ✓ The holy prophet Daniel and the Three Holy Children:  Hannaniah, Azariah, and Mishael.
+  Day 12/18... (no page)
+  Day 12/19... (no page)
+  Day 12/20... ✓ Pre-festive day of the Nativity
+  Day 12/21... ✓ Pre-festive day of the Nativity
+  Day 12/22... ✓ Pre-festive day of the Nativity
+  Day 12/23... ✓ Pre-festive day of the Nativity
+  Day 12/24... ✓ Vigil of the Nativity
+  Day 12/25... ✓ THE NATIVITY OF OUR LORD, GOD, AND SAVIOR JESUS CHRIST
+  Day 12/26... ✓ Post-festive day of the Nativity
+  Day 12/27... ✓ Post-festive day of the Nativity
+  Day 12/28... ✓ Post-festive day of the Nativity
+  Day 12/29... ✓ Post-festive day of the Nativity
+  Day 12/30... ✓ Post-festive day of the Nativity
+  Day 12/31... ✓ Leave-taking of the Nativity of the Lord.
+
+==================================================
+Scraping complete! Saved to menaion_complete.json
+Total days scraped: 351
+Days with stichera: 295
