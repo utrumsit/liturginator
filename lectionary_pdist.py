@@ -58,8 +58,10 @@ class LectionaryPdist:
             days_to_nativity = (date_obj.replace(month=12, day=25) - date_obj).days
             if 11 <= days_to_nativity <= 17:  # Forefathers range
                 float_feast = 1010
-            elif date_obj.month == 12 and date_obj.day >= 18:  # Sunday before Nativity
+            elif date_obj.month == 12 and 18 <= date_obj.day <= 24:  # Sunday before Nativity
                 float_feast = 1012
+            elif date_obj.month == 12 and date_obj.day >= 26:  # Sunday after Nativity
+                float_feast = 1020
             elif date_obj.month == 1 and date_obj.day <= 5:  # Sunday before Theophany
                 float_feast = 1024
             elif date_obj.month == 1 and date_obj.day >= 7:  # Sunday after Theophany

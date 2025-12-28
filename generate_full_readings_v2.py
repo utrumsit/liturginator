@@ -3,7 +3,7 @@ from datetime import date, timedelta
 import json
 from lectionary_pdist import LectionaryPdist
 
-lect = LectionaryPdist()
+lect = LectionaryPdist(rsv_xml_path='rsv.xml')
 extractor = lect.rsv_extractor  # Get extractor directly
 
 start = date(2025, 12, 14)
@@ -28,7 +28,7 @@ for i in range(days):
     if i % 500 == 0:
         print(f'Progress: {i}/{days} ({i/days*100:.1f}%)')
 
-with open('docs/readings_2025-2035-full.json', 'w') as f:
+with open('docs/readings_2025-2035-final.json', 'w') as f:
     json.dump(readings, f, default=str, indent=1)
 
-print(f'✅ REGENERATED: docs/readings_2025-2035-full.json with FULL RSV text!')
+print(f'✅ REGENERATED: docs/readings_2025-2035-final.json with FULL RSV text!')
