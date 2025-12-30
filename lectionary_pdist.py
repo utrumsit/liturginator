@@ -145,7 +145,11 @@ class LectionaryPdist:
     
     def _get_gospel_pdist(self, pdist, date_obj, key_dates, pascha):
         if pdist > key_dates['sun_after_elevation']:
-            lukan_jump = 119 - key_dates['sun_after_elevation']
+            # Lukan jump: align gospel readings so Luke starts on Monday after
+            # the Sunday after Elevation. The 18th Monday after Pentecost
+            # (pdist 169) must fall on that day.
+            # Formula: (49 + 1 + 7*17) - (sun_after_elevation + 1) = 168 - sun_after_elevation
+            lukan_jump = 168 - key_dates['sun_after_elevation']
             return pdist + lukan_jump
         return pdist
     
