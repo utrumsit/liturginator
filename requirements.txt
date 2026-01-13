@@ -2,3 +2,4 @@ click
 python-dateutil
 rich
 prompt_toolkit
+pdfplumber
