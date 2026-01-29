@@ -1,10 +1,8 @@
 from datetime import date
-from functools import lru_cache
+from functools import lru_cache, cached_property
 
-from django.utils.functional import cached_property
-
-from .. import datetools
-from ..datetools import Calendar, Weekday, FloatIndex
+import datetools
+from datetools import Calendar, Weekday, FloatIndex
 
 
 @lru_cache

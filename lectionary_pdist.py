@@ -6,6 +6,9 @@ Forefathers, Sunday before Nativity, Theophany afterfeasts, ALL FIXED
 import json
 import datetime
 from pascha import calculate_pascha
+from year import Year
+import datetools
+from datetools import Weekday
 
 try:
     from rsv_extractor import RSVExtractor
@@ -35,17 +38,13 @@ class LectionaryPdist:
             self.rsv_extractor = RSVExtractor(rsv_xml_path)
     
     def get_readings(self, date_obj):
-        year = date_obj.year
-        pascha = calculate_pascha(year)
-        
-        if date_obj < pascha:
-            pascha = calculate_pascha(year - 1)
-        
-        pdist = (date_obj - pascha).days
-        key_dates = self._calculate_key_dates(pascha.year, pascha)
-        
-        epistle_pdist = self._get_epistle_pdist(pdist, key_dates)
-        gospel_pdist = self._get_gospel_pdist(pdist, date_obj, key_dates, pascha)
+        pdist, pyear_val = datetools.compute_pascha_distance(date_obj)
+        pyear = Year(pyear_val)
+        jdn = datetools.gregorian_to_jdn(date_obj)
+        weekday = datetools.weekday_from_pdist(pdist)
+
+        epistle_pdist = self._get_epistle_pdist(pdist, pyear, jdn)
+        gospel_pdist = self._get_gospel_pdist(pdist, pyear, jdn, weekday)
         
         date_key = f"{date_obj.month:02d}-{date_obj.day:02d}"
         feast_info = self.fixed_feasts.get(date_key, {})
@@ -107,7 +106,7 @@ class LectionaryPdist:
                         reading['rsv_text'] = rsv_text
         
         result = {
-            'title': self._generate_title(pdist, date_obj, key_dates, feast_name),
+            'title': self._generate_title(pdist, date_obj, pyear, feast_name),
             'pdist': pdist,
             'epistle_pdist': epistle_pdist,
             'gospel_pdist': gospel_pdist,
@@ -127,42 +126,50 @@ class LectionaryPdist:
         
         return result
     
-    def _calculate_key_dates(self, year, pascha):
-        exaltation = datetime.date(year, 9, 14)
-        exaltation_pdist = (exaltation - pascha).days
-        sun_after_elevation = exaltation_pdist + 7 - (exaltation_pdist % 7)
-        
-        nativity = datetime.date(year, 12, 25)
-        nativity_pdist = (nativity - pascha).days
-        
-        return {
-            'sun_after_elevation': sun_after_elevation,
-            'nativity': nativity_pdist,
-        }
-    
-    def _get_epistle_pdist(self, pdist, key_dates):
+    def _get_epistle_pdist(self, pdist, pyear, jdn):
+        # From orthocal day.py
+        if pdist == 49 + 29*7:  # Pentecost + 29 weeks
+            # 29th Sunday after Pentecost
+            return pyear.forefathers
+
+        if pdist >= 49 + 32*7:  # Pentecost + 32 weeks
+            # Starting on the 32nd Sunday after Pentecost, we wrap around to
+            # the beginning of the next year.
+            return jdn - pyear.next_pascha
+
         return pdist
     
-    def _get_gospel_pdist(self, pdist, date_obj, key_dates, pascha):
-        if pdist > key_dates['sun_after_elevation']:
-            # Lukan jump: align gospel readings so Luke starts on Monday after
-            # the Sunday after Elevation. The 18th Monday after Pentecost
-            # (pdist 169) must fall on that day.
-            # Formula: (49 + 1 + 7*17) - (sun_after_elevation + 1) = 168 - sun_after_elevation
-            lukan_jump = 168 - key_dates['sun_after_elevation']
-            return pdist + lukan_jump
+    def _get_gospel_pdist(self, pdist, pyear, jdn, weekday):
+        # From orthocal day.py
+        if pdist == pyear.first_sun_luke + 10*7:
+            # On the 11th Sunday of Luke we commemorate the forefathers of the Lord.
+            return pyear.forefathers + pyear.lukan_jump
+
+        if weekday == Weekday.Sunday and pdist > pyear.sun_after_theophany and pyear.extra_sundays > 1:
+            # On Sundays after Theophany, use the Gospels left unread after the Lukan jump
+            i = (pdist - pyear.sun_after_theophany) // 7
+            if i-1 < len(pyear.reserves):
+                return pyear.reserves[i-1]
+
+        if pdist > pyear.sat_before_theophany:
+            # We jump into the paschal cycle for the upcoming Pascha.
+            return jdn - pyear.next_pascha
+
+        if pdist > pyear.sun_after_elevation:
+            return pdist + pyear.lukan_jump
+
         return pdist
-    
-    def _generate_title(self, pdist, date_obj, key_dates, feast_name):
+
+    def _generate_title(self, pdist, date_obj, pyear, feast_name):
         weekday_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
         weekday = pdist % 7
         
         if feast_name:
             return feast_name
         
-        days_to_nativity = (date_obj.replace(month=12, day=25) - date_obj).days
-        if 11 <= days_to_nativity <= 17 and date_obj.weekday() == 6:
+        if pdist == pyear.forefathers:
             return "Forefathers Sunday"
+        
         if date_obj.month == 12 and 18 <= date_obj.day <= 24:
             return f"Forefeast of the Nativity ({25 - date_obj.day} days)"
         
