@@ -4,17 +4,18 @@
 
 import json
 import tone
-import pascha
+from pascha import calculate_pascha, is_lent
 from menaion import Menaion
 from datetime import datetime
 import os
 from vespers_prokeimenon import get_vespers_prokeimenon, format_prokeimenon
 from vespers_paramia import get_vespers_paramia, format_paramia_output
+from kathismata import get_season, SUMMER_VESPERS, WINTER_VESPERS, LENT_VESPERS, extract_kathisma_text
 
 class VespersAssembler:
     def __init__(self, date):
         self.date = date
-        self.is_lent = pascha.is_lent(date)
+        self.is_lent = is_lent(date)
         dt = datetime.strptime(date, '%Y-%m-%d').date()
         self.tone_num = tone.get_tone(dt)
         self.men = Menaion()
@@ -86,8 +87,28 @@ class VespersAssembler:
             return f.read()
 
     def get_kathisma(self):
-        # Placeholder: implement using kathismata.py
-        return "### Kathisma\n\n*Kathisma text goes here.*"
+        dt = datetime.strptime(self.date, '%Y-%m-%d').date()
+        pascha_date = calculate_pascha(dt.year)
+        season = get_season(dt, pascha_date)
+        weekday = dt.weekday()  # 0=Mon, 6=Sun
+
+        if season == 'lent':
+            schedule = LENT_VESPERS
+        elif season in ('summer', 'bright_week'):
+            schedule = SUMMER_VESPERS
+        else:
+            schedule = WINTER_VESPERS
+
+        kathisma_nums = schedule.get(weekday)
+        if kathisma_nums:
+            kathisma_texts = []
+            for num in kathisma_nums:
+                text = extract_kathisma_text(num)
+                if text:
+                    kathisma_texts.append(f"### Kathisma {num}\n\n{text}")
+            return '\n\n'.join(kathisma_texts)
+        else:
+            return "### Kathisma\n\n*No kathisma prescribed for this day.*"
 
     def get_o_joyful_light(self):
         with open(os.path.join(os.path.dirname(__file__), 'resource', 'o_joyful_light.md'), 'r') as f:
