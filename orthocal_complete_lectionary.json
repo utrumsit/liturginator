@@ -5739,6 +5739,356 @@
         "sdisplay": "Luke 1.24-38",
         "pericope": "3"
       }
+    },
+    "281": {
+      "epistle": {
+        "book": "2 Peter",
+        "display": "2 Peter 1:20-2:9",
+        "sdisplay": "2 Peter 1:20-2:9",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 12:13-17",
+        "sdisplay": "Mark 12:13-17",
+        "pericope": ""
+      }
+    },
+    "282": {
+      "epistle": {
+        "book": "2 Peter",
+        "display": "2 Peter 2:9-22",
+        "sdisplay": "2 Peter 2:9-22",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 12:18-27",
+        "sdisplay": "Mark 12:18-27",
+        "pericope": ""
+      }
+    },
+    "283": {
+      "epistle": {
+        "book": "2 Peter",
+        "display": "2 Peter 3:1-18",
+        "sdisplay": "2 Peter 3:1-18",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 12:28-37",
+        "sdisplay": "Mark 12:28-37",
+        "pericope": ""
+      }
+    },
+    "284": {
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 1:8-2:6",
+        "sdisplay": "1 John 1:8-2:6",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 12:38-44",
+        "sdisplay": "Mark 12:38-44",
+        "pericope": ""
+      }
+    },
+    "285": {
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 2:7-17",
+        "sdisplay": "1 John 2:7-17",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 13:1-8",
+        "sdisplay": "Mark 13:1-8",
+        "pericope": ""
+      }
+    },
+    "286": {
+      "epistle": {
+        "book": "2 Timothy",
+        "display": "2 Timothy 3:1-9",
+        "sdisplay": "2 Timothy 3:1-9",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 18:2-8a",
+        "sdisplay": "Luke 18:2-8a",
+        "pericope": ""
+      }
+    },
+    "287": {
+      "epistle": {
+        "book": "2 Timothy",
+        "display": "2 Timothy 3:10-15",
+        "sdisplay": "2 Timothy 3:10-15",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 18:2-8a",
+        "sdisplay": "Luke 18:2-8a",
+        "pericope": ""
+      }
+    },
+    "295": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 13:9-13",
+        "sdisplay": "Mark 13:9-13",
+        "pericope": ""
+      },
+      "epistle": {
+        "book": "3 John",
+        "display": "3 John 1:1-15",
+        "sdisplay": "3 John 1:1-15",
+        "pericope": ""
+      }
+    },
+    "296": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 13:14-23",
+        "sdisplay": "Mark 13:14-23",
+        "pericope": ""
+      },
+      "epistle": {
+        "book": "Jude",
+        "display": "Jude 1:1-10",
+        "sdisplay": "Jude 1:1-10",
+        "pericope": ""
+      }
+    },
+    "297": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 13:24-31",
+        "sdisplay": "Mark 13:24-31",
+        "pericope": ""
+      },
+      "epistle": {
+        "book": "Jude",
+        "display": "Jude 1:11-25",
+        "sdisplay": "Jude 1:11-25",
+        "pericope": ""
+      }
+    },
+    "298": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 13:31-14:2",
+        "sdisplay": "Mark 13:31-14:2",
+        "pericope": ""
+      },
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 4:20-5:21",
+        "sdisplay": "1 John 4:20-5:21",
+        "pericope": ""
+      }
+    },
+    "299": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 14:3-9",
+        "sdisplay": "Mark 14:3-9",
+        "pericope": ""
+      },
+      "epistle": {
+        "book": "2 John",
+        "display": "2 John 1:1-13",
+        "sdisplay": "2 John 1:1-13",
+        "pericope": ""
+      }
+    },
+    "300": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 20:46-21:4",
+        "sdisplay": "Luke 20:46-21:4",
+        "pericope": ""
+      }
+    },
+    "301": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 18:10-14",
+        "sdisplay": "Luke 18:10-14",
+        "pericope": ""
+      }
+    },
+    "288": {
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 2:18-3:10",
+        "sdisplay": "1 John 2:18-3:10",
+        "pericope": ""
+      }
+    },
+    "302": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 11:1-11",
+        "sdisplay": "Mark 11:1-11",
+        "pericope": ""
+      }
+    },
+    "289": {
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 3:11-20",
+        "sdisplay": "1 John 3:11-20",
+        "pericope": ""
+      }
+    },
+    "303": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 14:10-42",
+        "sdisplay": "Mark 14:10-42",
+        "pericope": ""
+      }
+    },
+    "290": {
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 3:21-4:6",
+        "sdisplay": "1 John 3:21-4:6",
+        "pericope": ""
+      }
+    },
+    "304": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 14:43-15:1",
+        "sdisplay": "Mark 14:43-15:1",
+        "pericope": ""
+      }
+    },
+    "291": {
+      "epistle": {
+        "book": "1 John",
+        "display": "1 John 4:20-5:21",
+        "sdisplay": "1 John 4:20-5:21",
+        "pericope": ""
+      }
+    },
+    "305": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 15:1-15",
+        "sdisplay": "Mark 15:1-15",
+        "pericope": ""
+      }
+    },
+    "292": {
+      "epistle": {
+        "book": "2 John",
+        "display": "2 John 1:1-13",
+        "sdisplay": "2 John 1:1-13",
+        "pericope": ""
+      }
+    },
+    "306": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 15:22-25, 33-41",
+        "sdisplay": "Mark 15:22-25, 33-41",
+        "pericope": ""
+      }
+    },
+    "293": {
+      "epistle": {
+        "book": "1 Corinthians",
+        "display": "1 Corinthians 10:23-28",
+        "sdisplay": "1 Corinthians 10:23-28",
+        "pericope": ""
+      }
+    },
+    "307": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 21:8-9, 25-27, 33-36",
+        "sdisplay": "Luke 21:8-9, 25-27, 33-36",
+        "pericope": ""
+      }
+    },
+    "294": {
+      "epistle": {
+        "book": "1 Corinthians",
+        "display": "1 Corinthians 6:12-20",
+        "sdisplay": "1 Corinthians 6:12-20",
+        "pericope": ""
+      },
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 18:2-8",
+        "sdisplay": "Luke 18:2-8",
+        "pericope": ""
+      }
+    },
+    "308": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 15:11-32",
+        "sdisplay": "Luke 15:11-32",
+        "pericope": ""
+      }
+    },
+    "309": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 19:29-40, 22:7-39",
+        "sdisplay": "Luke 19:29-40, 22:7-39",
+        "pericope": ""
+      }
+    },
+    "310": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 22:39-42, 45-23:1",
+        "sdisplay": "Luke 22:39-42, 45-23:1",
+        "pericope": ""
+      }
+    },
+    "311": {
+      "gospel": {
+        "book": "Luke",
+        "display": "Luke 23:2-34, 44-56",
+        "sdisplay": "Luke 23:2-34, 44-56",
+        "pericope": ""
+      }
+    },
+    "312": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 15:1-15",
+        "sdisplay": "Mark 15:1-15",
+        "pericope": ""
+      }
+    },
+    "313": {
+      "gospel": {
+        "book": "Mark",
+        "display": "Mark 15:22-25, 33-41",
+        "sdisplay": "Mark 15:22-25, 33-41",
+        "pericope": ""
+      }
+    },
+    "280": {
+      "epistle": {
+        "book": "1 Timothy",
+        "display": "1 Timothy 6:11-16",
+        "sdisplay": "1 Tim 6:11-16",
+        "pericope": ""
+      }
     }
   },
   "fixed_feasts": {
@@ -9891,26 +10241,19 @@
       "feast_level": 0,
       "saint": "Martyrs Menas, Hermogenes, Eugraphus"
     },
-"12-11": {
-    "readings": [],
-    "title": "Forefathers Sunday",
-    "feast_name": "Forefathers Sunday",
-    "feast_level": 4,
-    "saint": "Ven. Daniel the Stylite"
-  },
-"12-14": {
-    "readings": [],
-    "title": "Forefathers Sunday",
-    "feast_name": "Forefathers Sunday",
-    "feast_level": 4,
-    "pdist_override": 1010
-  },
-  "12-11": {
-    "readings": [],
-    "title": "Forefathers Sunday",
-    "feast_name": "Forefathers Sunday",
-    "feast_level": 4,
-    "saint": "Ven. Daniel the Stylite"
-  }
+    "12-11": {
+      "readings": [],
+      "title": "Forefathers Sunday",
+      "feast_name": "Forefathers Sunday",
+      "feast_level": 4,
+      "saint": "Ven. Daniel the Stylite"
+    },
+    "12-14": {
+      "readings": [],
+      "title": "Forefathers Sunday",
+      "feast_name": "Forefathers Sunday",
+      "feast_level": 4,
+      "pdist_override": 1010
+    }
   }
 }
