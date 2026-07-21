@@ -1,2 +1,38 @@
+# PDFs (large + copyrighted-ish, not needed in repo)
 *.pdf
+
+# Submodule (removed in commit 585ffcf)
 orthocal/
+
+# Python bytecode + caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# macOS metadata
+.DS_Store
+.sync-conflict-*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Virtual envs
+venv/
+venv-orthocal/
+.env
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python tools / distribution
+*.egg-info/
+dist/
+build/
+.coverage
+htmlcov/

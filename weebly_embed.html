@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tulsa Byzantine Catholic Daily Readings</title>
+</head>
+<body>
+    <div id="byzantine-readings"></div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+async function loadDailyReadings(){
+  const now = new Date();
+  const today = now.getFullYear() + '-' +
+    String(now.getMonth() + 1).padStart(2, '0') + '-' +
+    String(now.getDate()).padStart(2, '0');
+  const container = document.getElementById('byzantine-readings');
+  container.innerHTML = '<div style="text-align:center;padding:20px;font-family:Georgia,serif">⏳ Byzantine Catholic Daily Readings Loading...</div>';
+  
+  try {
+    // Cache-bust for latest JSON
+    const res = await axios.get('https://utrumsit.github.io/liturginator/readings_2025-2035-final.json');
+    const reading = res.data[today];
+    
+    if (reading) {
+      container.innerHTML = `
+        <style>
+          #byzantine-readings { 
+            font-family: 'Georgia', serif; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 25px; 
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); 
+            border-radius: 15px; 
+            box-shadow: 0 4px 20px rgba(139,69,19,0.1);
+          }
+          h3 { color: #8B4513; text-align: center; margin-bottom: 10px; font-size: 1.4em; }
+          h4 { color: #B8860B; text-align: center; font-style: italic; margin-bottom: 20px; }
+          details { margin: 15px 0; border: 2px solid #ddd; border-radius: 10px; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+          summary { padding: 15px; background: linear-gradient(90deg, #f8f9fa, #e9ecef); cursor: pointer; font-weight: bold; border-radius: 8px 8px 0 0; font-size: 1.1em; }
+          p { padding: 20px; line-height: 1.8; text-align: justify; font-size: 1.05em; }
+          .saint-readings { border-left: 4px solid #B8860B; }
+        </style>
+        <h3>📖 ${reading.title}</h3>
+        ${reading.feast_name ? `<h4>✝️ ${reading.feast_name}</h4>` : ''}
+        
+        ${reading.epistle?.rsv_text ? `
+          <details open>
+            <summary>📜 ${reading.epistle.display}</summary>
+            <p>${reading.epistle.rsv_text}</p>
+          </details>
+        ` : ''}
+        
+        ${reading.gospel?.rsv_text ? `
+          <details open>
+            <summary>📖 ${reading.gospel.display}</summary>
+            <p>${reading.gospel.rsv_text}</p>
+          </details>
+        ` : ''}
+        
+        ${reading.saint_epistle?.rsv_text ? `
+          <details class="saint-readings">
+            <summary>🙏 Saint Epistle: ${reading.saint_epistle.display}</summary>
+            <p>${reading.saint_epistle.rsv_text}</p>
+          </details>
+        ` : ''}
+      `;
+    } else {
+      container.innerHTML = `
+        <style>#byzantine-readings { text-align: center; padding: 40px; font-family: Georgia, serif; }</style>
+        <h3>📅 Byzantine Catholic Daily Readings</h3>
+        <p>Available starting December 14, 2025</p>
+        <p>Full RSV Scripture • Auto-updates daily</p>
+      `;
+    }
+  } catch(e) {
+    container.innerHTML = `
+      <style>#byzantine-readings { text-align: center; padding: 40px; font-family: Georgia, serif; }</style>
+      <h3>🔄 Updating Daily Readings</h3>
+      <p>Refreshes automatically every 5 minutes</p>
+    `;
+  }
+}
+
+// Load immediately + refresh every 5 minutes
+loadDailyReadings();
+setInterval(loadDailyReadings, 300000);
+    </script>
+</body>
+</html>
